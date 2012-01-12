@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Number of malicious program}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces SysAnalyser tool for dynamic analysis.}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ollydbg tool for static analysis.}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Malware name is detected by antivirus engines.}}{9}{figure.2.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces PE file format.}}{16}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layout a file in PE header format.}}{18}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Layout of a file header}}{18}{figure.4.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The system architecture.}}{21}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Clustering method.}}{22}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Worm autorun decision tree.}}{22}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Malware classification system.}}{24}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Worm autorun decision tree.}}{24}{figure.5.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The best decision tree order.}}{26}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Experimental result}}{26}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The best decision tree order.}}{27}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The best decision tree order.}}{28}{figure.6.4}
+\addvspace {10\p@ }

@@ -1,0 +1,101 @@
+\begin{thebibliography}{10}
+\bibitem{SysAnalyzer}
+	David Zimmer. \emph{http://www.woodmann.com/collaborative/tools/index.php/SysAnalyzer}. 21 March 2011.
+\bibitem{Symantec}
+  Symantec Announces MessageLabs Intelligence. \emph{http://www.symantec.com/about/news/release/article.jsp?\\prid=2010120701}. 12 Dec 2011.
+\bibitem{keylogger}
+  John Bambenek. \emph{http://handlers.dshield.org/jbambenek/keylogger.html}. 13 Sep 2005.
+\bibitem{Microsoft}
+  Malware protection center. \emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Glossary.aspx}. 21 Dec 2011.
+\bibitem{wikipedia}
+  Wikipedia. \emph{http://en.wikipedia.org/wiki/Decision-tree-learning}. 21 Dec 2011. 
+\bibitem{antivirus}
+  Wikipedia. \emph{http://en.wikipedia.org/wiki/Antivirus-software}. 14 Jun 2011.
+\bibitem{kaspersky}
+  Eugene Kaspersky. \emph{http://www.kaspersky.co.in/news?id=207576357}. 14 Jun 2011.
+\bibitem{ipa}
+  Information-technology Promotion Agency, Japan.\emph{http://www.ipa.go.jp/security/txt/list.html}. 01 Jan 2012.
+\bibitem{gaobot}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?=\\Win322fGaobotsummarylink}. 01 Jan 2012.
+\bibitem{ircbot}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?name=\\Win32\%2FIRCBot\#symptoms\_link}. 01 Jan 2012.
+\bibitem{autorun}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=\\Win32\%2fAutorun}. 01 Jan 2012.
+\bibitem{virut}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=\\Win32\%2fVirut}. 01 Jan 2012.
+\bibitem{metamorphism}
+  Qinghua Zhang, Douglas S. Reeve.\emph{MetaAware: Identifying Metamorphic Malware}. 23rd Annual Computer Security Applications Conference 2007.
+ \bibitem{mohd}
+  Mohd Najwadi Yusoff and Aman Jantan.\emph{Optimizing Decision Tree in Malware Classification System by using Genetic Algorithm}. The Society of Digital Information and Wireless Communications, 2011.
+\bibitem{blackhat1}
+  MalwareChet Hosmer, Chief Scientis.\emph{Polymorphic \& Metamorphic Malware}. Black Hat, 2008.
+\bibitem{machinelearning}
+  S. B. Kotsiantis.\emph{Supervised Machine Learning: A Review of Classification
+Techniques}. Informatica 31, 2007.
+\bibitem{packing}
+  Paul Craig.\emph{PE Packers Used in Malicious Software}. Ruxcon, 2006.
+ \bibitem{packingnews}
+  Panda Security Internacional.\emph{http://www.pandasecurity.com}. 01 Jan 2012.
+\bibitem{waledac}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=\\Win32\%2fWaledac}. 01 Jan 2012.
+\bibitem{sality}
+  Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=\\Win32\%2fSality}. 01 Jan 2012.
+\bibitem{mota}
+  Symantec.\emph{http://www.symantec.com/security\_response/writeup.jsp?\\docid=2004070412024899}. 01 Jan 2012.
+\bibitem{kaspersky1}
+  \emph{http://news.softpedia.com/news/Kaspersky-Report-161-Million-Network-Attacks-Blocked-232812.shtml}. 14 December 2011.
+\bibitem{pe1}
+  \emph{http://win32assembly.online.fr/pe-tut1.html}. 14 December 2011.
+\bibitem{wiki1}
+  Wikipedia. \emph{http://en.wikipedia.org/wiki/MD5}. 14 December 2011.
+\bibitem{BlackHat}
+Perdram amini, Ero Carrera
+  \emph{Reverse engineering on windows: Application in malicious code analysis}. Masters Thesis,Central Queensland University, 2010.
+\bibitem{peheaderci}
+\emph{http://www.csn.ul.ie/~caolan/pub/winresdump/\\winresdump/doc/pefile.html}.  24 Aug 2011.
+\bibitem{kaspersky1}
+  \emph{http://www.viruslistjp.com/analysis/?pubid=204792101}.
+  17 Feb 2010.
+\bibitem{silvio}
+	Silvio CESARE,
+  \emph{Fast Automated Unpacking and Classificationof Malware}.
+  Masters Thesis,Central Queensland University, 2010.
+\bibitem{jingjing}
+	Jingjing Yao, Qiang Hou,
+  \emph{Malicious executables classification based on behavioral factor analysis}.
+  International Conference on e-Education, e-Business, e-Management and e-Learning, 2010.
+\bibitem{yuhei}
+ Yuhei Kawakoya, Makoto Iwamura, Mitsutaka Itoh,
+  \emph{Analyzing Malware with Stealth Debugger}.
+  Information Processing Society of Japan, 2008.
+\bibitem{kevin}
+  Kevin Coogan, Saumya Debray, Tasneem Kaochar, Gregg Townsend, 
+  \emph{Automatic Static Unpacking of Malware Binaries}.
+  16th Working Conference on Reverse Engineering, 2009.
+\bibitem{tony}
+  Tony Abou-Assaleh, Nick Cercone, Vlado Ke?selj, Ray Sweidan ,
+  \emph{N-gram-based Detection of New Malicious Code}.
+  Proceedings of the 28th Annual International Computer Software and Applications Conference, 2004 .	
+\bibitem{tonylee}
+ Tony Lee, Jigar J. Mody, 
+  \emph{Behavioral Classification}.
+  Presented at the EICAR Conference, May 2006.	
+\bibitem{yanfangye}
+ Yanfang Ye, Dingding Wang, Tao Li, Dongyi Ye,
+  \emph{IMDS: Intelligent Malware Detection System}.
+  Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining, 2007.
+\bibitem{robinsharp}
+ Robin Sharp,
+  \emph{An Introduction to Malware}.
+  Spring 2009.
+\bibitem{georg}
+ Georg Wicherski,
+  \emph{peHash: A Novel Approach to Fast Malware Clustering}.
+  December 7, 2008.
+\bibitem{goppit}
+ goppit,
+  \emph{PORTABLE EXECUTABLE FILE FORMAT}.
+  2011.
+
+
+\end{thebibliography}
