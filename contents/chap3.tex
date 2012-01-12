@@ -1,0 +1,31 @@
+\chapter{Related research}\label{chap:3}
+%THE SYSTEM ARCHITECTURE
+%
+%
+This chapter presents the recent approach for automatically classify malware into malware families. For the reason that the detection based static signature is no longer effective in chapter \ref{chap:2}, at this time new malware classification method is required to detect mawlare writers used avoidance technique.
+
+
+\section{Flow graph}
+An another approach is using emulator to automatically unpack the packing malware, then from reverse code produce flowgraph, then flowgraph matching to perform classification\cite{silvio}. The system created by the approach follows:
+\begin{itemize}
+\item Fist, System automatically unpack malware based on application level emulation, and then use entropy analysis to detect.\\
+\item Second, Produce control followgraph by using graph invaiant based signature in order to measure similarity between malware.\\
+\item Next, Generic string based control flow signature, in order to using string edit distancce. Automatically unpack malware based on application level emulation.\\
+\item Finally, Malware classification use a set similarity function and a set similarity search algorithm to represent benign and malicious classes.\\
+\end{itemize}
+The disadvantage in flowgraph approach is high cost of runtime complexity. Firstly, runtime complexity of of malware classification is $O(N\log{M})$ where M is the number of control follow graphs in database, and N is the number of control follow graph input binary \cite{silvio}. In addition, To identify two flowgraph is $N^{3}$, and N is the number of nodes in each graph. Further more, needs to unpack the sample if it was packed with an executable packer. There fore, this approach is ineffective in malware classification system with a large number of instances.\\
+In addition, malware classification based flowgraph approach cannot accurately detect metamorphic malware. As presented at chapter \ref{chap:2}, metamorphic malware can recode it self with program follow modification, function reordering. There fore, it is hard to classify malware based a set  similarity between follow graph.\\ 
+\section{Optimizing decision tree in malware classification system by using Generic Algorithm}
+In this time, malware classification system can use machine learning classifier. The main idea of machine learning technique classifier is search algorithm that learn from externally supplied instances to produce a concise model of the distribution, which then  make prediction about new  instances. Current machine learning classifier in malware classification include: Naive Bayse, Suport Vector machine, Decision tree, K-nearest Neighbor \cite{mohd}. This approach use combining Generic algorithms with Decision tree. The data set is separated in training data set and testing data set. The data set is include:\\
+// Malware target, specific target for malware attack\\
+vector<list<MalwareClass\*>> \_slots;\\
+
+// Malware classes for chromosome\\
+hash\_map<MalwareClass\*,int> \_Dataclasses;\\
+hash\_map<MalwareClass\*,int> \_Appsclasses;\\
+hash\_map<MalwareClass\*,int> \_Sysclasses;\\
+hash\_map<MalwareClass\*,int> \_Dosclasses;\\
+
+Generic algorithm is methods that analogous to the process of natural evolution. Generic algorithm is used to optimize decision tree in order to accurately classify malware. Malware classification system, which implemented by the combining generic algorithm with decision tree algorithm approach, is for classify malware into two classes: benign program and malicious program, not for detect semantic characterization of malware by classifying malware into families. There fore, the combining generic algorithm with decision tree algorithm approach cannot use for detecting semantic characterization of malware.
+\section{Conclustion}
+To achieve fast malware classification, two approach is described before can not be used in this system. New approach that is for fast malware classification system will introduced in the next chapter. 
