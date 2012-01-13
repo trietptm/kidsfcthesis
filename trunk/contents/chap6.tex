@@ -2,9 +2,9 @@
 
 
 \section{Accuracy evaluation}
-As previously stated, we obtained ? malware PE file, used ? malware PE file for make $8$ decision tree. Therefore, we used ? malware meta-data as training data, in order to sort $8$ decision tree, and we make the best order of decision tree which shown in Figure \ref{fig:ordertree}, this order have the best experimental result with ? malware training data. 
-Finally, malware meta-data to test experimental result our system.
-With experimental result, the order of decision tree is shown in Figure \ref{fig:ordertree}.
+In 935 malware PE files obtained, 635 of them are to make eight decision trees. 200 malware meta-data in training data is applied to, in order to sort $8$ decision tree, and to make the best order of decision tree as shown in Figure \ref{fig:ordertree}, this order has the best experimental result with ? malware training data. 
+Finally, Lasrly, 100 remaining malware meta-data are kept to test experimental result the system.
+Experiment results in the order of decision tree given	 in Figure \ref{fig:ordertree}.
 \begin{figure}[httb]
   \centering
     \includegraphics[width=1\textwidth]{graph/ordertree.jpg}
@@ -12,7 +12,7 @@ With experimental result, the order of decision tree is shown in Figure \ref{fig
      \label{fig:ordertree}
 \end{figure}
 
-With the order of decision tree, we use 100 malware to test the experimental result our system. In Table \ref{fig:experimentalresult}, we show the experimental result of our system. Some of number in axis show these total number of malware in that family, and that number is separated into group that these malware has been classified by our system. For example, we have 4 malware in Win32/Virut family, and we successfully classify 3 malware into Win32/Virut  family and have false to classify 1 malware into other family. Therefore, Our system also recognizes the trojan agent family with 75 \% accuracy.\\
+In the decision tree order, 100 malware are taken to check the experimental result of system, and Table \ref{fig:experimentalresult} reveals that result. Some of data in axis show these total number of malware in that family, and that number is separated into groups that these malware has been classified by the system. For example, there are four malwares in Win32/Virut family, and three of them are successfully sorted into Win32/Virut family and, while one malware is in other family. Therefore, the system recognizes the trojan agent family with 75 \% of accuracy.\\
 \\
 
 \begin{figure}[h!]
@@ -35,7 +35,7 @@ With the order of decision tree, we use 100 malware to test the experimental res
     \label{fig:experimentalresult}
 \end{figure} 
 
-Our system is useful to help virus researcher determined the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus research who know the family of malware can easily determined some semantic similarity between malware and showed their inner similarity in behavior and static malware characteristic.
+The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
 
 \section{Efficiency of classifying}
 Figure show comparing the step to detect semantic malware characterization using Virus total with our approach.

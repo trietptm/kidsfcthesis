@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  13 JAN 2012 23:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  14 JAN 2012 03:35
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -627,16 +627,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [18]) (G:\kidsfcthesis\contents/chap5.tex [19]
 Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
 <graph/system_architec1.jpg, id=298, 680.5425pt x 318.43968pt>
 File: graph/system_architec1.jpg Graphic file (type jpg)
 
 <use graph/system_architec1.jpg>
-Package pdftex.def Info: graph/system_architec1.jpg used on input line 16.
+Package pdftex.def Info: graph/system_architec1.jpg used on input line 17.
 (pdftex.def)             Requested size: 469.47046pt x 219.67502pt.
 
 
@@ -647,57 +642,54 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 
 Package natbib Warning: Citation `virustotal' on page 21 undefined on input lin
-e 30.
+e 33.
 
 
 LaTeX Warning: Reference `fig:familymalware' on page 21 undefined on input line
- 31.
+ 34.
 
-<graph/clustering.jpg, id=306, 743.77875pt x 228.855pt>
+<graph/clustering.jpg, id=307, 743.77875pt x 228.855pt>
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
-Package pdftex.def Info: graph/clustering.jpg used on input line 34.
+Package pdftex.def Info: graph/clustering.jpg used on input line 37.
 (pdftex.def)             Requested size: 469.47046pt x 144.45528pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--39
+Underfull \hbox (badness 10000) in paragraph at lines 33--42
 
  []
 
 [21 <G:/kidsfcthesis/graph/system_architec1.jpg>]
-<graph/classificationdecision.jpg, id=312, 749.04843pt x 312.41719pt>
+<graph/classificationdecision.jpg, id=313, 749.04843pt x 312.41719pt>
 File: graph/classificationdecision.jpg Graphic file (type jpg)
 
 <use graph/classificationdecision.jpg>
-Package pdftex.def Info: graph/classificationdecision.jpg used on input line 42
+Package pdftex.def Info: graph/classificationdecision.jpg used on input line 45
 .
 (pdftex.def)             Requested size: 469.47046pt x 195.81323pt.
 
-<graph/classification.jpg, id=316, 753.5653pt x 298.11375pt>
+<graph/classification.jpg, id=317, 753.5653pt x 298.11375pt>
 File: graph/classification.jpg Graphic file (type jpg)
 
 <use graph/classification.jpg>
-Package pdftex.def Info: graph/classification.jpg used on input line 52.
+Package pdftex.def Info: graph/classification.jpg used on input line 57.
 (pdftex.def)             Requested size: 469.47046pt x 185.72473pt.
 
-<graph/decisiontreeworm.jpg, id=317, 983.17313pt x 414.04688pt>
+<graph/decisiontreeworm.jpg, id=318, 983.17313pt x 414.04688pt>
 File: graph/decisiontreeworm.jpg Graphic file (type jpg)
 
 <use graph/decisiontreeworm.jpg>
-Package pdftex.def Info: graph/decisiontreeworm.jpg used on input line 58.
+Package pdftex.def Info: graph/decisiontreeworm.jpg used on input line 63.
 (pdftex.def)             Requested size: 469.47046pt x 197.71042pt.
 ) (G:\kidsfcthesis\contents/chap6.tex [22 <G:/kidsfcthesis/graph/clustering.jpg
 > <G:/kidsfcthesis/graph/classificationdecision.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23] [24 <G:/kidsfcthesis/graph/classification.jpg> <G:/kidsfcthesis/graph/deci
+[23 <G:/kidsfcthesis/graph/classification.jpg>] [24 <G:/kidsfcthesis/graph/deci
 siontreeworm.jpg>]
 Chapter 6.
-<graph/ordertree.jpg, id=332, 328.22626pt x 196.48407pt>
+<graph/ordertree.jpg, id=333, 328.22626pt x 196.48407pt>
 File: graph/ordertree.jpg Graphic file (type jpg)
 
 <use graph/ordertree.jpg>
@@ -721,7 +713,7 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 20--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/evaluation3.png, id=334, 663.98062pt x 532.99126pt>
+<graph/evaluation3.png, id=335, 663.98062pt x 532.99126pt>
 File: graph/evaluation3.png Graphic file (type png)
 
 <use graph/evaluation3.png>
@@ -730,7 +722,7 @@ Package pdftex.def Info: graph/evaluation3.png used on input line 44.
  [25
 
 ]
-<graph/evaluation2.png, id=341, 328.22626pt x 196.48407pt>
+<graph/evaluation2.png, id=342, 328.22626pt x 196.48407pt>
 File: graph/evaluation2.png Graphic file (type png)
 
 <use graph/evaluation2.png>
@@ -838,9 +830,6 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 212.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  9031 strings out of 494045
@@ -849,7 +838,7 @@ Here is how much of TeX's memory you used:
  12039 multiletter control sequences out of 15000+200000
  13548 words of font info for 49 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,10n,38p,1657b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,1667b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
@@ -861,9 +850,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on kid_thesis.pdf (39 pages, 1355289 bytes).
+Output written on kid_thesis.pdf (39 pages, 1355551 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
+ 586 PDF objects out of 1000 (max. 8388607)
  131 named destinations out of 1000 (max. 500000)
  407 words of extra memory for PDF output out of 10000 (max. 10000000)
 
