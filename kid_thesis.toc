@@ -24,14 +24,14 @@
 \contentsline {section}{\numberline {4.1}PE file format}{15}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}PE file overview}{15}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}PE header}{17}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Decision tree\cite {wikipedia}}{17}{section.4.2}
+\contentsline {section}{\numberline {4.2}Decision tree\cite {wikipedia}}{18}{section.4.2}
 \contentsline {section}{\numberline {4.3}Classification based on malware's meta-data using decision tree approach}{19}{section.4.3}
 \contentsline {chapter}{\numberline {5}Implementation}{20}{chapter.5}
 \contentsline {section}{\numberline {5.1}Environment}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}Over view}{20}{section.5.2}
+\contentsline {section}{\numberline {5.2}Overview}{20}{section.5.2}
 \contentsline {section}{\numberline {5.3}Classification based on machine learning technique}{21}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Meta-data}{21}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Create training data}{22}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Create training data}{21}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Classification}{22}{subsection.5.3.3}
 \contentsline {chapter}{\numberline {6}Evaluation}{25}{chapter.6}
 \contentsline {section}{\numberline {6.1}Accuracy evaluation}{25}{section.6.1}

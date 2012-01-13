@@ -5,7 +5,8 @@ This chapter presents the growth of malware. Afterwards, malware analysis techni
 %
 %
 \section{Growth of malware attack}
-Malware can self-replicate recursively. For example, Mota is a kind of worm that spread itself by sending spam email to address that harvested local machine. In addition, Downadup is a malware that receive and execute file through a peer-to-peer systems by communication between computers. Malware infects system and spread to the other systems by communication tools. Recently, malware infects system and send the copy of itself to the others systems by Internet.
+Malware can self-replicate recursively. For example, Mota is a kind of worm that spread itself by sending spam email to address that harvested local machine \cite{mota}. In addition, Downadup is a malware that receive and execute file through a peer-to-peer systems by communication between computers\cite{downadup}. Malware infects system and spread to the other systems by communication tools. Recently, malware infects system and send the copy of itself to the others systems by Internet.
+
 Since the rise of widespread broadband Internet access, the number of malware samples has rapidly increased. According to the report issued by Kaspersky's research team, 205 million pieces of malware were detected and neutralized \cite{kaspersky1}. In addition, in 2010 the number of malware samples increased by 20 millions \cite{kaspersky}.Figure \ref{fig:kaspersky} show the increasing of malware from 2003 to 2009 by Kaspersky Lab. As a result of the rapid growth malware, malware is still a huge problem in security internet and network connectivity. 
 \begin{figure}[h!]
 \centering
@@ -13,29 +14,36 @@ Since the rise of widespread broadband Internet access, the number of malware sa
 \caption{Number of malicious program}\cite{kaspersky}
 \label{fig:kaspersky}
 \end{figure}
-\newline
+
 At this time, malware is easy created by Malware Creation Tool, as know as a program that used by attacker to generate malware\cite{Microsoft}. In addition, unlike early attack tools that implement one type of attack, such tools now can be changed quickly by upgrading or replacing their code. This causes rapidly evolving attacks and, at the extreme, results in polymorphic tools that self-evolve, changing with each active instance of the attack. Therefore, a large amount of malware has challenged anti-virus vendor and researcher in effective analysis.
 
 \section{Malware avoidance technique}
-At the present time, malware is implemented with avoidance technique in order to invalidate static signature based method by anti-virus software and make analysis process more complicated. Avoidance technique can change malware signature and syntax without the changing the behaviors of malware. The avoidance technique consists of obfuscating code and packing technique. There fore, a avoidance technique make malware analysis more complicated. \\
- 
-Obfuscating code change the form of instance malware to other form in order to invalidate signature based detection technique. Obfuscating code consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique change the representation of malware. Virus, worm, and other self-propagating software if often used polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recode it self when it distributed or executed\cite{blackhat1}. Simple metamorphic techniques include: adding varying lengths of NOP instructions, adding useless instruction, and loop the code segment. Advantage metamorphism techniques include: function reordering, program flow modification, static structure modification.\\
 
-Packing malware can compress the Win32 portable execution file by several tool such as UPX. According to a study carried out by Panda Research, 78\% of new malware used some kind of file packing to evade detection. PE-packer is designed to reduce the size of malware through compression. The size of packed malware is small but it is bigger when it run in system\cite{packing}. When uncompressed in memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make analysis malware more harder.\\
+At the present time, malware is implemented with avoidance technique in order to invalidate static signature based method by anti-virus software and make analysis process more complicated. Avoidance technique can change malware signature and syntax without the changing the behaviors of malware. The avoidance technique consists of obfuscating code and packing technique. There fore, a avoidance technique make malware analysis more complicated. 
+ 
+Obfuscating code change the form of instance malware to other form in order to invalidate signature based detection technique. Obfuscating code consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique change the representation of malware. Virus, worm, and other self-propagating software if often used polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recode it self when it distributed or executed\cite{blackhat1}. Simple metamorphic techniques include: adding varying lengths of NOP instructions, adding useless instruction, and loop the code segment. Advantage metamorphism techniques include: function reordering, program flow modification, static structure modification.
+
+Packing malware can compress the Win32 portable execution file by several tool such as UPX. According to a study carried out by Panda Research, 78\% of new malware used some kind of file packing to evade detection. PE-packer is designed to reduce the size of malware through compression. The size of packed malware is small but it is bigger when it run in system\cite{packing}. When uncompressed in memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make analysis malware more harder.
+
 For the reason that modern malware is implemented with avoidance technique, detection method by the use of static signatures is criticized for being ineffective.   
 \section{Malware analysis technique}
 This section describes two malware analysis technique includes: dynamic and static analysis. The detail of two techniques is described as follow: 
 \subsection{Dynamic malware analysis}
 Dynamic malware analysis technique is technique to find out the purpose of malware by run it and make sure what happen in system. In general, malware is executed in the Virtual Machine. After that, malware researcher use SysAnalyzer, Process Explorer, ProcMon, RegShot, and other tools to identify the general behavioral analysis techniques. For example, SysAnalyser is useful analysis tool to monitors many aspects of system and process states such as running process, open ports, loaded drivers, injected libraries, key registry changes, APIs called by a target process, file Modifications, http, IRC, and DNS traffic. Figure \ref{fig:SysAnalyser} show the example of using SysAnalyser tool to analyse malware. 
+
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/SysAnalyser.png}
 \caption{SysAnalyser tool for dynamic analysis.}
 \label{fig:SysAnalyser}
 \end{figure}
+
 The advantage of Dynamic malware is easy to detect malware behavior. Therefore, researcher can remove malware effectively. However, these dynamic techniques are susceptible to a variety of anti-monitoring defenses, as well as \emph{time bombs} or \emph{logic bombs} and can be slow and tedious to identify and disable code analysis techniques to unpack the code for examination \cite{georg}. Furthermore, it takes large amount of time to prepare environment to analyze malware such as virtual machine environment but some malware cannot be executed in virtual machine environment. 
+
 \subsection{Static malware analysis}
-Static malware analysis is technique that identify malware program without executing it. With the static malware analysis technique, researcher performs reverse engineering using disassemble tools, decompile tools, source code analyzer tools such as IDA pro and Ollydbg in order to understand malware by seeing the structure of malware. Static malware analysis have an advantage that it can completely discover malware purpose and functionality. However, research takes many time to understand the malware functionality by analysing malware structure.\\
+Static malware analysis is technique that identify malware program without executing it. With the static malware analysis technique, researcher performs reverse engineering using disassemble tools, decompile tools, source code analyzer tools such as IDA pro and Ollydbg in order to understand malware by seeing the structure of malware. Static malware analysis have an advantage that it can completely discover malware purpose and functionality. However, research takes many time to understand the malware functionality by analysing malware structure.
+
 Figure \ref{fig:OllyDbg} show the example of using OllyDbg tool in order to analyse malware. 
 \begin{figure}[h!]
 \centering
@@ -44,7 +52,9 @@ Figure \ref{fig:OllyDbg} show the example of using OllyDbg tool in order to anal
 \label{fig:OllyDbg}
 \end{figure}
 \section{Malware categories}
+
 In general, malware is classified into a few categories or types based on behaviors, method of infection, and the resulting propagation of malware. For example, this is some malware categories: virus, trojan, worm, spyware, and rookit. The categories detail specific types of malware threats:
+
 \begin{itemize}
 \item Virus :"Software which infects other application and use them as a spreading medium"\cite{BlackHat}.
 \item Trojan :"A malicious application which present itself as something else"\cite{BlackHat}.
@@ -52,9 +62,12 @@ In general, malware is classified into a few categories or types based on behavi
 \item Spyware :"Application aiming to havest personal information"\cite{BlackHat}.
 \item Rookit :"Hidden tools providing stealth services to its writer"\cite{BlackHat}.
 \end{itemize}
+
 However, As the different between the categories are a bit fuzzy, and the classes are obviously not exclusive. In addition, depend on purpose of virus industry a unique malware can belong to rookit, virus, or spyware. The detail of malware categories is presented on the next section. 
 \subsection{Use virus total to detect the name of categories.}
+
 In this thesis, MD5 hash is used to detect malware name which provided by many anti-virus vendor. An MD5 hash is generated by MD5 Message-Digest Algorithm, is a widely used cryptographic hash function that produces a 128-bit (16-byte) hash value. An MD5 hash is typically expressed as a 32-digit hexadecimal number, and MD5 is not collision resistant\cite{wiki1}.
+
 \subsection{Using virus total to getting vendor name}
 In this paper, MD5 hash of malware is used to search the name of malware by virus total. Virustotal is a web service that analyzes malware files and facilitates quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines. Malware's name is provided by various anti-virus vendor, but there are many name for unique malware. The Figure \ref{fig:virustotal_listname} shows malware name detected by antivirus engines. 
 \begin{figure}[h!]
