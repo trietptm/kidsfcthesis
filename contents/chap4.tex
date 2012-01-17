@@ -4,19 +4,34 @@
 %
 This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, this chapter presents classification based on malware's meta-data using decision tree approach. 
 
-\section{PE file format}
-\subsection{PE file overview}
+\section{PE file format\cite{peheaderci}}
+\subsection{Overview of the PE File Format}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{graph/pefiles.png}
+\caption{The general layout of a PE file.}
+\label{fig:pefiles}
+\end{figure}
+
+The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. 
+
+First, DOS MZ header start with dos exe signature, known as "MZ". The Figure \ref{fig:dosheader} 	
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{graph/dosHeaderStructure.png}
+\caption{The general layout of a PE file.}
+\label{fig:dosheader}
+\end{figure}
+The real content of the PE file is divided into blocks name as sections. A section is nothing more than a block of data with common attributes such as code/data, read/write. The PE header is the boot sector and the sections are files in the disk. The files can have different attributes such as read-only, system, hidden, archive and so on. When the PE loader maps the sections into memory, it examines the attributes of the sections and gives the memory block occupied by the sections the indicated attributes.
+
+If the PE file format is viewed as a logical disk, the PE header as the boot sector and the sections as files. Each structure contains the information about each section in the PE file such as its attribute, the file offset, virtual offset. If there are 5 sections in the PE file, there will be exactly 5 members in this structure array. Each member of the array is equivalent to the each directory entry in the root directory.
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/pe1.png}
 \caption{PE file format.}
 \label{fig:pe1}
 \end{figure}
-
-The real content of the PE file is divided into blocks name as sections. A section is nothing more than a block of data with common attributes such as code/data, read/write. The PE header is the boot sector and the sections are files in the disk. The files can have different attributes such as read-only, system, hidden, archive and so on. When the PE loader maps the sections into memory, it examines the attributes of the sections and gives the memory block occupied by the sections the indicated attributes.
-
-If the PE file format is viewed as a logical disk, the PE header as the boot sector and the sections as files. Each structure contains the information about each section in the PE file such as its attribute, the file offset, virtual offset. If there are 5 sections in the PE file, there will be exactly 5 members in this structure array. Each member of the array is equivalent to the each directory entry in the root directory.
-
 That's all about the physical layout of the PE file format. The major steps in loading a PE file into memory is described as follow:
 
 \begin{itemize}
