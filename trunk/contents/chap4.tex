@@ -13,18 +13,9 @@ This chapter describes Win32 executive files structure, known as PE files struct
 \label{fig:pefiles}
 \end{figure}
 
-The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. 
+The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. As shown in Figure \ref{fig:pefiles} PE header consists of four parts: a MS-DOS section, PE header, a section table, and images pages.
 
-First, DOS MZ header start with dos exe signature, known as "MZ". The Figure \ref{fig:dosheader} 	
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{graph/dosHeaderStructure.png}
-\caption{The general layout of a PE file.}
-\label{fig:dosheader}
-\end{figure}
-The real content of the PE file is divided into blocks name as sections. A section is nothing more than a block of data with common attributes such as code/data, read/write. The PE header is the boot sector and the sections are files in the disk. The files can have different attributes such as read-only, system, hidden, archive and so on. When the PE loader maps the sections into memory, it examines the attributes of the sections and gives the memory block occupied by the sections the indicated attributes.
-
-If the PE file format is viewed as a logical disk, the PE header as the boot sector and the sections as files. Each structure contains the information about each section in the PE file such as its attribute, the file offset, virtual offset. If there are 5 sections in the PE file, there will be exactly 5 members in this structure array. Each member of the array is equivalent to the each directory entry in the root directory.
+The PE file format start with DOS MZ header. The first two bytes - "MZ" of the header is the DOS EXE signature. The first few hundred bytes of the typical PE file are taken up by the MS-DOS stub. This stub is a tiny program that displays a string like "This program cannot be run in MS-DOS mode.". 
 
 \begin{figure}[h!]
 \centering
@@ -32,19 +23,20 @@ If the PE file format is viewed as a logical disk, the PE header as the boot sec
 \caption{PE file format.}
 \label{fig:pe1}
 \end{figure}
+
 That's all about the physical layout of the PE file format. The major steps in loading a PE file into memory is described as follow:
 
 \begin{itemize}
 \item When the PE file is running, the PE loader examines the DOS MZ header for the offset of the PE header. If it is found, it would skip to the PE header.
-\item The PE loader checks if the PE header is valid. If so, it goes to the end of the PE header.
+\item The PE loader checks if the PE header is valid. If no, it goes to the end of the PE header.
 \item Following the PE header is the section table. The PE header reads information about the sections and maps those sections into memory using file mapping. It also gives each section the attributes as specified in the section table.
 \item After the PE file is mapped into memory, the PE loader concerns itself with the logical parts of the PE file, such as the import table.
 \end{itemize}
 
-The above steps are oversimplification and are based on my own observation. There may be some inaccuracies but it should give you the clear picture of the process.
-\subsection{PE header}
 
-PE header of second part of PE files structure. PE header includes important information of ma . As shown in Figure \ref{fig:peheader} PE header consists of four parts, a MS-DOS section, PE header, a section table, images pages.
+\subsection{The PE Header}
+
+PE header is second part of PE files structure. PE header includes important information of malware.
 \begin{figure}[httb]
 \centering
 \includegraphics[width=1\textwidth]{graph/peheader1.jpg}
@@ -52,9 +44,9 @@ PE header of second part of PE files structure. PE header includes important inf
 \label{fig:peheader}
 \end{figure}
 
-The PE header starts with two characters "PE" as know as the PE header file signature.
+The PE header starts with two characters "PE" known the PE header file signature.
 
-The file header contains seven fields shown in Figure \ref{fig:fileheader}. The number of the members in section is determined by \emph{NumberOfSection} file in file header. 
+The file header contains seven fields shown in Figure \ref{fig:fileheader}. The number of the members in section are determined by \emph{NumberOfSection} file in file header. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -73,7 +65,7 @@ Characteristics & 000000EE & Word\\
 \label{fig:fileheader}
 \end{figure}
 
-The following of the file header is the Optional header which consists of three parts. The first part is the COFF standard fields which contains the sizes of various parts of code and the \emph{AddressOfEntryPoint} which indicates the location of the entry point of the application and, the location of the end of the Import Address Table(IAT).
+The following of the file header is the Optional header which consists of three parts. The first part includes the COFF standard field which contains the sizes of various parts of code, and the \emph{AddressOfEntryPoint} which indicates the location of the entry point of the application and the location of the end of the Import Address Table(IAT).
 
 In order to create a fast malware classification system, classification malware system based on PE header's meta-data.
 

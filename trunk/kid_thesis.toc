@@ -21,10 +21,10 @@
 \contentsline {section}{\numberline {3.2}Optimizing decision tree in malware classification system by using Generic Algorithm}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Conclustion}{15}{section.3.3}
 \contentsline {chapter}{\numberline {4}Classification based on malware's meta-data using decision tree approach}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}PE file format}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}PE file overview}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}PE header}{18}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Decision tree\cite {wikipedia}}{20}{section.4.2}
+\contentsline {section}{\numberline {4.1}PE file format\cite {peheaderci}}{16}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Overview of the PE File Format}{16}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}The PE Header}{17}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Decision tree\cite {wikipedia}}{18}{section.4.2}
 \contentsline {section}{\numberline {4.3}Classification based on malware's meta-data using decision tree approach}{20}{section.4.3}
 \contentsline {chapter}{\numberline {5}Implementation}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Environment}{21}{section.5.1}
