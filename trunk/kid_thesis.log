@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  18 JAN 2012 04:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  18 JAN 2012 05:23
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -485,7 +485,7 @@ Chapter 2.
 Package natbib Warning: Citation `downadup' on page 4 undefined on input line 8
 .
 
-<graph/kapersky.jpg, id=182, 359.09157pt x 217.5628pt>
+<graph/kapersky.jpg, id=184, 359.09157pt x 217.5628pt>
 File: graph/kapersky.jpg Graphic file (type jpg)
 
 <use graph/kapersky.jpg>
@@ -508,7 +508,7 @@ l.19
                    \relax 
 l.25 
       [5 <G:/kidsfcthesis/graph/kapersky.jpg>]
-<graph/SysAnalyser.png, id=200, 478.03593pt x 261.97874pt>
+<graph/SysAnalyser.png, id=202, 478.03593pt x 261.97874pt>
 File: graph/SysAnalyser.png Graphic file (type png)
 
 <use graph/SysAnalyser.png>
@@ -523,7 +523,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.46 
-      [6] <graph/PEid.jpg, id=206, 423.5825pt x 236.885pt>
+      [6] <graph/PEid.jpg, id=208, 423.5825pt x 236.885pt>
 File: graph/PEid.jpg Graphic file (type jpg)
 
 <use graph/PEid.jpg>
@@ -534,7 +534,7 @@ Package pdftex.def Info: graph/PEid.jpg used on input line 55.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7 <G:/kidsfcthesis/graph/SysAnalyser.png>]
-<graph/OllyDbg.png, id=213, 724.20563pt x 462.22687pt>
+<graph/OllyDbg.png, id=215, 724.20563pt x 462.22687pt>
 File: graph/OllyDbg.png Graphic file (type png)
  <use graph/OllyDbg.png>
 Package pdftex.def Info: graph/OllyDbg.png used on input line 64.
@@ -543,7 +543,7 @@ Package pdftex.def Info: graph/OllyDbg.png used on input line 64.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/idapro.png, id=215, 607.51968pt x 374.14781pt>
+<graph/idapro.png, id=217, 607.51968pt x 374.14781pt>
 File: graph/idapro.png Graphic file (type png)
  <use graph/idapro.png>
 Package pdftex.def Info: graph/idapro.png used on input line 73.
@@ -553,7 +553,7 @@ Package pdftex.def Info: graph/idapro.png used on input line 73.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <G:/kidsfcthesis/graph/PEid.jpg>]
-<graph/virustotal_listname.png, id=228, 471.26062pt x 391.4625pt>
+<graph/virustotal_listname.png, id=230, 471.26062pt x 391.4625pt>
 File: graph/virustotal_listname.png Graphic file (type png)
 
 <use graph/virustotal_listname.png>
@@ -598,56 +598,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
 [14]) (G:\kidsfcthesis\contents/chap4.tex [15]
 Chapter 4.
-<graph/pe1.png, id=279, 286.82156pt x 319.1925pt>
-File: graph/pe1.png Graphic file (type png)
- <use graph/pe1.png>
-Package pdftex.def Info: graph/pe1.png used on input line 11.
-(pdftex.def)             Requested size: 469.47046pt x 522.46602pt.
+<graph/pefiles.png, id=281, 196.48407pt x 290.58563pt>
+File: graph/pefiles.png Graphic file (type png)
+ <use graph/pefiles.png>
+Package pdftex.def Info: graph/pefiles.png used on input line 11.
+(pdftex.def)             Requested size: 234.73523pt x 347.18015pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16
 
-] [17 <G:/kidsfcthesis/graph/pe1.png>]
-<graph/peheader1.jpg, id=289, 557.08125pt x 313.9228pt>
+] <graph/pe1.png, id=287, 471.26062pt x 349.305pt>
+File: graph/pe1.png Graphic file (type png)
+ <use graph/pe1.png>
+Package pdftex.def Info: graph/pe1.png used on input line 23.
+(pdftex.def)             Requested size: 469.47046pt x 347.9823pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <G:/kidsfcthesis/graph/pefiles.png>]
+<graph/peheader1.jpg, id=293, 557.08125pt x 313.9228pt>
 File: graph/peheader1.jpg Graphic file (type jpg)
 
 <use graph/peheader1.jpg>
-Package pdftex.def Info: graph/peheader1.jpg used on input line 35.
+Package pdftex.def Info: graph/peheader1.jpg used on input line 42.
 (pdftex.def)             Requested size: 469.47046pt x 264.56035pt.
- [18 <G:/kidsfcthesis/graph/peheader1.jpg>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18 <G:/kidsfcthesis/graph/pe1.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 65.
+(hyperref)                removing `\begingroup' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 65.
+(hyperref)                removing `\<let>-command' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 65.
+(hyperref)                removing `\NAT@ctype' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 65.
+(hyperref)                removing `\z@' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 65.
+(hyperref)                removing `\let' on input line 72.
 
-[19]) (G:\kidsfcthesis\contents/chap5.tex [20]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 72.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 72.
+
+[19 <G:/kidsfcthesis/graph/peheader1.jpg>]) (G:\kidsfcthesis\contents/chap5.tex
+[20]
 Chapter 5.
-<graph/system_architec1.jpg, id=309, 680.5425pt x 318.43968pt>
+<graph/system_architec1.jpg, id=313, 680.5425pt x 318.43968pt>
 File: graph/system_architec1.jpg Graphic file (type jpg)
 
 <use graph/system_architec1.jpg>
@@ -668,7 +682,7 @@ e 33.
 LaTeX Warning: Reference `fig:familymalware' on page 22 undefined on input line
  34.
 
-<graph/clustering.jpg, id=318, 743.77875pt x 228.855pt>
+<graph/clustering.jpg, id=322, 743.77875pt x 228.855pt>
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
@@ -680,7 +694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--42
  []
 
 [22 <G:/kidsfcthesis/graph/system_architec1.jpg>]
-<graph/classificationdecision.jpg, id=324, 749.04843pt x 312.41719pt>
+<graph/classificationdecision.jpg, id=328, 749.04843pt x 312.41719pt>
 File: graph/classificationdecision.jpg Graphic file (type jpg)
 
 <use graph/classificationdecision.jpg>
@@ -688,14 +702,14 @@ Package pdftex.def Info: graph/classificationdecision.jpg used on input line 45
 .
 (pdftex.def)             Requested size: 469.47046pt x 195.81323pt.
 
-<graph/classification.jpg, id=328, 753.5653pt x 298.11375pt>
+<graph/classification.jpg, id=332, 753.5653pt x 298.11375pt>
 File: graph/classification.jpg Graphic file (type jpg)
 
 <use graph/classification.jpg>
 Package pdftex.def Info: graph/classification.jpg used on input line 57.
 (pdftex.def)             Requested size: 469.47046pt x 185.72473pt.
 
-<graph/decisiontreeworm.jpg, id=329, 983.17313pt x 414.04688pt>
+<graph/decisiontreeworm.jpg, id=333, 983.17313pt x 414.04688pt>
 File: graph/decisiontreeworm.jpg Graphic file (type jpg)
 
 <use graph/decisiontreeworm.jpg>
@@ -709,7 +723,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [24 <G:/kidsfcthesis/graph/classification.jpg>] [25 <G:/kidsfcthesis/graph/deci
 siontreeworm.jpg>]
 Chapter 6.
-<graph/ordertree.jpg, id=345, 328.22626pt x 196.48407pt>
+<graph/ordertree.jpg, id=349, 328.22626pt x 196.48407pt>
 File: graph/ordertree.jpg Graphic file (type jpg)
 
 <use graph/ordertree.jpg>
@@ -733,7 +747,7 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 20--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/evaluation3.png, id=347, 663.98062pt x 532.99126pt>
+<graph/evaluation3.png, id=351, 663.98062pt x 532.99126pt>
 File: graph/evaluation3.png Graphic file (type png)
 
 <use graph/evaluation3.png>
@@ -742,7 +756,7 @@ Package pdftex.def Info: graph/evaluation3.png used on input line 44.
  [26
 
 ]
-<graph/evaluation2.png, id=353, 328.22626pt x 196.48407pt>
+<graph/evaluation2.png, id=357, 328.22626pt x 196.48407pt>
 File: graph/evaluation2.png Graphic file (type png)
 
 <use graph/evaluation2.png>
@@ -852,10 +866,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9044 strings out of 494045
- 132433 string characters out of 3145960
+ 9051 strings out of 494045
+ 132554 string characters out of 3145960
  240628 words of memory out of 3000000
- 12048 multiletter control sequences out of 15000+200000
+ 12053 multiletter control sequences out of 15000+200000
  13195 words of font info for 48 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,10n,38p,1667b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -870,9 +884,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on kid_thesis.pdf (40 pages, 1459320 bytes).
+Output written on kid_thesis.pdf (40 pages, 1450342 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

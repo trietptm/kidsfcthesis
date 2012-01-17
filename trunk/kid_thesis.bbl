@@ -50,9 +50,9 @@ Techniques}. Informatica 31, 2007.
   Wikipedia. \emph{http://en.wikipedia.org/wiki/MD5}. 14 December 2011.
 \bibitem{BlackHat}
 Perdram amini, Ero Carrera
-  \emph{Reverse engineering on windows: Application in malicious code analysis}. Masters Thesis,Central Queensland University, 2010.
+  \emph{Reverse engineering on windows: Application in malicious code analysis}. Masters Thesis,Central Queensland University. 2010.
 \bibitem{peheaderci}
-\emph{http://www.csn.ul.ie/~caolan/pub/winresdump/\\winresdump/doc/pefile.html}.  24 Aug 2011.
+\emph{Peering Inside the PE: A Tour of the Win32 Portable Executable File Format}.  Microsoft Systems Journal. March 1994.
 \bibitem{kaspersky1}
   \emph{http://www.viruslistjp.com/analysis/?pubid=204792101}.
   17 Feb 2010.

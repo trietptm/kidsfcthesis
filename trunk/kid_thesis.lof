@@ -8,9 +8,10 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Malware name is detected by antivirus engines.}}{11}{figure.2.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces PE file format.}}{17}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layout a file in PE header format.}}{18}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Layout of a file header}}{19}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The general layout of a PE file.}}{17}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PE file format.}}{18}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Layout a file in PE header format.}}{19}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Layout of a file header}}{19}{figure.4.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The system architecture.}}{22}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Clustering method.}}{23}{figure.5.2}
