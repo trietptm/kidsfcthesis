@@ -2,7 +2,7 @@
 %EXPERIMENTAL RESULTS AND ANALYSIS
 %
 %
-This chapter describes Win32 executive files structure, known as PE files structure, that used in classification system as malware meta-data. Afterwards, the machine learning technique, known as decision tree method, that used in classification malware system is described. Finally, this chapter presents classification based on malware's meta-data using decision tree approach. 
+This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, this chapter presents classification based on malware's meta-data using decision tree approach. 
 
 \section{PE file format}
 \subsection{PE file overview}
@@ -13,7 +13,7 @@ This chapter describes Win32 executive files structure, known as PE files struct
 \label{fig:pe1}
 \end{figure}
 
-The real content of the PE file is divided into blocks called sections. A section is nothing more than a block of data with common attributes such as code/data, read/write etc. You can think of a PE file as a logical disk. The PE header is the boot sector and the sections are files in the dvisk. The files can have different attributes such as read-only, system, hidden, archive and so on. When the PE loader maps the sections into memory, it examines the attributes of the sections and gives the memory block occupied by the sections the indicated attributes.
+The real content of the PE file is divided into blocks name as sections. A section is nothing more than a block of data with common attributes such as code/data, read/write. The PE header is the boot sector and the sections are files in the disk. The files can have different attributes such as read-only, system, hidden, archive and so on. When the PE loader maps the sections into memory, it examines the attributes of the sections and gives the memory block occupied by the sections the indicated attributes.
 
 If the PE file format is viewed as a logical disk, the PE header as the boot sector and the sections as files. Each structure contains the information about each section in the PE file such as its attribute, the file offset, virtual offset. If there are 5 sections in the PE file, there will be exactly 5 members in this structure array. Each member of the array is equivalent to the each directory entry in the root directory.
 
