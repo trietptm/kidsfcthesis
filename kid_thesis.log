@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  17 JAN 2012 00:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  17 JAN 2012 21:40
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -461,34 +461,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
-      [1
+l.15 H
+      owever, these dynamic techniques are susceptible to a variety of anti-...
+[1
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \item C
-            hapter 5 presents environment and implementation of static malwa...
-[2]
-Missing character: There is no â in font cmsl10!
-Missing character: There is no € in font cmsl10!
-Missing character: There is no ¢ in font cmsl10!
-) (G:\kidsfcthesis\contents/chap2.texpdfTeX warning (ext4): destination with th
-e same identifier (name{page.3}) has been already used, duplicate ignored
+l.38 \item C
+            hapter 5 mentions environment and implementation of static malwa...
+[2]) (G:\kidsfcthesis\contents/chap2.texpdfTeX warning (ext4): destination with
+ the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.2 \chapter
-            {Back ground}\label{chap:2} [3]
+            {Background}\label{chap:2} [3]
 Chapter 2.
 
 Package natbib Warning: Citation `downadup' on page 4 undefined on input line 8
 .
 
-<graph/kapersky.jpg, id=178, 359.09157pt x 217.5628pt>
+<graph/kapersky.jpg, id=180, 359.09157pt x 217.5628pt>
 File: graph/kapersky.jpg Graphic file (type jpg)
 
 <use graph/kapersky.jpg>
@@ -502,17 +499,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \section
-             {Malware avoidance technique} [4
+l.19 
+      [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 P
-      acking malware can compress the Win32 portable execution file by sever...
-[5 <G:/kidsfcthesis/graph/kapersky.jpg>]
-<graph/SysAnalyser.png, id=196, 478.03593pt x 261.97874pt>
+l.25 
+      [5 <G:/kidsfcthesis/graph/kapersky.jpg>]
+<graph/SysAnalyser.png, id=198, 478.03593pt x 261.97874pt>
 File: graph/SysAnalyser.png Graphic file (type png)
 
 <use graph/SysAnalyser.png>
@@ -527,47 +523,60 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.46 
-      [6] <graph/OllyDbg.png, id=203, 724.20563pt x 462.22687pt>
+      [6] <graph/OllyDbg.png, id=204, 724.20563pt x 462.22687pt>
 File: graph/OllyDbg.png Graphic file (type png)
 
 <use graph/OllyDbg.png>
-Package pdftex.def Info: graph/OllyDbg.png used on input line 50.
+Package pdftex.def Info: graph/OllyDbg.png used on input line 54.
 (pdftex.def)             Requested size: 469.47046pt x 299.64691pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <G:/kidsfcthesis/graph/SysAnalyser.png>]
-<graph/virustotal_listname.png, id=217, 471.26062pt x 391.4625pt>
+<graph/idapro.png, id=206, 607.51968pt x 374.14781pt>
+File: graph/idapro.png Graphic file (type png)
+ <use graph/idapro.png>
+Package pdftex.def Info: graph/idapro.png used on input line 62.
+(pdftex.def)             Requested size: 469.47046pt x 289.13373pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <G:/kidsfcthesis/graph/SysAnalyser.png>] [8 <G:/kidsfcthesis/graph/OllyDbg.p
+ng>] <graph/virustotal_listname.png, id=224, 471.26062pt x 391.4625pt>
 File: graph/virustotal_listname.png Graphic file (type png)
 
 <use graph/virustotal_listname.png>
-Package pdftex.def Info: graph/virustotal_listname.png used on input line 75.
+Package pdftex.def Info: graph/virustotal_listname.png used on input line 87.
 (pdftex.def)             Requested size: 469.47046pt x 389.98016pt.
- [8 <G:/kidsfcthesis/graph/OllyDbg.png>]
-[9 <G:/kidsfcthesis/graph/virustotal_listname.png>]
-Overfull \hbox (6.01865pt too wide) in paragraph at lines 83--84
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <G:/kidsfcthesis/graph/idapro.png>]
+Overfull \hbox (6.01865pt too wide) in paragraph at lines 95--96
 \OT1/cmr/m/n/10.95 Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, W
 in32/Sality, and W32.Mota. 
  []
 
 
-Package natbib Warning: Citation `walemac' on page 10 undefined on input line 9
-4.
+Package natbib Warning: Citation `walemac' on page 10 undefined on input line 1
+06.
 
 
 Package natbib Warning: Citation `downadup' on page 10 undefined on input line 
-95.
+107.
 
 
-Overfull \hbox (12.47173pt too wide) in paragraph at lines 87--99
+Overfull \hbox (12.47173pt too wide) in paragraph at lines 99--111
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 32.93677pt on input line 101.
+LaTeX Warning: Float too large for page by 32.93677pt on input line 113.
 
-) (G:\kidsfcthesis\contents/chap3.tex [10] [11]
+) (G:\kidsfcthesis\contents/chap3.tex [10 <G:/kidsfcthesis/graph/virustotal_lis
+tname.png>] [11]
 Chapter 3.
 [12
 
@@ -578,7 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
 [13]) (G:\kidsfcthesis\contents/chap4.tex [14]
 Chapter 4.
-<graph/pe1.png, id=268, 286.82156pt x 319.1925pt>
+<graph/pe1.png, id=271, 286.82156pt x 319.1925pt>
 File: graph/pe1.png Graphic file (type png)
  <use graph/pe1.png>
 Package pdftex.def Info: graph/pe1.png used on input line 11.
@@ -590,7 +599,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [15
 
 ] [16 <G:/kidsfcthesis/graph/pe1.png>]
-<graph/peheader1.jpg, id=278, 557.08125pt x 313.9228pt>
+<graph/peheader1.jpg, id=281, 557.08125pt x 313.9228pt>
 File: graph/peheader1.jpg Graphic file (type jpg)
 
 <use graph/peheader1.jpg>
@@ -627,7 +636,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [18]) (G:\kidsfcthesis\contents/chap5.tex [19]
 Chapter 5.
-<graph/system_architec1.jpg, id=298, 680.5425pt x 318.43968pt>
+<graph/system_architec1.jpg, id=301, 680.5425pt x 318.43968pt>
 File: graph/system_architec1.jpg Graphic file (type jpg)
 
 <use graph/system_architec1.jpg>
@@ -648,7 +657,7 @@ e 33.
 LaTeX Warning: Reference `fig:familymalware' on page 21 undefined on input line
  34.
 
-<graph/clustering.jpg, id=307, 743.77875pt x 228.855pt>
+<graph/clustering.jpg, id=310, 743.77875pt x 228.855pt>
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
@@ -660,7 +669,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--42
  []
 
 [21 <G:/kidsfcthesis/graph/system_architec1.jpg>]
-<graph/classificationdecision.jpg, id=313, 749.04843pt x 312.41719pt>
+<graph/classificationdecision.jpg, id=316, 749.04843pt x 312.41719pt>
 File: graph/classificationdecision.jpg Graphic file (type jpg)
 
 <use graph/classificationdecision.jpg>
@@ -668,14 +677,14 @@ Package pdftex.def Info: graph/classificationdecision.jpg used on input line 45
 .
 (pdftex.def)             Requested size: 469.47046pt x 195.81323pt.
 
-<graph/classification.jpg, id=317, 753.5653pt x 298.11375pt>
+<graph/classification.jpg, id=320, 753.5653pt x 298.11375pt>
 File: graph/classification.jpg Graphic file (type jpg)
 
 <use graph/classification.jpg>
 Package pdftex.def Info: graph/classification.jpg used on input line 57.
 (pdftex.def)             Requested size: 469.47046pt x 185.72473pt.
 
-<graph/decisiontreeworm.jpg, id=318, 983.17313pt x 414.04688pt>
+<graph/decisiontreeworm.jpg, id=321, 983.17313pt x 414.04688pt>
 File: graph/decisiontreeworm.jpg Graphic file (type jpg)
 
 <use graph/decisiontreeworm.jpg>
@@ -689,7 +698,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [23 <G:/kidsfcthesis/graph/classification.jpg>] [24 <G:/kidsfcthesis/graph/deci
 siontreeworm.jpg>]
 Chapter 6.
-<graph/ordertree.jpg, id=333, 328.22626pt x 196.48407pt>
+<graph/ordertree.jpg, id=336, 328.22626pt x 196.48407pt>
 File: graph/ordertree.jpg Graphic file (type jpg)
 
 <use graph/ordertree.jpg>
@@ -713,7 +722,7 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 20--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/evaluation3.png, id=335, 663.98062pt x 532.99126pt>
+<graph/evaluation3.png, id=338, 663.98062pt x 532.99126pt>
 File: graph/evaluation3.png Graphic file (type png)
 
 <use graph/evaluation3.png>
@@ -722,7 +731,7 @@ Package pdftex.def Info: graph/evaluation3.png used on input line 44.
  [25
 
 ]
-<graph/evaluation2.png, id=342, 328.22626pt x 196.48407pt>
+<graph/evaluation2.png, id=345, 328.22626pt x 196.48407pt>
 File: graph/evaluation2.png Graphic file (type png)
 
 <use graph/evaluation2.png>
@@ -830,13 +839,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 212.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9031 strings out of 494045
- 132232 string characters out of 3145960
+ 9036 strings out of 494045
+ 132323 string characters out of 3145960
  240628 words of memory out of 3000000
- 12039 multiletter control sequences out of 15000+200000
- 13548 words of font info for 49 fonts, out of 3000000 for 9000
+ 12043 multiletter control sequences out of 15000+200000
+ 13195 words of font info for 48 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,10n,38p,1667b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -850,9 +862,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on kid_thesis.pdf (39 pages, 1355156 bytes).
+Output written on kid_thesis.pdf (39 pages, 1403426 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 
