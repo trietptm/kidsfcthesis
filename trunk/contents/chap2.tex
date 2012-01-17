@@ -21,15 +21,15 @@ At this time, malware is easy created by Malware Creation Tool, known a program 
 
 At the present time, malware is implemented with avoidance technique in order to invalidate static signature based method by anti-virus software and make analysis process more complicated. Avoidance technique can change malware signature and syntax without changing the behaviors of malware. The avoidance technique consists of obfuscating code and packing technique. Therefore, an avoidance technique causes more difficulty in malware analysis. 
  
-Obfuscating code change the form of instance malware to other form in order to invalidate signature based detection technique. Obfuscating code consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique change the representation of malware. Virus, worm, and other self-propagating software if often used polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recode it self when it distributed or executed\cite{blackhat1}. Simple metamorphic techniques include: adding varying lengths of NOP instructions, adding useless instruction, and loop the code segment. Advantage metamorphism techniques include: function reordering, program flow modification, static structure modification.
+Obfuscating code changes the form of a malware instance to other form in order to invalidate signature based on detection technique. It consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique modifies the representation of malware. Virus, worm, and other self-propagating software are often used polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recodes itself when it distributed or executed\cite{blackhat1}. Simple metamorphic techniques include: adding and varying lengths of NOP instructions, adding useless instruction, and looping the code segment. Advantage metamorphism techniques include: function reordering, program flow modification, static structure modification.
 
-Packing malware can compress the Win32 portable execution file by several tool such as UPX. According to a study carried out by Panda Research, 78\% of new malware used some kind of file packing to evade detection. PE-packer is designed to reduce the size of malware through compression. The size of packed malware is small but it is bigger when it run in system\cite{packing}. When uncompressed in memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make analysis malware more harder.
+Packing malware can compress the Win32 portable execution file by several tool such as UPX, Winpack, and ExeCryptor. According to a study carried out by Panda Research, $78$\% of new malware used some kinds of file packing to evade detection. PE-packer is designed to reduce the size of malware through compression. The size of packed malware is small but it is bigger when it runs in system\cite{packing}. When uncompressed in memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make analysis malware harder.
 
 For the reason that modern malware is implemented with avoidance technique, detection method by the use of static signatures is criticized for being ineffective.   
 \section{Malware analysis technique}
-This section describes two malware analysis technique includes: dynamic and static analysis. The detail of two techniques is described as follow: 
+This section describes two malware analysis techniques including: dynamic and static analysis. The detail of two techniques is described as follow: 
 \subsection{Dynamic malware analysis}
-Dynamic malware analysis technique is technique to find out the purpose of malware by run it and make sure what happen in system. In general, malware is executed in the Virtual Machine. After that, malware researcher use SysAnalyzer, Process Explorer, ProcMon, RegShot, and other tools to identify the general behavioral analysis techniques. For example, SysAnalyser is useful analysis tool to monitors many aspects of system and process states such as running process, open ports, loaded drivers, injected libraries, key registry changes, APIs called by a target process, file Modifications, http, IRC, and DNS traffic. Figure \ref{fig:SysAnalyser} show the example of using SysAnalyser tool to analyse malware. 
+Dynamic malware analysis technique is technique to find out the purpose of malware by running it and making sure what will happen in system. In general, malware is executed in the Virtual Machine. After that, malware researchers use SysAnalyzer, Process Explorer, ProcMon, RegShot, and other tools to identify the general behavioral analysis techniques. For example, SysAnalyser is a useful analysis tool to monitors in many aspects of system and process states such as running process, open ports, loaded drivers, injected libraries, key registry changes, APIs called by a target process, file Modifications, http, IRC, and DNS traffic. Figure \ref{fig:SysAnalyser} shows the example of using SysAnalyser tool to analyse malware. 
 
 
 \begin{figure}[h!]
@@ -39,17 +39,40 @@ Dynamic malware analysis technique is technique to find out the purpose of malwa
 \label{fig:SysAnalyser}
 \end{figure}
 
-The advantage of Dynamic malware is easy to detect malware behavior. Therefore, researcher can remove malware effectively. However, these dynamic techniques are susceptible to a variety of anti-monitoring defenses, as well as \emph{time bombs} or \emph{logic bombs} and can be slow and tedious to identify and disable code analysis techniques to unpack the code for examination \cite{georg}. Furthermore, it takes large amount of time to prepare environment to analyze malware such as virtual machine environment but some malware cannot be executed in virtual machine environment. 
+The advantage of Dynamic malware technique is simple. The process of malware analysis is running malware and making sure what will happen in 
+system.
+
+However, there are some disadvantage of dynamic malware analysis technique. These dynamic techniques are vulnerable to a variety of anti-monitoring defenses such as \emph{time bombs} and \emph{logic bombs}. Additionally, these techniques can be slow and tedious to identify and disable. In addition, a dynamic analysis may fail to identify the malware if the behavior of malware is not logged during the analysis process. Furthermore, Much time is required to prepare environment for malware analysis, such as virtual machine environment or sandbox. Moreover, Some malware cannot be executed in virtual machine environment. In conclusion, dynamic technique is not enough for malware analysis. 
 
 \subsection{Static malware analysis}
-Static malware analysis is technique that identify malware program without executing it. With the static malware analysis technique, researcher performs reverse engineering using disassemble tools, decompile tools, source code analyzer tools such as IDA pro and Ollydbg in order to understand malware by seeing the structure of malware. Static malware analysis have an advantage that it can completely discover malware purpose and functionality. However, research takes many time to understand the malware functionality by analysing malware structure.
 
-Figure \ref{fig:OllyDbg} show the example of using OllyDbg tool in order to analyse malware. 
+Static malware analysis is technique that identifies malware program without executing it. With the static malware analysis technique, researcher performs reverse engineering using disassemble tools, decompile tools, source code analyzer tools such as IDA pro and Ollydbg in order to understand malware by seeing the structure of malware. Static malware analysis has an advantage that it can completely discover the purpose and functionality of malware. However, research needs time to understand the malware functionality by analysing malware structure.
+
+In addition, most modern malwares use packer to modify itself. Packer is a program that modify other program files to compress their content. When a packer compress, encrypts, otherwise modifies an executable program, the program looks much different before it was packed. For analysing malware by Ollydbg or IDA pro, malware must be unpacked. PEid is a program that can find the signature of a known compiler or packer. Figure \ref{fig:PEid} shows PEiD is applied to identify identifies the compiler and packer used by the malware author.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{graph/PEid.jpg}
+\caption{PEid identify the packer used by the malware author.}
+\label{fig:PEid}
+\end{figure}
+
+Figure \ref{fig:OllyDbg} shows the example of using OllyDbg tool in order to analyse malware. 
+
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/OllyDbg.png}
 \caption{Ollydbg tool for static analysis.}
 \label{fig:OllyDbg}
+\end{figure}
+Figure \ref{fig:IDApro} shows the example of using IDA pro tool in order to analyse malware. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{graph/idapro.png}
+\caption{IDA pro tool for static analysis.}
+\label{fig:IDApro}
 \end{figure}
 \section{Malware categories}
 
