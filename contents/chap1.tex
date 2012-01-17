@@ -5,34 +5,37 @@
 %
 \section{Background}
 Malware is a general word for all types of malicious software. Malware includes Virus, Trojan house, Back door, Worm, and other malicious software which are characterized by malicious code.
-Because of the widespread use of the Internet, computer users face many dangerous propagations of malware. The modern malware's purpose is usually to gain illegal profit. For example, a larger number of computers are infected by keylogger and $24.3$ billion USD is leveraged  by e-payment system losing \cite{keylogger}. In addition, According to 2010 Annual Security Report, on May 2010, tens of millions computer world wide was infected by email worm such as “I LOVE YOU”, “LOVE LETTER, “LOVEBUG”\cite{Symantec}. As a result, preventing, detecting, and removing malware is very important for security networking.
-\section{Malware analysis problem}
-Instead of effective preventing, detecting, removing, and analyzing malware is analysed to find common areas that all viruses in a family share uniquely, and can thus create a set of signature in order to detect malwares.
+Because of the widespread use of the Internet, computer users face many dangerous propagations of malware. The modern malware's purpose is commonly to gain illegal profit. For example, a larger number of computers are infected by keylogger and $24.3$ billion USD is leveraged  by e-payment system losing \cite{keylogger}. In addition, According to 2010 Annual Security Report, on May 2010, tens of millions computer world wide were infected by email worm such as “I LOVE YOU”, “LOVE LETTER, “LOVEBUG”\cite{Symantec}. As a result, preventing, detecting, and removing malware are very important for network security.
+	
+\section{Malware analysis problem}	
+This session will be a detail introduction of malware analysis of security professionals. Malware analysis is the process of analysing the purpose and functionally of a malware. Malware analysis is for understanding common areas that all viruses in a family share uniquely, and can thus create a set of signatures in order to detect malwares. In addition, the knowledge about the purpose and functionally of a malware is important for removal.
 
-Commonly, when new malware was detected, dynamic malware analysis and static malware analysis have used to analyze the malware.  Dynamic malware analysis technique execute malware in the Virtual Machine and use ProcMon, RegShot, and other tools. Dynamic malware analysis tools are used to identify the general behavioral analysis techniques such as network traffic analysis; file system; and other Window feature: service, process, the registry.
+Commonly, when new malware was detected, dynamic and static malware analysis have been applied. Dynamic malware analysis technique executes malware in the Virtual Machine and uses ProcMon, RegShot, and other tools. These tools are used to identify the general behavioral analysis techniques such as network traffic analysis; file system; and other Window features: service, process, the registry. 
 
-However, these dynamic techniques are susceptible to a variety of anti-monitoring defenses, as well as \emph{time bombs} or \emph{logic bombs} and can be slow and tedious to identify and disable code analysis techniques to unpack the code for examination \cite{georg}. Furthermore, it takes large amount of time to prepare environment to analyze malware such as virtual machine environment but some malware can not be executed in virtual machine environment.
+However, these dynamic techniques are susceptible to a variety of anti-monitoring defenses, as well as \emph{time bombs} or \emph{logic bombs} and can be slow and tedious to identify and disable code analysis techniques to unpack the code for examination \cite{georg}. Furthermore, it takes large amount of time to prepare environment to analyze malware such as virtual machine environment, but some malware can not be executed in the kind of environment.
 
-With the static malware analysis technique, researcher perform reverse engineering using IDA Pro and Ollydbg tool to analyze malware by seeing the structure of malware, to discover its purpose and functionality but it takes a lot of time to see the malware structure. 
+With the static malware analysis technique, researchers perform reverse engineering using IDA Pro and Ollydbg tool to analyze malware based on its structure, to discover its purpose and functionality but it takes a lot of time to see the malware structure. 
 
-Malware analysis is necessary to understand the behavior of malware. As a result, malware signature is created to effectively detect malware. Nevertheless, Nevertheless, it wastes a lot of time to find out the behavior and characterization of malware.
-With a vast amount of sample increased day by day, anti-virus industry and virus researchers is harder to analyze malware without information of new malware. With the aim of reducing time of malware analysis, it is necessary to have an automatically malware classification system.
+Malware analysis is necessary to understand the behavior of malware. As a result, malware signature is created to effectively detect malware. Nevertheless, it wastes much time to find out the behavior and characterization of malware.
 
+With a vast amount of samples increased day by day, anti-virus industry and virus researchers is harder to analyze malware without information of new malware. In order to reduce time of malware analysis, it is necessary to have an automatic malware classification system.
 
-\section{Approach}Two following issues are focused on:
+\section{Approach}
+
+Two following issues are focused on:
 \begin{itemize}
 \item Automatically perform fast malware classification based on malware file's meta-data using a machine learning technique, called decision tree algorithm to classify unknown malwares or subspecies rapidly and correctly.
-\item Help researcher to understand which family malware belongs to and detect some semantic information about malware so they can make.
+\item Help researcher to understand which family malware belongs to and detect some semantic information about malware. 
 \end{itemize}
 
-For that reason, in this paper, an approach is proposed to perform fast malware classification based on malware's meta-data using machine learning technique, known as decision tree.
+For those reason, in this paper, an approach is proposed to perform fast malware classification based on malware's meta-data using machine learning technique, known as decision tree.
 
 \section{Thesis outline}
 The rest of this thesis is structured as follows: \begin{itemize}
-\item Chapter 2 describes malware meta-data, and the method in static classification of malware. In sight is provided the purpose of method given in this research.
+\item Chapter 2 describes malware meta-data, and the method in static classification of malware. Insight is provided to understand the purpose of method given in this research.
 \item Chapter 3 presents the other malware static classification approach.
-\item Chapter 4 approach, and the design and operation of malware classification system is described.
-\item Chapter 5 presents environment and implementation of static malware system.\textsl{•} 
-\item Chapter 6 describes the system evaluation method and results. 
-\item Summary, the conclusion and future work is presented in chapter 7
+\item Chapter 4 gives approach, design and operation of malware classification system
+\item Chapter 5 mentions environment and implementation of static malware system.
+\item Chapter 6 shows the system evaluation method and results. 
+\item Summary, the conclusion and future work are presented in chapter 7
 \end{itemize}
