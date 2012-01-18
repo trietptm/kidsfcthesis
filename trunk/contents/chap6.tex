@@ -2,8 +2,8 @@
 
 
 \section{Accuracy evaluation}
-In 935 malware PE files obtained, 635 of them are to make eight decision trees. 200 malware meta-data in training data is applied to, in order to sort $8$ decision tree, and to make the best order of decision tree as shown in Figure \ref{fig:ordertree}, this order has the best experimental result with ? malware training data. 
-Finally, Lasrly, 100 remaining malware meta-data are kept to test experimental result the system.
+In 935 malwares obtained, 635 of them are to make eight decision trees. 200 malwares meta-data in training data are applied to, in order to sort $8$ decision tree, and to make the best order of decision tree as shown in Figure \ref{fig:ordertree}, this order has the best experimental result with ? malware training data. 
+Finally, 100 remaining malwares meta-data are kept to test experimental result the system.
 Experiment results in the order of decision tree given	 in Figure \ref{fig:ordertree}.
 \begin{figure}[httb]
   \centering
@@ -12,7 +12,7 @@ Experiment results in the order of decision tree given	 in Figure \ref{fig:order
      \label{fig:ordertree}
 \end{figure}
 
-In the decision tree order, 100 malware are taken to check the experimental result of system, and Table \ref{fig:experimentalresult} reveals that result. Some of data in axis show these total number of malware in that family, and that number is separated into groups that these malware has been classified by the system. For example, there are four malwares in Win32/Virut family, and three of them are successfully sorted into Win32/Virut family and, while one malware is in other family. Therefore, the system recognizes the trojan agent family with 75 \% of accuracy.\\
+In the decision tree order, 100 malwares are taken to check the experimental result of system, and Table \ref{fig:experimentalresult} reveals that result. Some of data in axis show these total number of malware in that family, and that number is separated into groups that these malwares has been classified by the system. For example, there are four malwares in Win32/Virut family, and three of them are successfully sorted into Win32/Virut family and, while one malware is in other family. Therefore, the system recognizes the trojan agent family with 75 \% of accuracy.\\
 \\
 
 \begin{figure}[h!]
@@ -37,8 +37,8 @@ In the decision tree order, 100 malware are taken to check the experimental resu
 
 The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
 
-\section{Efficiency of classifying}
-Figure show comparing the step to detect semantic malware characterization using Virus total with the system.
+\section{Classification efficiency}
+Figure shows comparison between steps to detect semantic malware characterization using Virus total with the system.
  \begin{figure}[httb]
   \centering
     \includegraphics[width=1\textwidth]{graph/evaluation3.png}
@@ -46,7 +46,7 @@ Figure show comparing the step to detect semantic malware characterization using
      \label{fig:evaluation3}
 \end{figure}
 
-The figure 1 show classifying time in the system. The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
+The figure 1 shows classifying time in the system. The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
 
 \begin{figure}[httb]
   \centering
@@ -54,5 +54,5 @@ The figure 1 show classifying time in the system. The evaluation was performed o
      \caption{The best decision tree order.}
      \label{fig:evaluation2}
 \end{figure}
-The result was shown in figure \ref{fig:evaluation1}. The median time to perform classification was 0.25 seconds. The slowest sample classified required 5.12 seconds. Only 6 samples required more than 2 seconds. Processing time of followgraph approach was shown in figure \ref{fig:evaluation2}.
+The result was shown in figure \ref{fig:evaluation1}. The median time to perform classification was 0.25 seconds. The slowest sample that is required 5.12 seconds. Only 6 samples required more than 2 seconds. Processing time of followgraph approach was shown in figure \ref{fig:evaluation2}.
 

@@ -53,6 +53,9 @@ Perdram amini, Ero Carrera
   \emph{Reverse engineering on windows: Application in malicious code analysis}. Masters Thesis,Central Queensland University. 2010.
 \bibitem{peheaderci}
 \emph{Peering Inside the PE: A Tour of the Win32 Portable Executable File Format}.  Microsoft Systems Journal. March 1994.
+\bibitem{peheaderci1}
+\emph{http://win32assembly.online.fr/petut1.html}.  17 Feb 2010.
+
 \bibitem{kaspersky1}
   \emph{http://www.viruslistjp.com/analysis/?pubid=204792101}.
   17 Feb 2010.
