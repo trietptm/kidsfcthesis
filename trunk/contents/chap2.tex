@@ -1,13 +1,13 @@
 
 \chapter{Background}\label{chap:2}
-This chapter presents the growth of malware, together with malware analysis technique. Afterwards, it introduces malware categories and the way of Virus total service to detect malware name defined by anti-virus vendor. Finally, there are problems of using malware name to detect semantic meaning of malware. 
+At first, this chapter presents the growth of malware. Then, malware analysis technique is introduced. Furthermore, malware categories and the way to use Virus total service to identify malware names defined by anti-virus vendor are introduced. Finally, there are problems of using malware name to detect semantic meaning of malware. 
 %RELATED WORK
 %
 %
 \section{Growth of malware attack}
-Malware can self-replicate recursively. For example, Mota is a kind of worm that spreads itself by sending spam email to address harvested from local machine \cite{mota}. In addition, Downadup is a malware that receives and executes file through a peer-to-peer system by communication between computers\cite{downadup}. Malware infects system and spreads to the other systems by communication tools. Recently, malware has damaged system and sent the copy of itself to the other systems through Internet.
+Malware can self-replicate recursively. For example, Mota is a kind of worm that proliferate	itself by sending spam email to addresses harvested on local machine \cite{mota}. In addition, Downadup is a malware that receives file through a peer-to-peer function\cite{downadup}. Malware infects system and spreads to the other systems by communication tools such as the Internet and related technologies. 
 
-Since the rise of widespread broadband Internet access, the number of malware samples have rapidly increased. According to the report issued by Kaspersky's research team, 205 million pieces of malware were detected and neutralized \cite{kaspersky1}. In addition, in 2010 the number of malware samples increased by 20 millions \cite{kaspersky}.Figure \ref{fig:kaspersky} shows the increase of malware from 2003 to 2009 by Kaspersky Lab. As a result of the fast growth malware, malware is still a huge problem in Internet security and network connectivity. 
+Since the rise of widespread broadband Internet access, the number of malware samples has been rapidly increasing. According to the report issued by Kaspersky's research team, 205 million pieces of malware were detected and neutralized \cite{kaspersky1}. In addition, in 2010 the number of malware samples increased by 20 millions \cite{kaspersky}.Figure \ref{fig:kaspersky} shows the increase of malware from 2003 to 2009 by Kaspersky Lab. As a result of the fast growth malware, malware is still a huge problem in Internet security and network connectivity. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/kapersky.jpg}
@@ -15,11 +15,11 @@ Since the rise of widespread broadband Internet access, the number of malware sa
 \label{fig:kaspersky}
 \end{figure}
 
-At this time, malware is easy created by Malware Creation Tool, known a program which is by attacker to generate malware\cite{Microsoft}. In addition, unlike early attack tools implementing one type of attack, such tools now can be changed quickly by upgrading or replacing their code. This causes rapidly evolving attacks and, at the extreme, results in polymorphic tools that self-evolve, change with each active instance of the attack. Therefore, a large amount of malware have challenged anti-virus vendor and researcher in effective analysis.
+At this time, malware is easily created by malware creation tools, known the programs which are used by attacker to generate malware\cite{Microsoft}. In addition, unlike early attack tools implementing one type of attack, such tools now can be changed quickly by upgrading or replacing their code. This causes rapidly evolving attacks and, at the extreme, results in polymorphic tools that self-evolve, change with each active instance of the attack. Therefore, a large amount of malware have challenged anti-virus vendor and researcher to avoid their analysis.
 
 \section{Malware avoidance technique}
 
-At the present time, malware is implemented with avoidance technique in order to invalidate static signature based method by anti-virus software and make analysis process more complicated. Avoidance technique can change malware signature and syntax without changing the behaviors of malware. The avoidance technique consists of obfuscating code and packing technique. Therefore, an avoidance technique causes more difficulty in malware analysis. 
+At the present time, malware is implemented with avoidance technique in order to invalidate static signature based method by anti-virus software and make analysis process more complicated. Avoidance technique can change malware signature and syntax without changing the behaviors of malware. The avoidance technique consists of code obfuscating and packing technique. Therefore, an avoidance technique causes more difficulty in malware analysis. 
  
 Obfuscating code changes the form of a malware instance to other form in order to invalidate signature based on detection technique. It consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique modifies the representation of malware. Virus, worm, and other self-propagating software are often used polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recodes itself when it distributed or executed\cite{blackhat1}. Simple metamorphic techniques include: adding and varying lengths of NOP instructions, adding useless instruction, and looping the code segment. Advantage metamorphism techniques include: function reordering, program flow modification, static structure modification.
 
@@ -39,10 +39,10 @@ Dynamic malware analysis technique is technique to find out the purpose of malwa
 \label{fig:SysAnalyser}
 \end{figure}
 
-The advantage of Dynamic malware technique is simple. The process of malware analysis is running malware and making sure what will happen in 
+The advantage of dynamic malware analysis technique is simple. The process of malware analysis is running malware and making sure what will happen in 
 system.
 
-However, there are some disadvantage of dynamic malware analysis technique. These dynamic techniques are vulnerable to a variety of anti-monitoring defenses such as \emph{time bombs} and \emph{logic bombs}. Additionally, these techniques can be slow and tedious to identify and disable. In addition, a dynamic analysis may fail to identify the malware if the behavior of malware is not logged during the analysis process. Furthermore, Much time is required to prepare environment for malware analysis, such as virtual machine environment or sandbox. Moreover, Some malware cannot be executed in virtual machine environment. In conclusion, dynamic technique is not enough for malware analysis. 
+However, there are some disadvantage of dynamic malware analysis technique. At first, these dynamic analysis techniques are vulnerable to a variety of anti-monitoring defenses such as \emph{time bombs} and \emph{logic bombs}. Additionally, these techniques can be slow and tedious to identify and disable. In addition, a dynamic analysis may fail to identify the malware if the behavior of malware is not logged during the analysis process. Furthermore, Much time is required to prepare environment for malware analysis, such as virtual machine environment or sandbox. Moreover, Some malware cannot be executed in virtual machine environment. In conclusion, dynamic technique is not enough for malware analysis. 
 
 \subsection{Static malware analysis}
 
