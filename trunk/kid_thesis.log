@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  18 JAN 2012 10:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  18 JAN 2012 13:41
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -502,14 +502,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.23 
       [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 
+l.27 
       [5 <G:/kidsfcthesis/graph/kapersky.jpg>]
 <graph/SysAnalyser.png, id=204, 478.03593pt x 261.97874pt>
 File: graph/SysAnalyser.png Graphic file (type png)
@@ -525,7 +525,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 
+l.50 
       [6] <graph/PEid.jpg, id=210, 423.5825pt x 236.885pt>
 File: graph/PEid.jpg Graphic file (type jpg)
 
@@ -536,33 +536,28 @@ Package pdftex.def Info: graph/PEid.jpg used on input line 55.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <G:/kidsfcthesis/graph/SysAnalyser.png>]
-<graph/OllyDbg.png, id=217, 724.20563pt x 462.22687pt>
+<graph/OllyDbg.png, id=212, 724.20563pt x 462.22687pt>
 File: graph/OllyDbg.png Graphic file (type png)
  <use graph/OllyDbg.png>
 Package pdftex.def Info: graph/OllyDbg.png used on input line 64.
 (pdftex.def)             Requested size: 469.47046pt x 299.64691pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<graph/idapro.png, id=219, 607.51968pt x 374.14781pt>
+[7 <G:/kidsfcthesis/graph/SysAnalyser.png>] [8 <G:/kidsfcthesis/graph/PEid.jpg>
+ <G:/kidsfcthesis/graph/OllyDbg.png>]
+<graph/idapro.png, id=223, 607.51968pt x 374.14781pt>
 File: graph/idapro.png Graphic file (type png)
  <use graph/idapro.png>
 Package pdftex.def Info: graph/idapro.png used on input line 73.
 (pdftex.def)             Requested size: 469.47046pt x 289.13373pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <G:/kidsfcthesis/graph/PEid.jpg>]
-<graph/virustotal_listname.png, id=232, 471.26062pt x 391.4625pt>
+[9 <G:/kidsfcthesis/graph/idapro.png>]
+<graph/virustotal_listname.png, id=236, 471.26062pt x 391.4625pt>
 File: graph/virustotal_listname.png Graphic file (type png)
 
 <use graph/virustotal_listname.png>
 Package pdftex.def Info: graph/virustotal_listname.png used on input line 100.
 (pdftex.def)             Requested size: 469.47046pt x 389.98016pt.
- [9 <G:/kidsfcthesis/graph/OllyDbg.png>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -572,13 +567,12 @@ Overfull \hbox (6.01865pt too wide) in paragraph at lines 108--109
 in32/Sality, and W32.Mota. 
  []
 
-[10 <G:/kidsfcthesis/graph/idapro.png>]
 
-Package natbib Warning: Citation `walemac' on page 11 undefined on input line 1
+Package natbib Warning: Citation `walemac' on page 10 undefined on input line 1
 19.
 
 
-Package natbib Warning: Citation `downadup' on page 11 undefined on input line 
+Package natbib Warning: Citation `downadup' on page 10 undefined on input line 
 120.
 
 
@@ -589,8 +583,8 @@ Overfull \hbox (12.47173pt too wide) in paragraph at lines 112--124
 
 LaTeX Warning: Float too large for page by 32.93677pt on input line 126.
 
-) (G:\kidsfcthesis\contents/chap3.tex [11 <G:/kidsfcthesis/graph/virustotal_lis
-tname.png>] [12]
+[10] [11]) (G:\kidsfcthesis\contents/chap3.tex [12 <G:/kidsfcthesis/graph/virus
+total_listname.png>]
 Chapter 3.
 [13
 
@@ -942,7 +936,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on kid_thesis.pdf (42 pages, 1480480 bytes).
+Output written on kid_thesis.pdf (42 pages, 1480127 bytes).
 PDF statistics:
  613 PDF objects out of 1000 (max. 8388607)
  138 named destinations out of 1000 (max. 500000)
