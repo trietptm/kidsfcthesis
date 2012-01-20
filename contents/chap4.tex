@@ -53,11 +53,13 @@ That is all about the physical layout of the PE file format. The major steps in 
 \caption{Layout a file in PE header format.}
 \label{fig:peheader}
 \end{figure}
-The PE header is second part of PE files structure. The PE header starts with two characters "PE" known the PE header file signature. The main PE header is a structure of type IMAGE\_NT\_HEADERS, which is defined in WINNT.H. The structure of PE header consists of a DWORD and two substructures composed of FileHeader and OptionalHeader. IMAGE\_NT\_HEADERS contains the three fields:\\
-DWORD Signature;\\
-IMAGE\_FILE\_HEADER FileHeader;\\
-IMAGE\_OPTIONAL\_HEADER OptionalHeader;
+The PE header is second part of PE files structure. The PE header starts with two characters "PE" known the PE header file signature. The main PE header is a structure of type IMAGE\_NT\_HEADERS, which is defined in WINNT.H. The structure of PE header consists of a DWORD and two substructures composed of FileHeader and OptionalHeader. IMAGE\_NT\_HEADERS contains the three fields:
+\begin{verbatim}
 
+DWORD Signature;
+IMAGE_FILE_HEADER FileHeader;
+IMAGE_OPTIONAL_HEADER OptionalHeader;
+\end{verbatim}
 Following the PE signature DWORD in the PE header is a structure of type IMAGE\_FILE\_HEADER. The fields of this structure contain only the most basic information about the file. The fields of the IMAGE\_FILE\_HEADER includes:
 \begin{itemize}
 \item WORD Machine: The CPU that this file is intended for.
@@ -133,14 +135,19 @@ Decision tree is a machine learning technique for building knowledge-based syste
 \label{fig:decisiontreesample}
 \end{figure}
 
-In data mining, trees can be described also as the combination of mathematical and computational techniques to aid the description, categorization and generalization of a given set of data.
+In data mining, the decision tree technique can be described also as the combination of mathematical and computational techniques to aid the description, categorization and generalization of a given set of data.
+
 Data comes in records of the form
-\(\textbf{x},Y\) = \(x_1, x_2, x_3, ..., x_k, Y\)
-The dependent variable, Y, is the target variable is analysed to understand, classify or generalise. The vector x is composed of the input variables, x1, x2, x3, that are used for that task.
+\begin{equation}
+    (x,Y) = (x_1, x_2, x_3, ..., x_k, Y) 
+\end{equation}
+
+The dependent variable, $Y$ which is the target variable is analysed to understand, classify or generalise. The vector x is composed of the input variables, $x_{1}, x_{2}, x_{3}$ that are used for that task.
 \section{Classification based on malware's meta-data using decision tree approach}
+
 To make malware classification rapid and correct, decision tree algorithm is used in malware classification system.
 
 As the previous section, Data comes in records of the form:
-\(\textbf{x},Y\) = \(x_1, x_2, x_3, ..., x_k, Y\)
+
 In malware classification system, Y is malware families name, \(x_1, x_2, x_3, ..., x_k, Y\) is meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required for detect meaningful characterization of malware. This classification system use famous malware families that reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
 
