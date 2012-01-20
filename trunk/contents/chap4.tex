@@ -2,7 +2,7 @@
 %EXPERIMENTAL RESULTS AND ANALYSIS
 %
 %
-This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, this chapter presents classification based on malware's meta-data using decision tree approach. 
+This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, we will propose the classification approach based on malware's meta-data using decision tree technique. 
 
 \section{PE file format\cite{peheaderci}}
 \subsection{The PE File Format}
@@ -199,4 +199,6 @@ To make malware classification rapid and correct, decision tree algorithm is use
 As the previous section, Data comes in records of the form:
 
 In malware classification system, Y is malware families name, \(x_1, x_2, x_3, ..., x_k, Y\) is meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required for detect meaningful characterization of malware. This classification system use famous malware families that reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
-
+\section{Conclusion}
+In this chapter, our approach is proposed with the technique used in malware classification system.
+In the next chapter, propose the system design and implementation will be proposed.

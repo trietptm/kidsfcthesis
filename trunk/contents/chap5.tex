@@ -1,8 +1,32 @@
 \chapter{Implementation}\label{chap:5}
+In this chapter, the work of implementing malware classification system will be described. Starting with the implementing environment, this chapter will go through introduction of the meta-data used in
+this system, and finally system software implementation which is written in PHP language.
 %EXPERIMENTAL RESULTS AND ANALYSIS
 %
 %
 \section{Environment}
+In proposing system, operator system, Database, and are all operated in one computer. Technical information of employed computer is shown as in Table \ref{table:environment}. DecisionTree $1.5$ is good choice to this implementation, with these following reasons:
+\begin{itemize}
+\item The library constructs a decision tree from multidimensional training data.
+\item The library use the decision tree thus constructed for classifying unlabeled data. \cite{decisiontree15}.
+\end{itemize} 
+  \begin{table}
+\begin{center}  
+\label{table:environment}
+    \begin{tabular}{ | l | l | l | }
+     \hline
+    Element &  Attribute  &  Environment \\ \hline
+    OS & Computer & Ubuntu 11.04 \\ \hline
+	Database & Mysql & Mysql 5.0 \\ \hline
+	Programming language & C & gcc  \\ \hline
+	 & PHP & PHP 5.0  \\ \hline
+	 & Python & Python 2.7 \\ \hline
+	 Library & DecisionTree 1.5 &  ID3 \\ \hline
+    \end{tabular}
+    \caption{Implementation environment of the malware classification system.}  
+    \end{center}
+  \end{table}
+  
 \section{Overview}
 The system uses machine learning technique, named decision tree algorithm for malware classification. The goal is classifying malware fast and decision tree algorithm is used to achieve. Classification is a form of supervised learning, which requires training data, with known input/output, to form knowledge \cite{tonylee}. As mentioned in Figure \ref{fig:system_architec}, the system contains three following parts.
 
@@ -20,7 +44,7 @@ The system uses machine learning technique, named decision tree algorithm for ma
 \end{figure}
 
 A vast amount of malware need analyzing, and the system uses database to store malware file's meta-data, to easily control a large number of data and to share them in the internet among web browsers.
-The flow of data is shown in the Figure \ref{fig:system_architec}. Firstly, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for classifying malware. Finally	, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
+The flow of data is shown in the Figure \ref{fig:system_architec}. Firstly, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for classifying malware. Finally, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
 %CLASSFICATION BASE ON DECISION TREE
 %
 %
@@ -30,7 +54,7 @@ In order to create a fast malware classification system, the system only uses PE
 There is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are indexed to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. The value of ImageBase of malware file in the system is 0 if it has 40000, and it is 1 if it has other value, ; in this research, that value is named as semantic value. This approach uses all of PE file's meta-data, specifically \emph{HeaderFilesize}, \emph{AddressOfEntryPoint}, \emph{Sizeofsection}, \emph{Imagebase}, \emph{Numberofsection}, \emph{StackCommit}, \emph{SizeHeap Commit}, \emph{SizeImage}, \emph{Characteristics}. The semantic value of all malware file's meta-data is calculated.
 
 \subsection{Create training data}
-Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by Kaspersky and uses it to  cluster malware into malware families with semantic information. 
+Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by Kaspersky and uses it to cluster malware into malware families with semantic information. 
 Figure \ref{fig:clustering} indicates http post technique to automatically get name from virus total service and cluster malware into malware families which given in Figure \ref{fig:familymalware}.
 \begin{figure}[h!]
 \centering
