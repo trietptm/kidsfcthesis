@@ -50,6 +50,7 @@ The flow of data is shown in the Figure \ref{fig:system_architec}. Firstly, bina
 %
 \section{Classification based on machine learning technique} 
 \subsection{Meta-data}
+Meta-data is simply data about data. The malware file's meta-data is all simply information about malware. simply data about malware.  
 In order to create a fast malware classification system, the system only uses PE header's meta-data to classify malware. PE header includes meta-data of MS-DOS section, COFF file header, Optional header, and Section header.\\
 There is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are indexed to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. The value of ImageBase of malware file in the system is 0 if it has 40000, and it is 1 if it has other value, ; in this research, that value is named as semantic value. This approach uses all of PE file's meta-data, specifically \emph{HeaderFilesize}, \emph{AddressOfEntryPoint}, \emph{Sizeofsection}, \emph{Imagebase}, \emph{Numberofsection}, \emph{StackCommit}, \emph{SizeHeap Commit}, \emph{SizeImage}, \emph{Characteristics}. The semantic value of all malware file's meta-data is calculated.
 
