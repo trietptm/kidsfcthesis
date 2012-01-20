@@ -10,7 +10,7 @@ This chapter describes Win32 executive files structure, known as PE files struct
 The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. As shown in Figure \ref{fig:pefiles} PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{graph/pefiles.png}
+\includegraphics[width=1\textwidth]{graph/pefiles.png}
 \caption{The general layout of a PE file.}
 \label{fig:pefiles}
 \end{figure}
@@ -55,58 +55,107 @@ That is all about the physical layout of the PE file format. The major steps in 
 \end{figure}
 The PE header is second part of PE files structure. The PE header starts with two characters "PE" known the PE header file signature. The main PE header is a structure of type IMAGE\_NT\_HEADERS, which is defined in WINNT.H. The structure of PE header consists of a DWORD and two substructures composed of FileHeader and OptionalHeader. IMAGE\_NT\_HEADERS contains the three fields:
 \begin{verbatim}
-
 DWORD Signature;
 IMAGE_FILE_HEADER FileHeader;
 IMAGE_OPTIONAL_HEADER OptionalHeader;
 \end{verbatim}
-Following the PE signature DWORD in the PE header is a structure of type IMAGE\_FILE\_HEADER. The fields of this structure contain only the most basic information about the file. The fields of the IMAGE\_FILE\_HEADER includes:
+Following the PE signature DWORD in the PE header is a structure of type IMAGE\_FILE\_HEADER. 
+\begin{verbatim}
+typedef struct _IMAGE_FILE_HEADER {
+  WORD  Machine;
+  WORD  NumberOfSections;
+  DWORD TimeDateStamp;
+  DWORD PointerToSymbolTable;
+  DWORD NumberOfSymbols;
+  WORD  SizeOfOptionalHeader;
+  WORD  Characteristics;
+} IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER;
+\end{verbatim}
+The fields of this structure contain only the most basic information about the file. The fields of the IMAGE\_FILE\_HEADER includes:
 \begin{itemize}
-\item WORD Machine: The CPU that this file is intended for.
-\item DWORD NumberOfSections: The number of the members in section
-\item DWORD TimeDateStamp: The time that the linker
-\item DWORD PointerToSymbolTable: The file offset of the COFF symbol table. 
-\item WORD NumberOfSymbols: The number of symbols in the COFF symbol table.
-\item WORD SizeOfOptionalHeader: The size of an optional header that can follow this structure.
-\item WORD Characteristics: The size of an optional header that can follow this structure. If there are no relocations in this file, characteristics will be 0x0001. If there are no relocations in this file, characteristics will be 0x0001 . If file is an executable image, characteristics will be 0x0002.  If file is a dynamic-link library, not a program, characteristics will be 0x2000.
+\item Machine: The CPU that this file is intended for.
+\item NumberOfSections: The number of the members in section
+\item TimeDateStamp: The time that the linker
+\item PointerToSymbolTable: The file offset of the COFF symbol table. 
+\item NumberOfSymbols: The number of symbols in the COFF symbol table.
+\item SizeOfOptionalHeader: The size of an optional header that can follow this structure.
+\item Characteristics: The size of an optional header that can follow this structure. If there are no relocations in this file, characteristics will be 0x0001. If there are no relocations in this file, characteristics will be 0x0001 . If file is an executable image, characteristics will be 0x0002.  If file is a dynamic-link library, not a program, characteristics will be 0x2000.
 \end{itemize}
 
 
 
-Following the file header is the Optional header which consists of three parts. The first part includes the COFF standard field which contains the sizes of various parts of code, and the \emph{AddressOfEntryPoint} which indicates the location of the entry point of the application and the location of the end of the Import Address Table(IAT).
+Following the file header is the optional header which consists of three parts: COFF standard fields, Windows specific fields, and data directories. The first part includes the COFF standard field which contains the sizes of various parts of code, and the \emph{AddressOfEntryPoint} which indicates the location of the entry point of the application and the location of the end of the Import Address Table(IAT). Then, the second part contains the information of OS. Finally, the Data directories field contains the information of Session table.
+
+The following is the structure of optional header. 
+\begin{verbatim}
+typedef struct _IMAGE_OPTIONAL_HEADER {
+  WORD                 Magic;
+  BYTE                 MajorLinkerVersion;
+  BYTE                 MinorLinkerVersion;
+  DWORD                SizeOfCode;
+  DWORD                SizeOfInitializedData;
+  DWORD                SizeOfUninitializedData;
+  DWORD                AddressOfEntryPoint;
+  DWORD                BaseOfCode;
+  DWORD                BaseOfData;
+  DWORD                ImageBase;
+  DWORD                SectionAlignment;
+  DWORD                FileAlignment;
+  WORD                 MajorOperatingSystemVersion;
+  WORD                 MinorOperatingSystemVersion;
+  WORD                 MajorImageVersion;
+  WORD                 MinorImageVersion;
+  WORD                 MajorSubsystemVersion;
+  WORD                 MinorSubsystemVersion;
+  DWORD                Win32VersionValue;
+  DWORD                SizeOfImage;
+  DWORD                SizeOfHeaders;
+  DWORD                CheckSum;
+  WORD                 Subsystem;
+  WORD                 DllCharacteristics;
+  DWORD                SizeOfStackReserve;
+  DWORD                SizeOfStackCommit;
+  DWORD                SizeOfHeapReserve;
+  DWORD                SizeOfHeapCommit;
+  DWORD                LoaderFlags;
+  DWORD                NumberOfRvaAndSizes;
+  IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
+} IMAGE_OPTIONAL_HEADER, *PIMAGE_OPTIONAL_HEADER;
+\end{verbatim}
+
 The fields of Optional header are described as follow: 
 \begin{itemize}
-\item WORD Magic: appears to be set to 0x010B.
-\item BYTE MajorLinkerVersion
-\item BYTE MinorLinkerVersion: the version of the linker that produced this file.
-\item DWORD SizeOfCode: this field matches the size of the .text section.
-\item DWORD SizeOfInitializedData: 
-\item DWORD SizeOfUninitializedData: 
-\item DWORD AddressOfEntryPoint: 
-\item DWORD BaseOfCode: 
-\item DWORD BaseOfData: 
-\item DWORD ImageBase: 
-\item DWORD SectionAlignment: 
-\item DWORD FileAlignment: 
-\item WORD MajorOperatingSystemVersion: 
-\item WORD MinorOperatingSystemVersion: 
-\item WORD MajorImageVersion: 
-\item WORD MinorImageVersion: 
-\item WORD MajorSubsystemVersion: 
-\item WORD MinorSubsystemVersion: 
-\item DWORD Reserved1: 
-\item DWORD SizeOfImage: 
-\item DWORD SizeOfHeaders: 
-\item DWORD CheckSum: 
-\item WORD Subsystem: 
-\item WORD DllCharacteristics: 
-\item DWORD SizeOfStackReserve:
-\item DWORD SizeOfStackCommit: 
-\item DWORD SizeOfHeapReserve:
-\item DWORD SizeOfHeapCommit: 
-\item DWORD LoaderFlags: 
-\item DWORD NumberOfRvaAndSizes:
-\item IMAGE\_DATA\_DIRECTORY DataDirectory:
+\item Magic: appears to be set to 0x010B.
+\item MajorLinkerVersion
+\item MinorLinkerVersion: the version of the linker that produced this file.
+\item SizeOfCode: this field matches the size of the .text section.
+\item SizeOfInitializedData: 
+\item SizeOfUninitializedData: 
+\item AddressOfEntryPoint: 
+\item BaseOfCode: 
+\item BaseOfData: 
+\item ImageBase: 
+\item SectionAlignment: 
+\item FileAlignment: 
+\item MajorOperatingSystemVersion: 
+\item MinorOperatingSystemVersion: 
+\item MajorImageVersion: 
+\item MinorImageVersion: 
+\item MajorSubsystemVersion: 
+\item MinorSubsystemVersion: 
+\item Reserved1: 
+\item SizeOfImage: 
+\item SizeOfHeaders: 
+\item CheckSum: 
+\item Subsystem: 
+\item DllCharacteristics: 
+\item SizeOfStackReserve:
+\item SizeOfStackCommit: 
+\item SizeOfHeapReserve:
+\item SizeOfHeapCommit: 
+\item LoaderFlags: 
+\item NumberOfRvaAndSizes:
+\item DataDirectory:
 \end{itemize}
 
 \section{Decision tree\cite{decisiontree}}
