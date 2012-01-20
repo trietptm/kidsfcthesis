@@ -19,15 +19,15 @@ The disadvantage in flowgraph approach is high cost of runtime complexity. First
 In addition, malware classification based on flowgraph approach cannot accurately detect metamorphic malware. As presented in chapter \ref{chap:2}, metamorphic malware can recode itself with program follow modification, function reordering. As a result, it is hard to classify malware based a set  similarity between follow graph.
 \section{Optimizing decision tree in malware classification system by using Genetic Algorithm}
 In this time, malware classification system can use machine learning classifier. The main idea of machine learning technique classifier is search algorithm that is learnt from externally supplied instances to produce a concise model of the distribution, which then  makes prediction about new  instances. Current machine learning classifier in malware classification include: Naive Bayse, Suport Vector machine, Decision tree, K-nearest Neighbor \cite{mohd}. This approach uses combining Genetic algorithms with Decision tree. The data set is separated in training data set and testing data set. The data set includes:
+\begin{verbatim}
 
-// Malware target, specific target for malware attack\\
-vector<list<MalwareClass\*>> \_slots;\\
-// Malware classes for chromosome\\
-hash\_map<MalwareClass\*,int> \_Dataclasses;\\
-hash\_map<MalwareClass\*,int> \_Appsclasses;\\
-hash\_map<MalwareClass\*,int> \_Sysclasses;\\
-hash\_map<MalwareClass\*,int> \_Dosclasses;\\
+// Malware classes for chromosome
+hash_map<MalwareClass*,int> _Dataclasses;
+hash_map<MalwareClass*,int> _Appsclasses;
+hash_map<MalwareClass*,int> _Sysclasses;
+hash_map<MalwareClass*,int> _Dosclasses;
 
+\end{verbatim}
 Genetic algorithm is method analogous to the process of natural evolution. Genetic algorithm is used to optimize decision tree for accurately classifying malware. Malware classification system, which is implemented by the combining generic algorithm with decision tree algorithm approach, is to classify malware into two classes: benign program and malicious program, not to detect semantic characterization of malware by classifying malware into families. Therefore, the combining generic algorithm with decision tree algorithm approach cannot use for detecting semantic characterization of malware.
 \section{Conclustion}
 To achieve fast malware classification, two approaches described as the above can not be used in this system. New approach for fast malware classification system will be introduced in the next chapter. 
