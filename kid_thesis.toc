@@ -22,20 +22,20 @@
 \contentsline {section}{\numberline {3.3}Conclustion}{15}{section.3.3}
 \contentsline {chapter}{\numberline {4}Classification based on malware's meta-data using decision tree approach}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}PE file format\cite {peheaderci}}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Overview of the PE File Format}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}The PE Header}{18}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Decision tree\cite {wikipedia}}{22}{section.4.2}
-\contentsline {section}{\numberline {4.3}Classification based on malware's meta-data using decision tree approach}{22}{section.4.3}
-\contentsline {chapter}{\numberline {5}Implementation}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Environment}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Overview}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}Classification based on machine learning technique}{24}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Meta-data}{24}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Create training data}{24}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Classification}{24}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}Evaluation}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}Accuracy evaluation}{28}{section.6.1}
-\contentsline {section}{\numberline {6.2}Classification efficiency}{29}{section.6.2}
+\contentsline {subsection}{\numberline {4.1.1}The PE File Format}{16}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}The PE Header}{19}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Decision tree\cite {decisiontree}}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Classification based on malware's meta-data using decision tree approach}{23}{section.4.3}
+\contentsline {chapter}{\numberline {5}Implementation}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Environment}{24}{section.5.1}
+\contentsline {section}{\numberline {5.2}Overview}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Classification based on machine learning technique}{25}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Meta-data}{25}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Create training data}{26}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Classification}{26}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Evaluation}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Accuracy evaluation}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Classification efficiency}{30}{section.6.2}
 \contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclusion}{32}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future work}{32}{section.7.2}

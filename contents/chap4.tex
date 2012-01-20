@@ -5,9 +5,9 @@
 This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, this chapter presents classification based on malware's meta-data using decision tree approach. 
 
 \section{PE file format\cite{peheaderci}}
-\subsection{Overview of the PE File Format}
+\subsection{The PE File Format}
 
-The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. As shown in Figure \ref{fig:pefiles} PE header consists of four parts: a MS-DOS session includes DosMZ header and Dos stub; PE header; a section table; and images pages consist of several different regions such as .text session, and .data session.
+The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. As shown in Figure \ref{fig:pefiles} PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\textwidth]{graph/pefiles.png}
@@ -15,7 +15,7 @@ The Portable Executable (PE) file format has been designed for use by all Win32 
 \label{fig:pefiles}
 \end{figure}
 
-The PE file format start with DOS MZ header. The first two bytes - "MZ" of the header is the DOS EXE signature. The first few hundred bytes of the typical PE file are taken up by the MS-DOS stub. This stub is a tiny program that displays a string like "This program cannot be run in MS-DOS mode.". 
+The PE file format starts with DOS MZ header. The first two bytes - "MZ" of the header is the DOS EXE signature. The first few hundred bytes of the typical PE file are taken up by the MS-DOS stub. This stub is a tiny program that displays a string as "This program cannot be run in MS-DOS mode.". 
 
 The following part is PE header. The fields of this structure contain only the most basic information about the file such as the locations and sizes of the code and the data areas. These data structures of PE header will be explained shortly.
 
@@ -23,7 +23,7 @@ Following the PE header is the session table. The section table is an array of I
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{graph/dosHeaderStructure.png}
+\includegraphics[width=0.8\textwidth]{graph/dosHeaderStructure.png}
 \caption{A section table for a typical PE file.}
 \label{fig:pefiles}
 \end{figure}
@@ -107,8 +107,31 @@ The fields of Optional header are described as follow:
 \item IMAGE\_DATA\_DIRECTORY DataDirectory:
 \end{itemize}
 
-\section{Decision tree\cite{wikipedia}}
-Decision tree is a algorithm generally used in machine learning technique. Decision tree is to create a model that predicts the value of a target variable based on several input variables. An example is shown on the right. Each interior node corresponds to one of the input variables; there are edges to children for each of the possible values of that input variable. Each leaf represents a value of the target variable given the values of the input variables represented by the path from the root to the leaf.
+\section{Decision tree\cite{decisiontree}}
+
+Decision tree is a machine learning technique for building knowledge-based systems by inductive inference from examples. Decision tree is to create a model that predicts the value of a target variable based on several input variables. An example is shown on the Figure \ref{fig:decisiontreesample} from the data Table \ref{fig:decisiontreesampletable}. The decision tree is created the Table from Each interior node corresponds to one of the input variables. There are edges to children for each of the possible values of that input variable. Each leaf shows a value of the target variable.
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tabular}{ | l | l | l | l | l }
+     \hline
+    Condition & Class & Attribute 1 &  Attribute \\ \hline
+    1 & A & 0 & 0 & ... \\ 
+	2 & B & 1 & 0 & ... \\ 
+	3 & B & 1 & 1 & ... \\ 
+	... & ... & ... & ... & ... \\ 
+
+
+    \end{tabular}
+	\end{center}
+     \caption{The data table.}
+    \label{fig:decisiontreesampletable}
+\end{figure} 
+\begin{figure}[httb]
+\centering
+\includegraphics[width=1\textwidth]{graph/decisiontreesample.png}
+\caption{Decision tree sample.}
+\label{fig:decisiontreesample}
+\end{figure}
 
 In data mining, trees can be described also as the combination of mathematical and computational techniques to aid the description, categorization and generalization of a given set of data.
 Data comes in records of the form
