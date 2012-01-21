@@ -11,7 +11,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The general layout of a PE file.}}{16}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A section table for a typical PE file.}}{17}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces PE file format.}}{18}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Layout a file in PE header format.}}{19}{figure.4.4}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Layout a file in the PE header format.}}{19}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces The data table.}}{23}{figure.4.5}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Decision tree sample.}}{23}{figure.4.6}
 \addvspace {10\p@ }

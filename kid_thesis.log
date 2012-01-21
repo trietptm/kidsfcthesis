@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  21 JAN 2012 16:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  21 JAN 2012 16:40
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -351,9 +351,6 @@ Package: scrpage2 2010/04/22 v2.5 LaTeX2e KOMA-Script package
 \citation{*}
 (G:\kidsfcthesis\kid_thesis.aux
 
-LaTeX Warning: Label `fig:pefiles' multiply defined.
-
-
 Package natbib Warning: Citation `kaspersky1' multiply defined.
 
 )
@@ -634,7 +631,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 7.
 
-<graph/pefiles.png, id=281, 438.8897pt x 267.24844pt>
+<graph/pefiles.png, id=280, 438.8897pt x 267.24844pt>
 File: graph/pefiles.png Graphic file (type png)
  <use graph/pefiles.png>
 Package pdftex.def Info: graph/pefiles.png used on input line 13.
@@ -678,12 +675,6 @@ File: graph/peheader1.jpg Graphic file (type jpg)
 Package pdftex.def Info: graph/peheader1.jpg used on input line 52.
 (pdftex.def)             Requested size: 469.47046pt x 264.56035pt.
  [17 <G:/kidsfcthesis/graph/dosHeaderStructure.png>]
-Overfull \hbox (16.75044pt too wide) in paragraph at lines 56--57
-\OT1/cmr/m/n/10.95 DWORD and two sub-struc-tures com-posed of File-Header and O
-p-tion-al-Header. IM-AGE[]NT[]HEADERS
- []
-
-
 Overfull \hbox (6.90314pt too wide) in paragraph at lines 62--63
 \OT1/cmr/m/n/10.95 Following the PE sig-na-ture DWORD in the PE header is a str
 uc-ture of type IM-AGE[]FILE[]HEADER. 
@@ -693,37 +684,37 @@ uc-ture of type IM-AGE[]FILE[]HEADER.
 [20] [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 161.
+(hyperref)                removing `\begingroup' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 161.
+(hyperref)                removing `\<let>-command' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 161.
+(hyperref)                removing `\NAT@ctype' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 161.
+(hyperref)                removing `\z@' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 161.
+(hyperref)                removing `\let' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 161.
+(hyperref)                removing `\let' on input line 159.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 161.
+(hyperref)                removing `\new@ifnextchar' on input line 159.
 
 <graph/decisiontreesample.png, id=317, 306.39468pt x 194.22563pt>
 File: graph/decisiontreesample.png Graphic file (type png)
 
 <use graph/decisiontreesample.png>
-Package pdftex.def Info: graph/decisiontreesample.png used on input line 182.
+Package pdftex.def Info: graph/decisiontreesample.png used on input line 180.
 (pdftex.def)             Requested size: 469.47046pt x 297.61766pt.
  [22] [23 <G:/kidsfcthesis/graph/decisiontreesample.png>]) (G:\kidsfcthesis\con
 tents/chap5.tex [24]
@@ -740,12 +731,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25
 
-] [26 <G:/kidsfcthesis/graph/system_architec.jpg>]
-
-Package natbib Warning: Citation `virustotal' on page 27 undefined on input lin
-e 68.
-
-[27]
+] [26 <G:/kidsfcthesis/graph/system_architec.jpg>] [27]
 
 LaTeX Warning: Reference `fig:familymalware' on page 28 undefined on input line
  70.
@@ -760,14 +746,14 @@ in32/Sality, and W32.Mota.
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
-Package pdftex.def Info: graph/clustering.jpg used on input line 78.
+Package pdftex.def Info: graph/clustering.jpg used on input line 77.
 (pdftex.def)             Requested size: 469.47046pt x 144.45528pt.
 
 <graph/classificationdecision.jpg, id=360, 749.04843pt x 312.41719pt>
 File: graph/classificationdecision.jpg Graphic file (type jpg)
 
 <use graph/classificationdecision.jpg>
-Package pdftex.def Info: graph/classificationdecision.jpg used on input line 86
+Package pdftex.def Info: graph/classificationdecision.jpg used on input line 85
 .
 (pdftex.def)             Requested size: 469.47046pt x 195.81323pt.
 
@@ -778,14 +764,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: graph/classification.jpg Graphic file (type jpg)
 
 <use graph/classification.jpg>
-Package pdftex.def Info: graph/classification.jpg used on input line 98.
+Package pdftex.def Info: graph/classification.jpg used on input line 97.
 (pdftex.def)             Requested size: 469.47046pt x 185.72473pt.
 
 <graph/decisiontreeworm.jpg, id=365, 983.17313pt x 414.04688pt>
 File: graph/decisiontreeworm.jpg Graphic file (type jpg)
 
 <use graph/decisiontreeworm.jpg>
-Package pdftex.def Info: graph/decisiontreeworm.jpg used on input line 104.
+Package pdftex.def Info: graph/decisiontreeworm.jpg used on input line 103.
 (pdftex.def)             Requested size: 469.47046pt x 197.71042pt.
 ) (G:\kidsfcthesis\contents/chap6.tex [28 <G:/kidsfcthesis/graph/clustering.jpg
 >]
@@ -930,12 +916,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 212.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  9102 strings out of 494045
- 133430 string characters out of 3145960
+ 133432 string characters out of 3145960
  240628 words of memory out of 3000000
  12090 multiletter control sequences out of 15000+200000
  13089 words of font info for 48 fonts, out of 3000000 for 9000
@@ -954,7 +940,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (44 pages, 1451453 bytes).
+Output written on kid_thesis.pdf (44 pages, 1451238 bytes).
 PDF statistics:
  636 PDF objects out of 1000 (max. 8388607)
  146 named destinations out of 1000 (max. 500000)
