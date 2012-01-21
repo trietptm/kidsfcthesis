@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  21 JAN 2012 21:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  21 JAN 2012 23:03
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -757,6 +757,10 @@ Package pdftex.def Info: graph/clustering.jpg used on input line 106.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `fig:classificationdecision' on page 28 undefined on i
+nput line 113.
+
 [28]
 
 LaTeX Warning: Reference `fig:classification' on page 29 undefined on input lin
@@ -770,25 +774,20 @@ ine 126.
 >]
 Chapter 6.
 
-Overfull \hbox (28.01622pt too wide) in paragraph at lines 31--44
+Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--49
-
  []
 
 [30
 
 ] [31]
 
-LaTeX Warning: Reference `fig:evaluation1' on page 32 undefined on input line 5
-7.
+LaTeX Warning: Reference `fig:evaluation1' on page 32 undefined on input line 7
+8.
 
 
-LaTeX Warning: Reference `fig:evaluation2' on page 32 undefined on input line 5
-7.
+LaTeX Warning: Reference `fig:evaluation2' on page 32 undefined on input line 7
+8.
 
 ) (G:\kidsfcthesis\contents/chap7.tex [32]
 Chapter 7.
@@ -886,37 +885,31 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 212.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 9081 strings out of 494045
- 132879 string characters out of 3145960
- 242628 words of memory out of 3000000
- 12075 multiletter control sequences out of 15000+200000
+ 9083 strings out of 494045
+ 132908 string characters out of 3145960
+ 243628 words of memory out of 3000000
+ 12076 multiletter control sequences out of 15000+200000
  13089 words of font info for 48 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,10n,38p,1265b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.5.3} has been referenced but does not exis
-t, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (43 pages, 1234726 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/courier/ucrr8a.pfb>
+Output written on kid_thesis.pdf (43 pages, 1237017 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  410 words of extra memory for PDF output out of 10000 (max. 10000000)
 
