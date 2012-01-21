@@ -8,7 +8,7 @@ this system, and finally system software implementation which is written in PHP 
 In proposing system, operator system, Database, and are all operated in one computer. Technical information of employed computer is shown as in Table \ref{table:environment}. DecisionTree $1.5$ is good choice to this implementation, with these following reasons:
 \begin{itemize}
 \item The library constructs a decision tree from multidimensional training data.
-\item The library use the decision tree thus constructed for classifying unlabeled data. \cite{decisiontree15}.
+\item The library use the decision tree thus constructed for classifying unlabeled data. \cite{decisiontreelibrary}.
 \end{itemize} 
   \begin{table}
 \begin{center}  
@@ -50,20 +50,31 @@ The flow of data is shown in the Figure \ref{fig:system_architec}. Firstly, bina
 %
 \section{Classification based on machine learning technique} 
 \subsection{Meta-data}
-Meta-data is simply data about data. The malware file's meta-data is all simply information about malware. simply data about malware.  
-In order to create a fast malware classification system, the system only uses PE header's meta-data to classify malware. PE header includes meta-data of MS-DOS section, COFF file header, Optional header, and Section header.\\
-There is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are indexed to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. The value of ImageBase of malware file in the system is 0 if it has 40000, and it is 1 if it has other value, ; in this research, that value is named as semantic value. This approach uses all of PE file's meta-data, specifically \emph{HeaderFilesize}, \emph{AddressOfEntryPoint}, \emph{Sizeofsection}, \emph{Imagebase}, \emph{Numberofsection}, \emph{StackCommit}, \emph{SizeHeap Commit}, \emph{SizeImage}, \emph{Characteristics}. The semantic value of all malware file's meta-data is calculated.
+Meta-data is simply data about data. The malware file's meta-datas are all simply information about malware file. PE header includes meta-data of MS-DOS section; COFF file header; Optional header; Section header; and other types of data in sections include API import and export table. Meta-datas are many data about malware. The classification system based on can identify malware changed malware signature and syntax by using code reordering, code rewriting, and instruction insertion. Additionally, malware's meta-data can be easy received. 
+Therefore, in order to create a fast and accuracy malware classification system, the system only uses PE header's meta-data to classify malware.
+ 
+There is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are separated  to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. In this system, the meta-data of PE header file is separated into $7$ class by this calculation:
+\begin{equation}
+SemanticMetaData = MetaData \bmod 7
+\end{equation} 
+
+Decision tree modeling predicts effects $7$ is larger enough to separate malware file's meta-data value into classes. Additionally, $7$ is a prime number so that it is better to divide malware file's meta-data value into $7$ classes than another number. For example, The \emph{MajorLinkerVersion} field in PE file has a list of values as: $0x00003000$, $0x00001000$, and $0x00006000$. By the above equation, the semantic value of these value is as follows: 3,1,6. However, if the system use $8$, the semantic value of these value are as follows: 0. In conclusion, $7$ is good choice to separate malware file's meta-data value.
 
 \subsection{Create training data}
-Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by Kaspersky and uses it to cluster malware into malware families with semantic information. 
+Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information. 
 Figure \ref{fig:clustering} indicates http post technique to automatically get name from virus total service and cluster malware into malware families which given in Figure \ref{fig:familymalware}.
+
+Malware families in this classification system are as follows: Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, and W32.Mota. 
+
+The disadvantage of using Virustotal to identify malware's families that a unique malware has many different names provided by many antis-virus vendors. Therefore, if unique malware has two or more families name provided by anti-virus vendor, unique malware will be classed into the most reported malware family.
+ 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/clustering.jpg}
 \caption{Clustering method.}
 \label{fig:clustering}
 \end{figure}
-\newline
+
 \subsection{Classification}
 \begin{figure}[h!]
 \centering
