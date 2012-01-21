@@ -5,6 +5,7 @@ this system, and finally system software implementation which is written in PHP 
 %
 %
 \section{Environment}
+
 In proposing system, operator system, Database, and are all operated in one computer. Technical information of employed computer is shown as in Table \ref{table:environment}. DecisionTree $1.5$ is good choice to this implementation, with these following reasons:
 \begin{itemize}
 \item The library constructs a decision tree from multidimensional training data.
@@ -44,7 +45,7 @@ The system uses machine learning technique, named decision tree algorithm for ma
 \end{figure}
 
 A vast amount of malware need analyzing, and the system uses database to store malware file's meta-data, to easily control a large number of data and to share them in the internet among web browsers.
-The flow of data is shown in the Figure \ref{fig:system_architec}. Firstly, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for classifying malware. Finally, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
+The flow of data is shown in the Figure \ref{fig:system_architec}. At first, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for classifying malware. Finally, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
 %CLASSFICATION BASE ON DECISION TREE
 %
 %
@@ -61,6 +62,9 @@ SemanticMetaData = MetaData \bmod 7
 Decision tree modeling predicts effects $7$ is larger enough to separate malware file's meta-data value into classes. Additionally, $7$ is a prime number so that it is better to divide malware file's meta-data value into $7$ classes than another number. For example, The \emph{MajorLinkerVersion} field in PE file has a list of values as: $0x00003000$, $0x00001000$, and $0x00006000$. By the above equation, the semantic value of these value is as follows: 3,1,6. However, if the system use $8$, the semantic value of these value are as follows: 0. In conclusion, $7$ is good choice to separate malware file's meta-data value.
 
 \subsection{Create training data}
+
+In decision tree technique, training data comes in records of the form $(x,Y) = (x_1, x_2, x_3, ..., x_k, Y)$. The malware file's meta-data are as follows: $x_1, x_2,\.\.\., x_k$. Malware family name is $Y$.
+
 Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information. 
 Figure \ref{fig:clustering} indicates http post technique to automatically get name from virus total service and cluster malware into malware families which given in Figure \ref{fig:familymalware}.
 
@@ -87,7 +91,7 @@ To make malware classification rapid and correct, decision tree algorithm is uti
 
 Malware' meta-data are known as input data for each decision tree, and the decision tree determines whether the malware is of worm autorun family or not. If the input malware belongs to worm autorun, malware classification shall detect which the family that malware is, otherwise it moves to the next decision tree. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics. The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. For example, this is a list of meta-data created :1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3, 818e. This is value before being computed :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e. 
 The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
-The decision tree is given as in Figure \ref{fig:decisiontreeworm}. When PE header's meta-data of malware is inputted into the worn autorun decision tree for determining unknown malware. Then, it decides whether it belongs to worm auto run family or not.\\
+The decision tree is given as in Figure \ref{fig:decisiontreeworm}. When PE header's meta-data of malware is inputted into the worn autorun decision tree for determining unknown malware. Then, it decides whether it belongs to worm auto run family or not.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/classification.jpg}
