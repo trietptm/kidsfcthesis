@@ -63,9 +63,10 @@ Decision tree modeling predicts effects $7$ is larger enough to separate malware
 
 \subsection{Create training data}
 
-In decision tree technique, training data comes in records of the form $(x,Y) = (x_1, x_2, x_3, ..., x_k, Y)$. The malware file's meta-data are as follows: $x_1, x_2,\.\.\., x_k$. Malware family name is $Y$.
+In this system use decision tree technique. The attributes of decision tree described in previous subsection. We mentions the method to identify malware family name based on malware name provided by anti-virus vendors.
 
-Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information. 
+Virustotal is a service that analyzes malware and facilitates quick collection of viruses, worms, trojans, and all kinds of malware are detected by antivirus vendor such as Norton and Kaspersky \cite{virustotal}. This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information.
+
 Figure \ref{fig:clustering} indicates http post technique to automatically get name from virus total service and cluster malware into malware families which given in Figure \ref{fig:familymalware}.
 
 Malware families in this classification system are as follows: Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, and W32.Mota. 
