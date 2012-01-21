@@ -51,10 +51,39 @@ The flow of data is shown in the Figure \ref{fig:system_architec}. At first, bin
 %
 \section{Classification based on machine learning technique} 
 \subsection{Meta-data}
-Meta-data is simply data about data. The malware file's meta-datas are all simply information about malware file. PE header includes meta-data of MS-DOS section; COFF file header; Optional header; Section header; and other types of data in sections include API import and export table. Meta-datas are many data about malware. The classification system based on can identify malware changed malware signature and syntax by using code reordering, code rewriting, and instruction insertion. Additionally, malware's meta-data can be easy received. 
-Therefore, in order to create a fast and accuracy malware classification system, the system only uses PE header's meta-data to classify malware.
- 
-There is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are separated  to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. In this system, the meta-data of PE header file is separated into $7$ class by this calculation:
+
+Meta-data is simply data about data. The malware file's meta-datas are all simply information about malware file. PE header includes meta-data of MS-DOS section; COFF file header; Optional header; Section header; and other types of data in sections include API import and export table. Meta-datas are many data about malware. The classification system based on can identify malware changed malware signature and syntax by using code reordering, code rewriting, and instruction insertion. Additionally, malware's meta-data can be easy received. Therefore, in order to create a fast and accuracy malware classification system, PE header's meta-data is good choice to classification malware system. 
+
+Malware file's meta-data are as shown in Table \ref{table:metadata}:
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l |}
+     \hline
+    Meta-data classes & fields \\
+  PE header & Magic, MajorLinkerVersion, SizeOfCode,\\
+  & SizeOfInitializedData, \\
+ & SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase,... \\ 
+ \hline
+	Dll &   wininet1dll, ole32dll, user321dll, gdi32dll,\\ 
+	 & advapi321dll, crtdlldll, ntdlldll, shell32dll,...\\ 
+	 \hline
+	Session &  UPX0, UPX1, UPX2, text, data, rdata, rsrc, bss, \\
+ & idata, rsrc1, aspack, packed, q5p6, \\
+ & q1rk2j, 4895f, t623ai, weitl, edata, ndata,.. \\ 
+ \hline
+	API &  WritePrivateProfileStringA, \\
+& GetPrivateProfileStringA, WriteFile, ReadFile, MulDiv,\\
+& FindNextFileA, FindFirstFileA, DeleteFileA, CopyFileA,...\\  
+ \hline
+    \end{tabular}
+	\end{center}
+     \caption{The data table.}
+    \label{table:metadata}
+\end{table}
+
+At first, there is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are separated  to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. 
+
+In this system, the meta-data of PE header file is separated into $7$ class by this calculation:
 \begin{equation}
 SemanticMetaData = MetaData \bmod 7
 \end{equation} 
@@ -63,7 +92,7 @@ Decision tree modeling predicts effects $7$ is larger enough to separate malware
 
 \subsection{Create training data}
 
-In this system use decision tree technique. The attributes of decision tree described in previous subsection. Then, we mentions the method of identifying malware family name based on malware name provided by anti-virus vendors.
+In this system use decision tree technique. The attributes of decision tree described in previous subsection. In here, we mentions the method of identifying malware family name based on malware name provided by anti-virus vendors.
 
 This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information.
 
@@ -88,8 +117,17 @@ The disadvantage of using Virustotal to identify malware's families that a uniqu
 \end{figure}
 
 To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. For example, based on training data from clustering part, six decision trees are created. The worm autorun decision tree is indicated in Figure \ref{fig:classificationdecision}.
-
-Malware' meta-data are known as input data for each decision tree, and the decision tree determines whether the malware is of worm autorun family or not. If the input malware belongs to worm autorun, malware classification shall detect which the family that malware is, otherwise it moves to the next decision tree. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics. The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. For example, this is a list of meta-data created :1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3, 818e. This is value before being computed :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e. 
+We use decision tree 1.5 library, for implementing malware classification system. 
+\begin{verbatim}
+   dt = DecisionTree( training_datafile = "training.dat", debug1 = 1 )
+        dt.get_training_data()
+        dt.show_training_data()
+        root_node = dt.construct_decision_tree_classifier()
+        root_node.display_decision_tree("   ")
+\end{verbatim}
+ 
+Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, .... The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. For example, this is a list of meta-data created: 2, 0, 6, 3, 1, 2, 1, 6, 6, 4, 4, 0, 0, 0, 4, 0, 0, 1, 6, 0, 2, 0, 5, 3, 5, 6, 0, 3, 2, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,..
+ 
 The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
 The decision tree is given as in Figure \ref{fig:decisiontreeworm}. When PE header's meta-data of malware is inputted into the worn autorun decision tree for determining unknown malware. Then, it decides whether it belongs to worm auto run family or not.
 \begin{figure}[h!]
