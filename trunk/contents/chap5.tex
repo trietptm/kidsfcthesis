@@ -109,12 +109,6 @@ The disadvantage of using Virustotal to identify malware's families that a uniqu
 \end{figure}
 
 \subsection{Classification}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1\textwidth]{graph/classificationdecision.jpg}
-\caption{Worm autorun decision tree.}
-\label{fig:classificationdecision}
-\end{figure}
 
 To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. For example, based on training data from clustering part, six decision trees are created. The worm autorun decision tree is indicated in Figure \ref{fig:classificationdecision}.
 We use decision tree 1.5 library, for implementing malware classification system. 
@@ -130,15 +124,3 @@ Malware' meta-data are known as input data for each decision tree, and the decis
  
 The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
 The decision tree is given as in Figure \ref{fig:decisiontreeworm}. When PE header's meta-data of malware is inputted into the worn autorun decision tree for determining unknown malware. Then, it decides whether it belongs to worm auto run family or not.
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1\textwidth]{graph/classification.jpg}
-\caption{Malware classification system.}
-\label{fig:classification}
-\end{figure}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1\textwidth]{graph/decisiontreeworm.jpg}
-\caption{Worm autorun decision tree.}
-\label{fig:decisiontreeworm}
-\end{figure}

@@ -2,17 +2,36 @@
 
 
 \section{Accuracy evaluation}
-In 4436 malwares obtained, 4181 of them are to make a decision trees. Then, 100 remaining malwares meta-data are kept to test experimental result the system.
+In 4436 malwares obtained, 4181 of them are to construct a decision trees. The number of each malware families is shown in Table \ref{table:trainingdata}.Then, 255 remaining malwares meta-data are kept to test experimental result the system.
 
-In the decision tree order, 100 malwares are taken to check the experimental result of system, and Table \ref{fig:experimentalresult} reveals that result. Some of data in axis show these total number of malware in that family, and that number is separated into groups that these malwares has been classified by the system. For example, there are four malwares in Win32/Virut family, and three of them are successfully sorted into Win32/Virut family and, while one malware is in other family. Therefore, the system recognizes the trojan agent family with 75 \% of accuracy.\\
+\begin{table}
+  \begin{center}
+    \begin{tabular}{ | l | l |}
+     \hline
+    Malware & Number\\ \hline
+    Virut & 2243\\ \hline
+	IRCbot & 1169\\ \hline
+	Gaobot  & 265\\ \hline
+	Autorun & 195\\ \hline
+	Downadup &  103\\ \hline
+	Mota & 79\\ \hline
+	Sality  & 66  \\ \hline
+	WaledacMota & 61\\ \hline
+    \end{tabular}
+	\end{center}
+     \caption{Training data.}
+    \label{table:trainingdata}
+\end{table}
+In the decision tree, 255 malwares are taken to check the experimental result of system, and Table \ref{table:experimentalresult} reveals that result. Some of data in axis show these total number of malware in that family, and that number is separated into groups that these malwares has been classified by the system. For example, there are four malwares in Win32/Virut family, and three of them are successfully sorted into Win32/Virut family and, while one malware is in other family. Therefore, the system recognizes the trojan agent family with 75 \% of accuracy.\\
 \\
+\begin{table}
 
-\begin{figure}[h!]
+
   \begin{center}
     \begin{tabular}{ | l | l | l | l | l | l | l | l | l | l |}
      \hline
     Malware & Virut & Autorun & IRCbot & Gaobot & Waledac & Downadup & Sality & Mota & Accuracy\\ \hline
-    Virut & ? & ? & ? & ? & ? & ? & ? & 75\% \\ \hline
+    Virut & 55 & ? & ? & ? & ? & ? & ? & 75\% \\ \hline
 	Autorun & 0 & 0 & 0 & ? & ? & ? & ? & 50\% \\ \hline
 	IRCbot & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 66\% \\ \hline
 	Gaobot & 1 & 0 & 0 & 2 & 8 & 0 & 3 & 53\% \\ \hline
@@ -24,8 +43,9 @@ In the decision tree order, 100 malwares are taken to check the experimental res
     \end{tabular}
 	\end{center}
      \caption{Experimental result}
-    \label{fig:experimentalresult}
-\end{figure} 
+    \label{table:experimentalresult}
+
+\end{table}
 
 The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
 
