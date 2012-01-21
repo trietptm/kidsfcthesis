@@ -23,7 +23,7 @@ At present, malware is implemented with avoidance technique in order to invalida
  
 Code obfuscation changes the form of a malware instance to other form in order to invalidate signature based on detection technique; it consists of polymorphism and metamorphism \cite{blackhat1}. Polymorphic technique modifies the representation of malware. Virus, worm, and other self-propagating software are often applied polymorphic technique such as encryption, data appending, and data pre-pending.  Metamorphic malware automatically recodes itself when it distributed or executed\cite{blackhat1}. Some simple metamorphic techniques are adding and varying lengths of NOP instructions, adding useless instruction, and looping the code segment. Advantage metamorphism techniques consist of function reordering, program flow modification, and static structure modification.
 
-Packing malware can compress the Win32 portable execution file by several tools such as UPX, Winpack, and ExeCryptor. According to a study carried out by Panda Research, $78$\% of new malware used some kinds of file packing to evade detection. PE-packer is designed to reduce the size of malware. The size of packed malware is small but gets bigger when running in the system\cite{packing}. When uncompressed in the memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make malware analysis harder.
+Packing malware can compress the Win32 portable execution file by several tools such as UPX, Winpack, and ExeCryptor. According to a study carried out by Panda Research, $78$\% of new malware used some kinds of file packing to evade detection. PE-packer is designed to reduce the size of malware. The size of packed malware is small but it gets bigger when running in the system\cite{packing}. When uncompressed in the memory, packed malware is normally executed. UPX and some PE-packer compress malware binary files and make malware analysis harder.
 
 For the reason that modern malware is implemented with avoidance technique, detect method by the use of static signatures is criticized for being ineffective.   
 \section{Malware analysis technique}
@@ -48,7 +48,7 @@ However, there are some disadvantage of dynamic malware analysis technique. At f
 
 Static malware analysis is a technique that identifies malware program without executing it. With the static malware analysis technique, researcher performs reverse engineering by using disassemble tools, decompile tools, source code analyzer tools such as IDA pro and Ollydbg in order to understand malware by seeing the structure of malware. Static malware analysis has an advantage that it can completely discover the purpose and functionality of malware. However, research needs time to understand the malware functionality by analysing malware structure.
 
-In addition, most modern malwares use packer to modify itself. Packer is a program that modify other program files to compress their content. When a packer compress, encrypts, otherwise modifies an executable program, the program looks much different before it was packed. For analysing malware by Ollydbg or IDA pro, malware must be unpacked. PEid is a program that can find the signature of a known compiler or packer. Figure \ref{fig:PEid} gives PEiD is applied to identify identifies the compiler and packer used by the malware author.
+In addition, most modern malwares use packer to modify itself. Packer is a program that modify other program files to compress their content. When a packer compress, encrypts, or modifies an executable program, the program looks much different. For analysing malware by Ollydbg or IDA pro, malware must be unpacked. PEid is a program that can find the signature of a known compiler or packer. Figure \ref{fig:PEid} shows that PEiD is applied to identify identifies the compiler and packer used by the malware author.
 
 \begin{figure}[h!]
 \centering
@@ -66,7 +66,7 @@ Ollydbg is a debugger that shows the assembly instruction of a program as they e
 \label{fig:OllyDbg}
 \end{figure}
 
-IDA pro is a disassembly tool used by many researchers in different areas of reverse engineering. In addition to the disassembly listing, IDA pro also provides control-flow graphs. Figure \ref{fig:IDApro} shows a control-flow graph provided by IDA pro.
+IDA pro is a disassembly tool used by many researchers in different areas or reverse engineering. In addition to the disassembly listing, IDA pro also provides control-flow graphs. Figure \ref{fig:IDApro} shows a control-flow graph provided by IDA pro.
 
 \begin{figure}[h!]
 \centering
@@ -78,23 +78,23 @@ IDA pro is a disassembly tool used by many researchers in different areas of rev
 
 \section{Malware categories}
 
-In general, malware is classified into a few categories or types based on behaviors, method of infection, and the resulting propagation of malware. For example, there are some malware categories: virus, trojan, worm, spyware, and rookit. The categories have specific types of malware threats:
+In general, malware is classified into a few categories or types based on behaviors, method of infection, and the resulting propagation of malware. For example, there are some malware categories: virus, trojan, worm, spyware, and rookit. Each category have specific types of malware threats:
 
 \begin{itemize}
-\item Virus :"Software which infects other application and use them as a spreading medium"\cite{BlackHat}.
-\item Trojan :"A malicious application which present itself as something else"\cite{BlackHat}.
-\item Worm :"Code with ability to spread from computer to computer by means of different network protocols"\cite{BlackHat}.
-\item Spyware :"Application aiming to havest personal information"\cite{BlackHat}.
-\item Rookit :"Hidden tools providing stealth services to its writer"\cite{BlackHat}.
+\item Virus :"Software which infects other application and use them as a spreading medium"\cite{blackhat1}.
+\item Trojan :"A malicious application which present itself as something else"\cite{blackhat1}.
+\item Worm :"Code with ability to spread from computer to computer by means of different network protocols"\cite{blackhat1}.
+\item Spyware :"Application aiming to havest personal information"\cite{blackhat1}.
+\item Rookit :"Hidden tools providing stealth services to its writer"\cite{blackhat1}.
 \end{itemize}
 
 However, the differences between the categories are a bit fuzzy, and the classes are obviously not exclusive. In addition, depending on purpose of virus industry, a unique malware can belong to rookit, virus, or spyware. The detail of malware categories is presented in the next section. 
 \subsection{Use virus total to detect the name of categories.}
 
-In this thesis, MD5 hash is used to detect malware name provided by many anti-virus vendor. An MD5 hash is generated by MD5 Message-Digest Algorithm, is a widely used cryptographic hash function that produces a 128-bit (16-byte) hash value. An MD5 hash is typically expressed as a 32-digit hexadecimal number, and MD5 is not collision resistant\cite{wiki1}.
+In this thesis, MD5 hash is used to detect malware name provided by many anti-virus vendor. An MD5 hash is generated by MD5 Message-Digest Algorithm, a widely used cryptographic hash function that produces a 128-bit (16-byte) hash value. An MD5 hash is typically expressed as a 32-digit hexadecimal number, and MD5 is not collision resistant\cite{wiki1}.
 
 \subsection{Using virus total to getting vendor name}
-In this paper, MD5 hash of malware is used to search the name of malware by virus total. Virustotal is a web service that analyzes malware files and facilitates quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines. Malware's name is provided by various anti-virus vendor, but there are many names for unique malware. The Figure \ref{fig:virustotal_listname} reveals malware name detected by antivirus engines. 
+In this paper, MD5 hash of malware is used to search the name of malware by virus total. Virustotal is a web service that analyzes malware files and facilitates in order to quick detect of viruses, worms, trojans, and all kinds of malware provided by antivirus engines. Malware's name is provided by various anti-virus vendor, but there are many names for unique malware. The Figure \ref{fig:virustotal_listname} reveals malware name detected by antivirus engines. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{graph/virustotal_listname.png}
@@ -102,8 +102,8 @@ In this paper, MD5 hash of malware is used to search the name of malware by viru
 \label{fig:virustotal_listname}
 \end{figure}
 \section{Problems of malware name} 
-As the malware name detected by anti-virus engines is given in Figure \ref{fig:virustotal_listname}, unique malware is not classified into unique name. For each anti-virus vendor, the name of malware detected is different to the other anti-virus vendor. The classification of each anti-virus engine is unlike others. Therefore, malware detected by anti-virus engines cannot provide meaningful characterization of malware for virus researcher. In order to overcome this problem, this paper proposed to classify the malware into families based on malware specific target and its operation behavior. 
-As a result of malware name detected by anti-virus vendor was presented above, the new malware families are required for detect meaningful characterization of malware. 
+As the malware name detected by anti-virus engines given in Figure \ref{fig:virustotal_listname}, unique malware is not classified into unique name. For each anti-virus vendor, the name of the malware detected different to the other anti-virus vendor. The classification of each anti-virus engine is unlike others. Therefore, malware detected by anti-virus engines cannot provide meaningful characterization of malware for virus researcher. In order to overcome this problem, this paper is proposed to classify the malware into families based on specific target and its operation behavior. 
+As a result, the new malware families are required for detect meaningful characterization of malware. 
 \section{Malware families are used in this paper} 
 This paper uses malware families which are reported by Information-technology Promotion Agency \cite{ipa}. The table indicates malware families used in this paper such as Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, and W32.Mota.
 
@@ -116,12 +116,12 @@ Win32/Virut & "Win32/Virut is a family of file infecting viruses that target and
 Win32/Autorun & "Win32/Autorun is a family of worms that spreads by copying itself to the mapped drives of an infected computer. The mapped drives may include network or removable drives." \cite{autorun}\\\hline
 Win32/IRCbot & "Win32/IRCbot is a large family of backdoor Trojans that targets computers running Microsoft Windows. The Trojan drops other malicious software and opens a backdoor on the infected computer to connect to IRC servers. The Trojan can maintain multiple IRC server connections simultaneously to receive commands from attackers." \cite{ircbot}\\ \hline
 Win32/Gaobot & "The Win32/Gaobot worm family spreads using different methods, depending on the variant. Some variants spread to machines with weak passwords. Others exploit vulnerabilities to infect machines. Once a machine is infected, the worm connects to an IRC server to receive commands." \cite{gaobot}\\ \hline
-Win32/Waledac & "Win32/Waledac is a trojan that is used to send spam. It also has the ability to download and execute arbitrary files, harvest email addresses from the local machine, perform denial of service attacks, proxy network traffic and sniff passwords." \cite{walemac}\\ \hline
+Win32/Waledac & "Win32/Waledac is a trojan that is used to send spam. It also has the ability to download and execute arbitrary files, harvest email addresses from the local machine, perform denial of service attacks, proxy network traffic and sniff passwords." \cite{waledac}\\ \hline
 Win32/Downadup & "Win32/Downadup attempts to spread to network shares by brute-forcing commonly used network passwords and by copying itself to removable drives." \cite{downadup}\\ \hline 
 Win32/Sality & "Virus:Win32/Sality is a family of polymorphic file infectors that target Windows executable files with the extensions .SCR or .EXE. They may execute a damaging payload that deletes files with certain extensions and terminates security-related processes and services.\\ \hline 
 W32.Mota & W32.Mota is a worm that propagates by sending itself to email addresses gathered from the computer." \cite{mota}\\ \hline 
 \end{tabular}
-\caption{Malware}
+\caption{Malware families}
 \label{tab:malwarefamilies}
 \end{table}
 \end{center}

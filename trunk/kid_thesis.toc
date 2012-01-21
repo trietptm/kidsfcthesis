@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.6}Malware families are used in this paper}{10}{section.2.6}
 \contentsline {chapter}{\numberline {3}Related research}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Flow graph}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Optimizing decision tree in malware classification system by using Genetic Algorithm}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Optimizing decision tree in malware classification system using Genetic Algorithm}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Conclustion}{14}{section.3.3}
 \contentsline {chapter}{\numberline {4}Classification based on malware's meta-data using decision tree approach}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}PE file format\cite {peheaderci}}{15}{section.4.1}
@@ -37,7 +37,8 @@
 \contentsline {chapter}{\numberline {6}Evaluation}{30}{chapter.6}
 \contentsline {section}{\numberline {6.1}Accuracy evaluation}{30}{section.6.1}
 \contentsline {section}{\numberline {6.2}Classification efficiency}{32}{section.6.2}
-\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future work}{33}{section.7.2}
+\contentsline {section}{\numberline {6.3}Discussion}{32}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusion}{34}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{34}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future work}{34}{section.7.2}
 \contentsline {chapter}{References}{ii}{section*.4}

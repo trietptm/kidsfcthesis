@@ -42,8 +42,10 @@ Techniques}. Informatica 31, 2007.
   Malware Protection Center.\emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=\\Win32\%2fSality}. 01 Jan 2012.
 \bibitem{mota}
   Symantec.\emph{http://www.symantec.com/security\_response/writeup.jsp?\\docid=2004070412024899}. 01 Jan 2012.
+\bibitem{downadup}
+  Symantec.\emph{http://www.symantec.com/security\_response/writeup.jsp?\\docid=2008112203240899}. 01 Jan 2012.
 \bibitem{kaspersky1}
-  \emph{http://news.softpedia.com/news/Kaspersky-Report-161-Million-Network-Attacks-Blocked-232812.shtml}. 14 December 2011.
+  \emph{http://news.softpedia.com/news/Kaspersky-Report-161-Million\\-Network-Attacks-Blocked-232812.shtml}. 14 December 2011.
 \bibitem{pe1}
   \emph{http://win32assembly.online.fr/pe-tut1.html}. 14 December 2011.
 \bibitem{wiki1}

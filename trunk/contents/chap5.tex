@@ -96,7 +96,7 @@ In this system use decision tree technique. The attributes of decision tree desc
 
 This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information.
 
-Figure \ref{fig:clustering} indicates HTTP post technique to automatically get name from virus total service and cluster malware into malware families which given in Figure \ref{fig:familymalware}.
+Figure \ref{fig:clustering} indicates HTTP post technique to automatically get name from virus total service and cluster malware into malware families which given in chapter \ref{chap:2}.
 
 Malware families in this classification system are as follows: Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, and W32.Mota. 
 
@@ -110,7 +110,8 @@ The disadvantage of using Virustotal to identify malware's families that a uniqu
 
 \subsection{Classification}
 
-To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. For example, based on training data from clustering part, six decision trees are created. The worm autorun decision tree is indicated in Figure \ref{fig:classificationdecision}.
+To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. For example, based on training data from clustering part, six decision trees are created.
+
 We use decision tree 1.5 library, for implementing malware classification system. 
 \begin{verbatim}
    dt = DecisionTree( training_datafile = "training.dat", debug1 = 1 )
@@ -123,4 +124,3 @@ We use decision tree 1.5 library, for implementing malware classification system
 Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, .... The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. For example, this is a list of meta-data created: 2, 0, 6, 3, 1, 2, 1, 6, 6, 4, 4, 0, 0, 0, 4, 0, 0, 1, 6, 0, 2, 0, 5, 3, 5, 6, 0, 3, 2, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,..
  
 The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
-The decision tree is given as in Figure \ref{fig:decisiontreeworm}. When PE header's meta-data of malware is inputted into the worn autorun decision tree for determining unknown malware. Then, it decides whether it belongs to worm auto run family or not.
