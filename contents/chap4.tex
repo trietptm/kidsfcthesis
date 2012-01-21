@@ -7,7 +7,7 @@ This chapter describes Win32 executive files structure, known as PE files struct
 \section{PE file format\cite{peheaderci}}
 \subsection{The PE File Format}
 
-The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. As shown in Figure \ref{fig:pefiles} PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
+The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles}. PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/pefiles.png}
@@ -19,13 +19,13 @@ The PE file format starts with DOS MZ header. The first two bytes - "MZ" of the 
 
 The following part is PE header. The fields of this structure contain only the most basic information about the file such as the locations and sizes of the code and the data areas. These data structures of PE header will be explained shortly.
 
-Following the PE header is the session table. The section table is an array of IMAGE\_SECTION\_HEADERs structures. An IMAGE\_SECTION\_HEADER provides information about its associated section such as location, length, and characteristics. The number of elements in this array is given in the PE header, known as NumberOfSections field. At a minimum, there are commonly at least two sections in a PE file: code and data. Figure  shows a section table for a typical PE file.
+Following the PE header is the session table. The section table is an array of IMAGE\_SECTION\_HEADERs structures. An IMAGE\_SECTION\_HEADER provides information about its associated section such as location, length, and characteristics. The number of elements in this array is given in the PE header, known as NumberOfSections field. At a minimum, there are commonly at least two sections in a PE file: code and data. Figure \ref{fig:pefiles1} shows a section table for a typical PE file.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{graph/dosHeaderStructure.png}
 \caption{A section table for a typical PE file.}
-\label{fig:pefiles}
+\label{fig:pefiles1}
 \end{figure}
 
 That is all about the physical layout of the PE file format. The major steps in loading a PE file into memory is described as follow:
@@ -168,7 +168,7 @@ Decision tree is a machine learning technique for building knowledge-based syste
     Condition & Class & Attribute 1 &  Attribute \\ \hline
     1 & A & 0 & 0 & ... \\ 
 	2 & B & 1 & 0 & ... \\ 
-	3 & B & 1 & 1 & ... \\ 
+	3 & C & 1 & 1 & ... \\ 
 	... & ... & ... & ... & ... \\ 
 
 
@@ -196,9 +196,11 @@ The dependent variable, $Y$ which is the target variable is analysed to understa
 
 To make malware classification rapid and correct, decision tree algorithm is used in malware classification system.
 
-As the previous section, data comes in records of the form:$(x,Y) = (x_1, x_2, x_3, ..., x_k, Y)$ 
+As the previous section, data comes in records of the form:\begin{equation}
+    (x,Y) = (x_1, x_2, x_3, ..., x_k, Y) 
+\end{equation}
 
-In malware classification system, Y is malware families name, $x_{1}, x_{2},\.\.\.,x_{3}$ is malware file's meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required for detect meaningful characterization of malware. This classification system use famous malware families reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
+In malware classification system, Y is malware families name, $x_{1}, x_{2}$,...,$x_{3}$ is malware file's meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required for detect meaningful characterization of malware. This classification system use famous malware families reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
 \section{Conclusion}
 In this chapter, our approach is proposed with the technique used in malware classification system.
 In the next chapter, propose the system design and implementation will be proposed.
