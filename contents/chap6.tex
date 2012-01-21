@@ -68,12 +68,27 @@ The accuracy of this classification system:
 Accuracy=\frac{98+95+9+2}{355}=57\%
 \end{equation}
 
-The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
+The other classification is often classify malware into benign and malicious software. The system implemented in this thesis classify malware into the malware family. Therefore, system The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
 
 \section{Classification efficiency}
-Figure shows comparison between steps to detect semantic malware characterization using Virus total with the system.
+The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
 
-The figure 1 shows classifying time in the system. The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
+To evaluate the speed of the malware classification system, 70 malwares were evaluate. The classification efficiency of the system. 70 sample id required 0.37 second. The median time to perform classification was as follows: 
+\begin{equation}
+MedianTime=\frac{0.37}{70}\qquad0.005 s
+\end{equation}
 
-The result was shown in figure \ref{fig:evaluation1}. The median time to perform classification was 0.25 seconds. The slowest sample that is required 5.12 seconds. Only 6 samples required more than 2 seconds. Processing time of followgraph approach was shown in figure \ref{fig:evaluation2}.
+The median time compared to the median time of folowgraphs appoach introduced in chapter \ref{chap:3}. The evaluation of  folowgraphs appoach was performed on a 2.4 GHz Quad Core Desktop PC with 4G of memory, running 32-bit Windows Vista Home Premium with Service Pack 1\cite{silvio}. The result was shown in figure \ref{fig:evaluation1}. The median time to perform classification was 0.25 seconds. The slowest sample that is required 5.12 seconds. Only 6 samples required more than 2 seconds. Processing time of followgraph approach was shown in figure \ref{fig:evaluation2}.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]
+{graph/evaluation1.png}
+\caption{The system architecture.}
+\label{fig:evaluation1}
+\end{figure}
 
+According to the median time to perform classification, the system implemented by our approach is faster than the malware classification based on the followgraphs approach.
+\section{Discussion}
+Obviously, in experiment we obtained 4181 malware samples for constructing decision tree and 255 malware samples for evaluating system. The accuracy of our malware classification system is 57\%. However, the accuracy of Mota, Waledac, Sality samples are too low because the number of those samples is less than Virut, or IRC bot samples. There are 2243 Virut, and 1169 IRC bot samples. Otherwise, there is only 79 Mota, 61 Waledac, 66 Sality samples.
+
+Moreover, all of Gaobot samples is classified into IRC bot because the Autorun file is nearly similar to IRC bot.
