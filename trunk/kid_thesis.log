@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  22 JAN 2012 01:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 08:07
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -737,23 +737,45 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
 
 ] [31]
 
-LaTeX Warning: Reference `fig:evaluation2' on page 32 undefined on input line 8
-1.
+LaTeX Warning: Reference `fig:evaluation' on page 32 undefined on input line 77
+.
 
-<graph/evaluation1.png, id=398, 328.22626pt x 196.48407pt>
+
+LaTeX Warning: Reference `fig:evaluation' on page 32 undefined on input line 78
+.
+
+<graph/evaluation.png, id=395, 636.87938pt x 369.63094pt>
+File: graph/evaluation.png Graphic file (type png)
+
+<use graph/evaluation.png>
+Package pdftex.def Info: graph/evaluation.png used on input line 82.
+(pdftex.def)             Requested size: 469.47046pt x 272.4679pt.
+
+
+LaTeX Warning: Reference `fig:evaluation2' on page 32 undefined on input line 8
+6.
+
+<graph/evaluation1.png, id=399, 328.22626pt x 196.48407pt>
 File: graph/evaluation1.png Graphic file (type png)
 
 <use graph/evaluation1.png>
-Package pdftex.def Info: graph/evaluation1.png used on input line 85.
+Package pdftex.def Info: graph/evaluation1.png used on input line 90.
 (pdftex.def)             Requested size: 469.47046pt x 281.03903pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32]) (G:\kidsfcthesis\contents/chap7.tex [33 <G:/kidsfcthesis/graph/evaluation
-1.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32]
+
+LaTeX Warning: Text page 33 contains only floats.
+
+[33 <G:/kidsfcthesis/graph/evaluation.png> <G:/kidsfcthesis/graph/evaluation1.p
+ng>]) (G:\kidsfcthesis\contents/chap7.tex [34]
 Chapter 7.
-) [34
+) [35
 
 ] (G:\kidsfcthesis\contents/acknowledgement.tex) [1]
 (G:\kidsfcthesis\kid_thesis.bbl
@@ -842,10 +864,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9091 strings out of 494045
- 133037 string characters out of 3145960
+ 9098 strings out of 494045
+ 133169 string characters out of 3145960
  244628 words of memory out of 3000000
- 12078 multiletter control sequences out of 15000+200000
+ 12083 multiletter control sequences out of 15000+200000
  13089 words of font info for 48 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,10n,38p,1265b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -862,9 +884,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (44 pages, 1246917 bytes).
+Output written on kid_thesis.pdf (45 pages, 1253429 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
