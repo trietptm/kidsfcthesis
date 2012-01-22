@@ -73,17 +73,22 @@ The other classification is often classify malware into benign and malicious sof
 \section{Classification efficiency}
 The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
 
-To evaluate the speed of the malware classification system, 70 malwares were evaluate. The classification efficiency of the system. 70 sample id required 0.37 second. The median time to perform classification was as follows: 
-\begin{equation}
-MedianTime=\frac{0.37}{70}\qquad0.005 s
-\end{equation}
-
+To evaluate the speed of the malware classification system, 2999 malware samples were evaluate the classification efficiency of the system.
+Figure \ref{fig:evaluation} show the processing time of our approach. 1606 samples required approximately 0 seconds. 1392  required 0.01 second. Only one sample required 0.02 seconds. The median time samples to perform classification for each samples is approximately 0.05 seconds.
+\ref{fig:evaluation}.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]
+{graph/evaluation.png}
+\caption{Processing time of our approach.}
+\label{fig:evaluation}
+\end{figure}
 The median time compared to the median time of folowgraphs appoach introduced in chapter \ref{chap:3}. The evaluation of  folowgraphs appoach was performed on a 2.4 GHz Quad Core Desktop PC with 4G of memory, running 32-bit Windows Vista Home Premium with Service Pack 1\cite{silvio}. The result was shown in figure \ref{fig:evaluation1}. The median time to perform classification was 0.25 seconds. The slowest sample that is required 5.12 seconds. Only 6 samples required more than 2 seconds. Processing time of followgraph approach was shown in figure \ref{fig:evaluation2}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]
 {graph/evaluation1.png}
-\caption{The system architecture.}
+\caption{Processing time of followgraphs approach.}
 \label{fig:evaluation1}
 \end{figure}
 
