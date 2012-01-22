@@ -70,7 +70,7 @@ Accuracy=\frac{98+95+9+2}{355}=57\%
 
 The other classification is often classify malware into benign and malicious software. The system implemented in this thesis classify malware into the malware family. Therefore, system The system is useful to help virus researcher determine the malware family that unknown malware belongs to. The malware family contains Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, W32.Mota, known as famous malware family. Virus researchers who know the family of malware can easily find out some semantic similarities between malwares and shows their inner similarity in behavior and static malware characteristics.
 
-\section{Classification efficiency}
+\section{Efficiency  of classification}
 The evaluation was performed on a 2.4 HZ core i3 laptop with 4G memory, running in ubuntu 11.4. 	
 
 To evaluate the speed of the malware classification system, 2999 malware samples were evaluate the classification efficiency of the system.
@@ -94,6 +94,9 @@ The median time compared to the median time of folowgraphs appoach introduced in
 
 According to the median time to perform classification, the system implemented by our approach is faster than the malware classification based on the followgraphs approach.
 \section{Discussion}
+\subsubsection{•}
 Obviously, in experiment we obtained 4181 malware samples for constructing decision tree and 255 malware samples for evaluating system. The accuracy of our malware classification system is 57\%. However, the accuracy of Mota, Waledac, Sality samples are too low because the number of those samples is less than Virut, or IRC bot samples. There are 2243 Virut, and 1169 IRC bot samples. Otherwise, there is only 79 Mota, 61 Waledac, 66 Sality samples.
 
-Moreover, all of Gaobot samples is classified into IRC bot because the Autorun file is nearly similar to IRC bot.
+Moreover, all of Gaobot samples is classified into IRC bot because the Gaobot binary file is nearly similar to IRC bot.
+
+
