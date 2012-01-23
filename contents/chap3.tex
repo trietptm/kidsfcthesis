@@ -2,7 +2,7 @@
 %THE SYSTEM ARCHITECTURE
 %
 %
-This chapter presents the recent approach for automatically classifying malware into malware families. For the reason that the detection based on static signature is no longer effective in chapter \ref{chap:2}, at this time new malware classification method is required to detect malware using avoidance technique.
+This chapter presents the recent approach for automatically classifying malware into malware families. For the reason that the detection based on static signature is no longer effective in chapter \ref{chap:2}, new malware classification method is required to detect malware using avoidance technique.
 
 \section{Flow graph}
 Another approach is using emulator to automatically unpack the packing malware, then from reverse code produce flowgraph, flowgraph matching to perform classification\cite{silvio}. The system is created by the approach as the followings:
@@ -29,5 +29,5 @@ hash_map<MalwareClass*,int> _Dosclasses;
 
 \end{verbatim}
 Genetic algorithm is a method analogous to the process of natural evolution. Genetic algorithm is used to optimize decision tree for accurately classifying malware. Malware classification system, which is implemented by the combining generic algorithm with decision tree algorithm approach, is to classify malware into two classes: benign program and malicious program, not to detect semantic characterization of malware by classifying malware into families. Therefore, the combining generic algorithm with decision tree algorithm approach cannot be used to detect semantic characterization of malware.
-\section{Conclustion}
+\section{Conclusion}
 To achieve fast malware classification, two approaches described as above can not be used in the system. New approach for fast malware classification system will be introduced in the next chapter. 
