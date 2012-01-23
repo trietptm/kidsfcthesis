@@ -45,14 +45,14 @@ The system uses machine learning technique, named decision tree algorithm for ma
 \end{figure}
 
 A vast amount of malware need analyzing, and the system uses database to store malware file's meta-data, to easily control a large number of data and to share them in the internet among web browsers.
-The flow of data is shown in the Figure \ref{fig:system_architec}. At first, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for classifying malware. Finally, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
+The flow of data is shown in the Figure \ref{fig:system_architec}. At first, binary file meta-data are read, and all of the meta-data are input into database. In the second part, the system exports meta-data in database as the training data to create the decision tree for malware classifying. Finally, the decision tree algorithm created in the second step is utilized to class  unknown malware into the different malware families. 
 %CLASSFICATION BASE ON DECISION TREE
 %
 %
 \section{Classification based on machine learning technique} 
 \subsection{Meta-data}
 
-Meta-data is simply data about data. The malware file's meta-datas are all simply information about malware file. PE header includes meta-data of MS-DOS section; COFF file header; Optional header; Section header; and other types of data in sections include API import and export table. Meta-datas are many data about malware. The classification system based on can identify malware changed malware signature and syntax by using code reordering, code rewriting, and instruction insertion. Additionally, malware's meta-data can be easy received. Therefore, in order to create a fast and accuracy malware classification system, PE header's meta-data is good choice to classification malware system. 
+Meta-data is simply data about data. The malware file's meta-datas are all simply information about malware file. PE header includes: meta-data of MS-DOS section; COFF file header; Optional header; Section header; and other types of data in sections such as API import and export table. Meta-datas contain many data about malware. The malware classification system based on can identify malware changed on signature and syntax by using code reordering, code rewriting, and instruction insertion. Additionally, malware's meta-data can be easily received. Therefore, in order to create a fast and high accuracy malware classification system, PE header's meta-data is good choice to classification malware system. 
 
 Malware file's meta-data are as shown in Table \ref{table:metadata}:
 \begin{table}
@@ -89,11 +89,11 @@ In this system use decision tree technique. The attributes of decision tree desc
 
 This research applies virustotal service to take the name of malware provided by the vendors and uses it to cluster malware into malware families with semantic information.
 
-Figure \ref{fig:clustering} indicates HTTP post technique to automatically get name from virus total service and cluster malware into malware families which given in chapter \ref{chap:2}.
+Figure \ref{fig:clustering} indicates HTTP post technique to automatically get name from Virus total service and cluster malware into malware families which given in chapter \ref{chap:2}.
 
 Malware families in this classification system are as follows: Win32/Virut, Win32/Autorun, Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, Win32/Sality, and W32.Mota. 
 
-The disadvantage of using Virustotal to identify malware's families that a unique malware has many different names provided by many antis-virus vendors. Therefore, if unique malware has two or more families name provided by anti-virus vendor, unique malware will be classed into the most reported malware family.
+The disadvantage of using Virustotal to identify malware's families is that a unique malware has many different names provided by many antis-virus vendors. Therefore, if unique malware has two or more families name provided by anti-virus vendor, unique malware will be classed into the most reported malware family.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/clustering.jpg}
@@ -103,7 +103,7 @@ The disadvantage of using Virustotal to identify malware's families that a uniqu
 
 \subsection{Classification}
 
-To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. 
+To make malware classification rapid and correct, decision tree algorithm is utilized. Thus, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. 
 Decision tree 1.5 library is good choice for implementing malware classification system.  
 
 Here is sample code:
@@ -116,7 +116,7 @@ Here is sample code:
 \end{lstlisting}
 
  
-Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, and other fields. The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. With this approach, the list semantic value of meta-data of malware is generated. For example, this is list meta-data created:1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3. This is value before generating :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e.
+Malware' meta-data is used as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, and other fields. The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. With this approach, the list semantic value of meta-data of malware is generated. For example, this is list meta-data created:1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3. This is value before generating :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e.
  
 The decision tree exported by system is as the following code. Probabilities of each node is the probabilities of each families. The most probable family is the family of malware sample.
 

@@ -2,12 +2,12 @@
 %EXPERIMENTAL RESULTS AND ANALYSIS
 %
 %
-This chapter describes Win32 executive files structure, known as PE files structure, that is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, we will propose the classification approach based on malware's meta-data using decision tree technique. 
+This chapter describes Win32 executive files structure, known as PE files structure, which is used in classification system as malware meta-data. Afterwards, the machine learning technique called decision tree method is mentioned in classification malware system. Finally, we will propose the classification approach based on malware's meta-data using decision tree technique. 
 
 \section{PE file format\cite{peheaderci}}
 \subsection{The PE File Format}
 
-The Portable Executable (PE) file format has been designed for use by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles} . PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
+The Portable Executable (PE) file format has been designed to be used by all Win32 based system. The general layout of a PE file is given in Figure \ref{fig:pefiles} . PE header consists of four parts: a MS-DOS session including DosMZ header and Dos stub; PE header; a section table; and images pages consisting of several different regions such as .text session, and .data session.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{graph/pefiles.png}
@@ -28,7 +28,7 @@ Following the PE header is the session table. The section table is an array of I
 \label{fig:pefiles1}
 \end{figure}
 
-That is all about the physical layout of the PE file format. The major steps in loading a PE file into memory are described as follows:
+That is all about the physical layout of the PE file format. The major steps in loading a PE file into memory is described as follows:
 
 \begin{itemize}
 \item When the PE file is running, the PE loader examines the DOS MZ header for the offset of the PE header. If it is found, it would skip to the PE header.
@@ -79,7 +79,7 @@ The fields of this structure contain only the most basic information about the f
 \item PointerToSymbolTable: The file offset of the COFF symbol table. 
 \item NumberOfSymbols: The number of symbols in the COFF symbol table.
 \item SizeOfOptionalHeader: The size of an optional header that can follow this structure.
-\item Characteristics: The size of an optional header can follow this structure. If there are no relocations in this file, characteristics will be 0x0001. Otherwise, the file is an executable image, characteristics will be 0x0002.  If file is a dynamic-link library, not a program, characteristics will be 0x2000.
+\item Characteristics: The size of an optional header can follow this structure. If there are no relocations in this file, characteristics will be 0x0001. Otherwise, the file is an executable image, characteristics will be 0x0002.  If the file is a dynamic-link library, not a program, characteristics will be 0x2000.
 \end{itemize}
 
 Following the file header is the optional header which consists of three parts: COFF standard fields, Windows specific fields, and data directories. The first part includes the COFF standard field which contains the sizes of various parts of code, and the \emph{AddressOfEntryPoint} which indicates the location of the entry point of the application and the location of the end of the Import Address Table(IAT). Then, the second part contains the information of OS. Finally, the Data directories field contains the information of Session table.
@@ -158,10 +158,8 @@ The fields of Optional header are described as follow:
 
 \section{Decision tree\cite{decisiontree}}
 
-Decision tree is a machine learning technique for building knowledge-based systems by inductive inference from examples. Decision tree is to create a model that predicts the value of a target variable based on several input variables. An example is shown on the Figure \ref{fig:decisiontreesample} from the data Table \ref{table:decisiontreesampletable}. The decision tree is created the Table from Each interior node corresponds to one of the input variables. There are edges to children for each of the possible values of that input variable. Each leaf shows a value of the target variable.
+Decision tree is a machine learning technique for building knowledge-based systems by inductive inference from examples. Decision tree is to create a model that predicts the value of a target variable based on several input variables. An example is shown on the Figure \ref{fig:decisiontreesample} from the data Table \ref{table:decisiontreesampletable}.Each interior node corresponds to one of the input variables. There are edges to children for each of the possible values of that input variable. Each leaf shows a value of the target variable.
 \begin{table}
-
-
   \begin{center}
     \begin{tabular}{ | l | l | l | l | l }
      \hline
@@ -197,11 +195,12 @@ The dependent variable, $Y$ which is the target variable is analysed to understa
 
 To make malware classification rapid and correct, decision tree algorithm is used in malware classification system.
 
-As the previous section, data comes in records of the form:\begin{equation}
+As the previous section, data comes in records of the form:
+\begin{equation}
     (x,Y) = (x_1, x_2, x_3, ..., x_k, Y) 
 \end{equation}
 
-In malware classification system, Y is malware families name, $x_{1}, x_{2}$,...,$x_{3}$ is malware file's meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required for detect meaningful characterization of malware. This classification system use famous malware families reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
+In malware classification system, Y is malware families name, $x_{1}, x_{2}$,...,$x_{3}$ is malware file's meta-data. Malware name is provided by anti-virus engines that presented in chapter \ref{chap:2} cannot used in this system. The new malware families is required to detect meaningful characterization of malware. This classification system use famous malware families reported in Information technology agency such as netsky, mydoom, autorun, mytob, and other famous malware families. Therefore, when new malware is classified into famous malware families, researcher detect some meaningful characterize of malware, and reduce time for malware analysis. 
 \section{Conclusion}
 In this chapter, our approach is proposed with the technique used in malware classification system.
 In the next chapter, propose the system design and implementation will be proposed.
