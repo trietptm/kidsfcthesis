@@ -61,8 +61,8 @@ Malware file's meta-data are as shown in Table \ref{table:metadata}:
      \hline
     Meta-data classes & fields \\
   PE header & Magic, MajorLinkerVersion, SizeOfCode,\\
-  & SizeOfInitializedData, \\
- & SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase,... \\ 
+  & SizeOfInitializedData, SizeOfUninitializedData,  \\
+ & AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase,... \\ 
  \hline
 	Dll &   wininet1dll, ole32dll, user321dll, gdi32dll,\\ 
 	 & advapi321dll, crtdlldll, ntdlldll, shell32dll,...\\ 
@@ -103,23 +103,56 @@ The disadvantage of using Virustotal to identify malware's families that a uniqu
 
 \subsection{Classification}
 
-To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. For example, based on training data from clustering part, six decision trees are created.
+To make malware classification rapid and correct, decision tree algorithm is utilized. At that time, it is easy to update a new malware family, the classification uses decision tree algorithm to determine each malware family. 
+Decision tree 1.5 library is good choice for implementing malware classification system.  
 
-We use decision tree 1.5 library, for implementing malware classification system. 
-\begin{verbatim}
-   dt = DecisionTree( training_datafile = "training.dat", debug1 = 1 )
-        dt.get_training_data()
-        dt.show_training_data()
-        root_node = dt.construct_decision_tree_classifier()
-        root_node.display_decision_tree("   ")
-\end{verbatim}
+Here is sample code:
+\begin{lstlisting}[caption=Python Implementation of Decision tree 1.5, label=meinLabel]
+  dt = DecisionTree( training_datafile = "training.dat", debug1 = 1 )
+   dt.get_training_data()
+   dt.show_training_data()
+   root_node = 		    dt.construct_decision_tree_classifier()
+   root_node.display_decision_tree("   ")
+\end{lstlisting}
+
  
 Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, and other fields. The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. With this approach, the list semantic value of meta-data of malware is generated. For example, this is list meta-data created:1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3. This is value before generating :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e.
  
-The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
+The decision tree exported by system is as the following code. Probabilities of each node is the probabilities of each families. The most probable family is the family of malware sample.
+
+\begin{lstlisting}{Decision tree exported by system }{Decision tree exported by system}
+NODE 0:
+   Branch features and values to this node: []
+   Class probabilities at current node: [0.28916876574307304, 0.03853904282115869, 0.020151133501259445, 0.0619647355163728, 0.01057934508816121, 0.5531486146095718, 0.011083123425692695, 0.015365239294710327]
+   Entropy at current node: 1.76730915987
+   Best feature test at current node: 209
+NODE 1:
+   Branch features and values to this node: ['209=>0']
+   Class probabilities at current node: [0.38588640275387265, 0.04819277108433735, 0.0006884681583476765, 0.08296041308089501, 0.013769363166953529, 0.45197934595524963, 0.00963855421686747, 0.006884681583476764]
+   Entropy at current node: 1.56845724671
+   Best feature test at current node: 44
+NODE 2:
+   Branch features and values to this node: ['209=>0', '44=>0']
+   Class probabilities at current node: [0.4968425922724381, 0.054748822372797955, 0.0005797736588481511, 0.11087157799969649, 0.013693701656603949, 0.31032084114450614, 0.00944503996959897, 0.0034976509255101565]
+   Entropy at current node: 1.1010285852
+   Best feature test at current node: 32
+NODE 3:
+   Branch features and values to this node: ['209=>0', '44=>0', '32=>0']
+   Class probabilities at current node: [0.5693425835153504, 0.06312750788349168, 0.0006773557567694956, 0.12900589385502, 0.014474831409967637, 0.21330422996733156, 0.00852684536125038, 0.0015407522508188685]
+   Entropy at current node: 0.793704327232
+   Best feature test at current node: 208
+NODE 4:
+   Branch features and values to this node: ['209=>0', '44=>0', '32=>1']
+   Class probabilities at current node: [0.06609160326169744, 0.004967753320681031, 0.0, 0.0031284685758396417, 0.009052702284896878, 0.8867347206306493, 0.014900395603026747, 0.015124356323208915]
+   Entropy at current node: 0.793704327232
+   Best feature test at current node: 12
+.............
+.............
+\end{lstlisting}
+The virtualization decision tree is shown in Figure    \ref{fig:classificationsystem} . Each interior corresponds to one of the meta-data of new malware.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1\textwidth]{graph/clustering.jpg}
-\caption{Clustering method.}
-\label{fig:clustering}
+\includegraphics[width=1\textwidth]{graph/classificationsystem.png}
+\caption{The virtualization decision tree.}
+\label{fig:classificationsystem}
 \end{figure}

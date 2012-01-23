@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 08:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 11:26
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -481,7 +481,7 @@ l.39 \item C
 l.2 \chapter
             {Background}\label{chap:2} [3]
 Chapter 2.
-<graph/kapersky.jpg, id=193, 359.09157pt x 217.5628pt>
+<graph/kapersky.jpg, id=197, 359.09157pt x 217.5628pt>
 File: graph/kapersky.jpg Graphic file (type jpg)
 
 <use graph/kapersky.jpg>
@@ -504,7 +504,7 @@ l.23
                    \relax 
 l.27 
       [5 <G:/kidsfcthesis/graph/kapersky.jpg>]
-<graph/SysAnalyser.png, id=212, 478.03593pt x 261.97874pt>
+<graph/SysAnalyser.png, id=216, 478.03593pt x 261.97874pt>
 File: graph/SysAnalyser.png Graphic file (type png)
 
 <use graph/SysAnalyser.png>
@@ -516,26 +516,26 @@ been already used, duplicate ignored
                    \relax 
 l.46 
       [6 <G:/kidsfcthesis/graph/SysAnalyser.png>]
-<graph/PEid.jpg, id=218, 423.5825pt x 236.885pt>
+<graph/PEid.jpg, id=222, 423.5825pt x 236.885pt>
 File: graph/PEid.jpg Graphic file (type jpg)
  <use graph/PEid.jpg>
 Package pdftex.def Info: graph/PEid.jpg used on input line 55.
 (pdftex.def)             Requested size: 234.73523pt x 131.27393pt.
  [7 <G:/kidsfcthesis/graph/PEid.jpg>]
-<graph/OllyDbg.png, id=225, 724.20563pt x 462.22687pt>
+<graph/OllyDbg.png, id=229, 724.20563pt x 462.22687pt>
 File: graph/OllyDbg.png Graphic file (type png)
  <use graph/OllyDbg.png>
 Package pdftex.def Info: graph/OllyDbg.png used on input line 64.
 (pdftex.def)             Requested size: 234.73523pt x 149.81993pt.
 
-<graph/idapro.png, id=227, 607.51968pt x 374.14781pt>
+<graph/idapro.png, id=231, 607.51968pt x 374.14781pt>
 File: graph/idapro.png Graphic file (type png)
  <use graph/idapro.png>
 Package pdftex.def Info: graph/idapro.png used on input line 73.
 (pdftex.def)             Requested size: 234.73523pt x 144.56401pt.
 
 [8 <G:/kidsfcthesis/graph/OllyDbg.png> <G:/kidsfcthesis/graph/idapro.png>]
-<graph/virustotal_listname.png, id=239, 471.26062pt x 391.4625pt>
+<graph/virustotal_listname.png, id=243, 471.26062pt x 391.4625pt>
 File: graph/virustotal_listname.png Graphic file (type png)
 
 <use graph/virustotal_listname.png>
@@ -599,7 +599,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 7.
 
-<graph/pefiles.png, id=292, 438.8897pt x 267.24844pt>
+<graph/pefiles.png, id=296, 438.8897pt x 267.24844pt>
 File: graph/pefiles.png Graphic file (type png)
  <use graph/pefiles.png>
 Package pdftex.def Info: graph/pefiles.png used on input line 13.
@@ -616,7 +616,7 @@ Overfull \hbox (51.24pt too wide) in paragraph at lines 22--23
 on ta-ble is an ar-ray of IM-AGE[]SECTION[]HEADERs
  []
 
-<graph/dosHeaderStructure.png, id=298, 274.77657pt x 413.29407pt>
+<graph/dosHeaderStructure.png, id=302, 274.77657pt x 413.29407pt>
 File: graph/dosHeaderStructure.png Graphic file (type png)
 
 <use graph/dosHeaderStructure.png>
@@ -627,7 +627,7 @@ Package pdftex.def Info: graph/dosHeaderStructure.png used on input line 26.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <G:/kidsfcthesis/graph/pefiles.png>]
-<graph/pe1.png, id=303, 741.52031pt x 508.14844pt>
+<graph/pe1.png, id=307, 741.52031pt x 508.14844pt>
 File: graph/pe1.png Graphic file (type png)
  <use graph/pe1.png>
 Package pdftex.def Info: graph/pe1.png used on input line 41.
@@ -636,7 +636,7 @@ Package pdftex.def Info: graph/pe1.png used on input line 41.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/peheader1.jpg, id=304, 557.08125pt x 313.9228pt>
+<graph/peheader1.jpg, id=308, 557.08125pt x 313.9228pt>
 File: graph/peheader1.jpg Graphic file (type jpg)
 
 <use graph/peheader1.jpg>
@@ -678,7 +678,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 159.
 
-[22] <graph/decisiontreesample.png, id=333, 306.39468pt x 194.22563pt>
+[22] <graph/decisiontreesample.png, id=337, 306.39468pt x 194.22563pt>
 File: graph/decisiontreesample.png Graphic file (type png)
 
 <use graph/decisiontreesample.png>
@@ -687,7 +687,7 @@ Package pdftex.def Info: graph/decisiontreesample.png used on input line 183.
  [23 <G:/kidsfcthesis/graph/decisiontreesample.png>]) (G:\kidsfcthesis\contents
 /chap5.tex [24]
 Chapter 5.
-<graph/system_architec.jpg, id=350, 473.51906pt x 326.72063pt>
+<graph/system_architec.jpg, id=354, 473.51906pt x 326.72063pt>
 File: graph/system_architec.jpg Graphic file (type jpg)
 
 <use graph/system_architec.jpg>
@@ -699,52 +699,44 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25
 
-] [26 <G:/kidsfcthesis/graph/system_architec.jpg>]
-Overfull \hbox (64.70897pt too wide) in paragraph at lines 60--79
- [] 
- []
-
-[27]
-Overfull \hbox (6.01865pt too wide) in paragraph at lines 101--102
+] [26 <G:/kidsfcthesis/graph/system_architec.jpg>] [27]
+Overfull \hbox (6.01865pt too wide) in paragraph at lines 94--95
 \OT1/cmr/m/n/10.95 Win32/IRCbot, Win32/Gaobot, Win32/Waledac, Win32/Downadup, W
 in32/Sality, and W32.Mota. 
  []
 
-<graph/clustering.jpg, id=371, 743.77875pt x 228.855pt>
+<graph/clustering.jpg, id=375, 743.77875pt x 228.855pt>
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
-Package pdftex.def Info: graph/clustering.jpg used on input line 106.
+Package pdftex.def Info: graph/clustering.jpg used on input line 99.
 (pdftex.def)             Requested size: 469.47046pt x 144.45528pt.
+ [28 <G:/kidsfcthesis/graph/clustering.jpg>]
 
+Package Listings Warning: Text dropped after begin of listing on input line 123
+.
+
+[29] <graph/classificationsystem.png, id=397, 744.53156pt x 368.1253pt>
+File: graph/classificationsystem.png Graphic file (type png)
+
+<use graph/classificationsystem.png>
+Package pdftex.def Info: graph/classificationsystem.png used on input line 155.
+
+(pdftex.def)             Requested size: 469.47046pt x 232.13362pt.
+) (G:\kidsfcthesis\contents/chap6.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28]
-
-LaTeX Warning: Reference `fig:classification' on page 29 undefined on input lin
-e 126.
-
-) (G:\kidsfcthesis\contents/chap6.tex [29 <G:/kidsfcthesis/graph/clustering.jpg
->]
+[30] [31 <G:/kidsfcthesis/graph/classificationsystem.png>]
 Chapter 6.
 
 Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
  [] 
  []
 
-[30
+[32
 
-] [31]
-
-LaTeX Warning: Reference `fig:evaluation' on page 32 undefined on input line 77
-.
-
-
-LaTeX Warning: Reference `fig:evaluation' on page 32 undefined on input line 78
-.
-
-<graph/evaluation.png, id=395, 636.87938pt x 369.63094pt>
+] [33] <graph/evaluation.png, id=444, 636.87938pt x 369.63094pt>
 File: graph/evaluation.png Graphic file (type png)
 
 <use graph/evaluation.png>
@@ -752,10 +744,10 @@ Package pdftex.def Info: graph/evaluation.png used on input line 82.
 (pdftex.def)             Requested size: 469.47046pt x 272.4679pt.
 
 
-LaTeX Warning: Reference `fig:evaluation2' on page 32 undefined on input line 8
+LaTeX Warning: Reference `fig:evaluation2' on page 34 undefined on input line 8
 6.
 
-<graph/evaluation1.png, id=399, 328.22626pt x 196.48407pt>
+<graph/evaluation1.png, id=448, 328.22626pt x 196.48407pt>
 File: graph/evaluation1.png Graphic file (type png)
 
 <use graph/evaluation1.png>
@@ -768,14 +760,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32]
+[34]
 
-LaTeX Warning: Text page 33 contains only floats.
+LaTeX Warning: Text page 35 contains only floats.
 
-[33 <G:/kidsfcthesis/graph/evaluation.png> <G:/kidsfcthesis/graph/evaluation1.p
-ng>]) (G:\kidsfcthesis\contents/chap7.tex [34]
+[35 <G:/kidsfcthesis/graph/evaluation.png> <G:/kidsfcthesis/graph/evaluation1.p
+ng>]) (G:\kidsfcthesis\contents/chap7.tex [36]
 Chapter 7.
-) [35
+) [37
 
 ] (G:\kidsfcthesis\contents/acknowledgement.tex) [1]
 (G:\kidsfcthesis\kid_thesis.bbl
@@ -859,18 +851,15 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 212.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 9098 strings out of 494045
- 133169 string characters out of 3145960
- 244628 words of memory out of 3000000
- 12083 multiletter control sequences out of 15000+200000
- 13089 words of font info for 48 fonts, out of 3000000 for 9000
+ 9150 strings out of 494045
+ 133973 string characters out of 3145960
+ 387628 words of memory out of 3000000
+ 12094 multiletter control sequences out of 15000+200000
+ 13903 words of font info for 51 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,10n,38p,1265b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,1545b,1678s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
@@ -884,9 +873,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (45 pages, 1253429 bytes).
+Output written on kid_thesis.pdf (47 pages, 1275246 bytes).
 PDF statistics:
- 657 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
