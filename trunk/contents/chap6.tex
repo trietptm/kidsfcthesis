@@ -97,12 +97,13 @@ According to the median time to perform classification, the system implemented b
 \subsubsection{Accuracy evaluation}
 Obviously, in experiment we obtained 4181 malware samples for constructing decision tree and 255 malware samples for evaluating system. The accuracy of our malware classification system is 57\%. However, the accuracy of Mota, Waledac, Sality samples are too low because the number of those samples is less than Virut, or IRC bot samples. There are 2243 Virut, and 1169 IRC bot samples. Otherwise, there is only 79 Mota, 61 Waledac, 66 Sality samples.
 
-The number of Downadup samples in training data are small, but the accuracy of Downadup samples are higher than another. The reasons is Downadup binary files are different to other families so that decision tree easily identify Downadup samples.  
-
 Moreover, all of Gaobot samples is classified into IRC bot because the Gaobot binary file is nearly similar to IRC bot.
+
+The number of Downadup samples in training data are small, but the accuracy of Downadup samples are higher than another. The reasons is Downadup binary files are different to other families so that decision tree easily identify Downadup samples.  
 
 \subsubsection{Efficiency of classification}
 
 1606 malware samples required approximately 0 seconds. With our approach, malware samples use meta-data to compare with each node of decision tree. In some case, malware sample is only correspond to one to two node in decision tree so that the result is exported instantly. 
-The result of processing shows that our approach is faster than followgraphs approach. 
+
+The result of processing time shows that our approach is faster than follow graphs approach. Motivation of our approach is fast classify malware into families. Only meta-data is used on our system. Additionally, our system is implemented by the decision tree technique which is faster than other classification technique. Therefore, the processing time of classification in our system is fast.    
 
