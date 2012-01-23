@@ -3,6 +3,10 @@
   John Bambenek. \emph{http://handlers.dshield.org/jbambenek/keylogger.html}. 13 Sep 2005.
 \bibitem{Symantec}
   Symantec Announces MessageLabs Intelligence. \emph{http://www.symantec.com/about/news/release/article.jsp?\\prid=2010120701}. 12 Dec 2011.
+\bibitem{georg}
+ Georg Wicherski,
+  \emph{peHash: A Novel Approach to Fast Malware Clustering}.
+  December 7, 2008.
 \bibitem{goppit} Goppit,\emph{PORTABLE EXECUTABLE FILE FORMAT}. 2011. 
 \bibitem{mota}
   Symantec.\emph{http://www.symantec.com/security\_response/writeup.jsp?\\docid=2004070412024899}. 01 Jan 2012.
@@ -94,10 +98,6 @@ Perdram amini, Ero Carrera
  Robin Sharp,
   \emph{An Introduction to Malware}.
   Spring 2009.
-\bibitem{georg}
- Georg Wicherski,
-  \emph{peHash: A Novel Approach to Fast Malware Clustering}.
-  December 7, 2008.
 
 
 
