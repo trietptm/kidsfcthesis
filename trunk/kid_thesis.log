@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 13:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 14:13
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -599,7 +599,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 7.
 
-<graph/pefiles.png, id=296, 438.8897pt x 267.24844pt>
+<graph/pefiles.png, id=298, 438.8897pt x 267.24844pt>
 File: graph/pefiles.png Graphic file (type png)
  <use graph/pefiles.png>
 Package pdftex.def Info: graph/pefiles.png used on input line 13.
@@ -616,7 +616,7 @@ Overfull \hbox (51.24pt too wide) in paragraph at lines 22--23
 on ta-ble is an ar-ray of IM-AGE[]SECTION[]HEADERs
  []
 
-<graph/dosHeaderStructure.png, id=302, 274.77657pt x 413.29407pt>
+<graph/dosHeaderStructure.png, id=304, 274.77657pt x 413.29407pt>
 File: graph/dosHeaderStructure.png Graphic file (type png)
 
 <use graph/dosHeaderStructure.png>
@@ -627,7 +627,7 @@ Package pdftex.def Info: graph/dosHeaderStructure.png used on input line 26.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <G:/kidsfcthesis/graph/pefiles.png>]
-<graph/pe1.png, id=307, 741.52031pt x 508.14844pt>
+<graph/pe1.png, id=309, 741.52031pt x 508.14844pt>
 File: graph/pe1.png Graphic file (type png)
  <use graph/pe1.png>
 Package pdftex.def Info: graph/pe1.png used on input line 41.
@@ -636,7 +636,7 @@ Package pdftex.def Info: graph/pe1.png used on input line 41.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<graph/peheader1.jpg, id=308, 557.08125pt x 313.9228pt>
+<graph/peheader1.jpg, id=310, 557.08125pt x 313.9228pt>
 File: graph/peheader1.jpg Graphic file (type jpg)
 
 <use graph/peheader1.jpg>
@@ -678,7 +678,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 159.
 
-[22] <graph/decisiontreesample.png, id=337, 306.39468pt x 194.22563pt>
+[22] <graph/decisiontreesample.png, id=339, 306.39468pt x 194.22563pt>
 File: graph/decisiontreesample.png Graphic file (type png)
 
 <use graph/decisiontreesample.png>
@@ -687,7 +687,7 @@ Package pdftex.def Info: graph/decisiontreesample.png used on input line 181.
  [23 <G:/kidsfcthesis/graph/decisiontreesample.png>]) (G:\kidsfcthesis\contents
 /chap5.tex [24]
 Chapter 5.
-<graph/system_architec.jpg, id=354, 473.51906pt x 326.72063pt>
+<graph/system_architec.jpg, id=356, 473.51906pt x 326.72063pt>
 File: graph/system_architec.jpg Graphic file (type jpg)
 
 <use graph/system_architec.jpg>
@@ -705,7 +705,7 @@ Overfull \hbox (6.01865pt too wide) in paragraph at lines 94--95
 in32/Sality, and W32.Mota. 
  []
 
-<graph/clustering.jpg, id=375, 743.77875pt x 228.855pt>
+<graph/clustering.jpg, id=377, 743.77875pt x 228.855pt>
 File: graph/clustering.jpg Graphic file (type jpg)
 
 <use graph/clustering.jpg>
@@ -716,7 +716,7 @@ Package pdftex.def Info: graph/clustering.jpg used on input line 99.
 Package Listings Warning: Text dropped after begin of listing on input line 123
 .
 
-[29] <graph/classificationsystem.png, id=397, 744.53156pt x 368.1253pt>
+[29] <graph/classificationsystem.png, id=399, 744.53156pt x 368.1253pt>
 File: graph/classificationsystem.png Graphic file (type png)
 
 <use graph/classificationsystem.png>
@@ -736,7 +736,7 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
 
 [32
 
-] [33] <graph/evaluation.png, id=444, 636.87938pt x 369.63094pt>
+] [33] <graph/evaluation.png, id=446, 636.87938pt x 369.63094pt>
 File: graph/evaluation.png Graphic file (type png)
 
 <use graph/evaluation.png>
@@ -747,7 +747,7 @@ Package pdftex.def Info: graph/evaluation.png used on input line 82.
 LaTeX Warning: Reference `fig:evaluation2' on page 34 undefined on input line 8
 6.
 
-<graph/evaluation1.png, id=448, 328.22626pt x 196.48407pt>
+<graph/evaluation1.png, id=450, 328.22626pt x 196.48407pt>
 File: graph/evaluation1.png Graphic file (type png)
 
 <use graph/evaluation1.png>
@@ -771,68 +771,27 @@ Chapter 7.
 
 ] (G:\kidsfcthesis\contents/acknowledgement.tex) [1]
 (G:\kidsfcthesis\kid_thesis.bbl
-Underfull \hbox (badness 3128) in paragraph at lines 3--4
-[]\OT1/cmr/m/n/10.95 David Zim-mer. \OT1/cmr/m/it/10.95 http://www.woodmann.com
-/collaborative/tools/index.php/SysAnalyzer\OT1/cmr/m/n/10.95 . 21
- []
-
-
 Overfull \hbox (59.05392pt too wide) in paragraph at lines 5--6
 []\OT1/cmr/m/n/10.95 Symantec An-nounces Mes-sage-Labs In-tel-li-gence. \OT1/cm
 r/m/it/10.95 http://www.symantec.com/about/news/release/article.jsp? 
  []
 
 
-Overfull \hbox (59.65846pt too wide) in paragraph at lines 9--10
+Overfull \hbox (59.65846pt too wide) in paragraph at lines 20--21
 []\OT1/cmr/m/n/10.95 Malware pro-tec-tion cen-ter. \OT1/cmr/m/it/10.95 http://w
 ww.microsoft.com/security/portal/Threat/Encyclopedia/Glossary.aspx\OT1/cmr/m/n/
 10.95 .
  []
 
-
-Overfull \hbox (58.39006pt too wide) in paragraph at lines 19--20
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?= 
- []
-
-
-Overfull \hbox (84.13457pt too wide) in paragraph at lines 21--22
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?name= 
- []
-
-
-Overfull \hbox (86.11772pt too wide) in paragraph at lines 23--24
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name= 
- []
-
-
-Overfull \hbox (86.11772pt too wide) in paragraph at lines 25--26
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name= 
- []
-
 [2
 
 ]
-Overfull \hbox (86.11772pt too wide) in paragraph at lines 40--41
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name= 
+Underfull \hbox (badness 3128) in paragraph at lines 42--43
+[]\OT1/cmr/m/n/10.95 David Zim-mer. \OT1/cmr/m/it/10.95 http://www.woodmann.com
+/collaborative/tools/index.php/SysAnalyzer\OT1/cmr/m/n/10.95 . 21
  []
 
-
-Overfull \hbox (86.11772pt too wide) in paragraph at lines 42--43
-[]\OT1/cmr/m/n/10.95 Malware Pro-tec-tion Cen-ter.\OT1/cmr/m/it/10.95 http://ww
-w.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name= 
- []
-
-[3]pdfTeX warning (ext4): destination with the same identifier (name{cite.kaspe
-rsky1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 \bibitem{kaspersky1}
-                         )
+[3])
 
 Package natbib Warning: There were multiply defined citations.
 
@@ -873,9 +832,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (47 pages, 1275278 bytes).
+Output written on kid_thesis.pdf (47 pages, 1275267 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
+ 715 PDF objects out of 1000 (max. 8388607)
  189 named destinations out of 1000 (max. 500000)
  433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
