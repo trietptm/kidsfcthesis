@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 14:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  23 JAN 2012 15:05
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -767,20 +767,7 @@ Chapter 7.
 ) [37
 
 ] (G:\kidsfcthesis\contents/acknowledgement.tex) [1]
-(G:\kidsfcthesis\kid_thesis.bbl
-Overfull \hbox (59.05392pt too wide) in paragraph at lines 5--6
-[]\OT1/cmr/m/n/10.95 Symantec An-nounces Mes-sage-Labs In-tel-li-gence. \OT1/cm
-r/m/it/10.95 http://www.symantec.com/about/news/release/article.jsp? 
- []
-
-
-Overfull \hbox (59.65846pt too wide) in paragraph at lines 24--25
-[]\OT1/cmr/m/n/10.95 Malware pro-tec-tion cen-ter. \OT1/cmr/m/it/10.95 http://w
-ww.microsoft.com/security/portal/Threat/Encyclopedia/Glossary.aspx\OT1/cmr/m/n/
-10.95 .
- []
-
-[2
+(G:\kidsfcthesis\kid_thesis.bbl [2
 
 ]
 Underfull \hbox (badness 3128) in paragraph at lines 46--47
@@ -821,7 +808,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (47 pages, 1276021 bytes).
+Output written on kid_thesis.pdf (47 pages, 1276032 bytes).
 PDF statistics:
  715 PDF objects out of 1000 (max. 8388607)
  189 named destinations out of 1000 (max. 500000)

@@ -2,7 +2,7 @@
 \bibitem{keylogger}
   John Bambenek. \emph{http://handlers.dshield.org/jbambenek/keylogger.html}. 13 Sep 2005.
 \bibitem{Symantec}
-  Symantec Announces MessageLabs Intelligence. \emph{http://www.symantec.com/about/news/release/article.jsp?\\prid=2010120701}. 12 Dec 2011.
+  Symantec Announces MessageLabs Intelligence. \emph{http://www.symantec.com/about/\\news/release/article.jsp?prid=2010120701}. 12 Dec 2011.
 \bibitem{georg}
  Georg Wicherski,
   \emph{peHash: A Novel Approach to Fast Malware Clustering}.
@@ -21,7 +21,7 @@
 \bibitem{kaspersky}
   Eugene Kaspersky. \emph{http://www.kaspersky.co.in/news?id=207576357}. 14 Jun 2011.
 \bibitem{Microsoft}
-  Malware protection center. \emph{http://www.microsoft.com/security/portal/Threat/Encyclopedia/Glossary.aspx}. 21 Dec 2011.
+  Malware protection center. \emph{http://www.microsoft.com/security/portal/\\Threat/Encyclopedia/Glossary.aspx}. 21 Dec 2011.
 \bibitem{blackhat1}
   MalwareChet Hosmer, Chief Scientis.\emph{Polymorphic \& Metamorphic Malware}. Black Hat, 2008.
 \bibitem{packing}
