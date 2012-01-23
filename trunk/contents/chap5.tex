@@ -81,14 +81,7 @@ Malware file's meta-data are as shown in Table \ref{table:metadata}:
     \label{table:metadata}
 \end{table}
 
-At first, there is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are separated  to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file has value of 400000h \cite{goppit}. 
-
-In this system, the meta-data of PE header file is separated into $7$ class by this calculation:
-\begin{equation}
-SemanticMetaData = MetaData \bmod 7
-\end{equation} 
-
-Decision tree modeling predicts effects $7$ is larger enough to separate malware file's meta-data value into classes. Additionally, $7$ is a prime number so that it is better to divide malware file's meta-data value into $7$ classes than another number. For example, The \emph{MajorLinkerVersion} field in PE file has a list of values as: $0x00003000$, $0x00001000$, and $0x00006000$. By the above equation, the semantic value of these value is as follows: 3,1,6. However, if the system use $8$, the semantic value of these value are as follows: 0. In conclusion, $7$ is good choice to separate malware file's meta-data value.
+At first, there is a problem that PE file's meta data value is too large to detect unknown malwares which have meta-data's differences from the training data of the system. The meta-data of PE header file are separated  to give semantic information for malware classification. For example, normally \emph{ImageBase} field of PE header file have value 400000h \cite{goppit} so that the vaue of ImageBase of malware file in our system is 0 if it has 40000h and it is 1 if it has other value, and in this research that value is called as semantic value. 
 
 \subsection{Create training data}
 
@@ -121,6 +114,12 @@ We use decision tree 1.5 library, for implementing malware classification system
         root_node.display_decision_tree("   ")
 \end{verbatim}
  
-Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, .... The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. For example, this is a list of meta-data created: 2, 0, 6, 3, 1, 2, 1, 6, 6, 4, 4, 0, 0, 0, 4, 0, 0, 1, 6, 0, 2, 0, 5, 3, 5, 6, 0, 3, 2, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,..
+Malware' meta-data are known as input data for each decision tree, and the decision tree determines the malware family. Lists of malware PE header file's meta-data are Magic, MajorLinkerVersion, MinorLinkerVersion, SizeOfCode, SizeOfInitializedData, SizeOfUninitializedData, AddressOfEntryPoint, BaseOfCode, BaseOfData, ImageBase, SectionAlignment, FileAlignment, MajorOperatingSystemVersion, MinorOperatingSystemVersion, MajorImageVersion, MinorImageVersion, MajorSubsystemVersion, MinorSubsystemVersion, Reserved1, SizeOfImage, SizeOfHeaders, CheckSum, Subsystem, DllCharacteristics, SizeOfStackReserve, SizeOfStackCommit, SizeOfHeapReserve, SizeOfHeapCommit, LoaderFlags, NumberOfRvaAndSizes, Machine, NumberOfSections, TimeDateStamp, PointerToSymbolTable, NumberOfSymbols, SizeOfOptionalHeader, Characteristics, .... The value of each field in PE header has semantics for decision tree algorithm if it is appeared at 10\% in malware training data. With this approach, the semantic value list of meta-data malware is made. With this approach, the list semantic value of meta-data of malware is generated. For example, this is list meta-data created:1, 2, 6, 4, 0, 1, 1, 4, 0, 200, 4, 0, 0, 0, 4, 0, 0, 1.00E+00, 200, 0, 2, 0, 100000, 4000, 100000, 1000, 0, 10, 14c, 2, 1000, 8, 0, e0, 3,  .... This is value before generating :35328, 10b, 2, 0, 6200, 0, 200, b32e, b000, 9000, 400000, 1000, 200, 3, 0, 0, 0, 4, 0, 0, d000, 400, afe8, 2, 0, 1000, 1000, 10000, 0, 0, 10, 14c, 6, 0, 0, 0, e0, 10e, .... 
  
 The malware classification part is shown in Figure \ref{fig:classification}. The training data from the malware clustering part is used to create the order of decision tree that makes malware classification system correct.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{graph/clustering.jpg}
+\caption{Clustering method.}
+\label{fig:clustering}
+\end{figure}
