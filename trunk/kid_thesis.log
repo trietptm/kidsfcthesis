@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  27 JAN 2012 05:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.22)  1 FEB 2012 14:42
 entering extended mode
 **kid_thesis.tex
 (G:\kidsfcthesis\kid_thesis.tex
@@ -731,7 +731,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [30] [31 <G:/kidsfcthesis/graph/classificationsystem.png>]
 Chapter 6.
 
-Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
+Overfull \hbox (105.44255pt too wide) in paragraph at lines 50--63
  [] 
  []
 
@@ -741,18 +741,18 @@ Overfull \hbox (28.01622pt too wide) in paragraph at lines 50--62
 File: graph/evaluation.png Graphic file (type png)
 
 <use graph/evaluation.png>
-Package pdftex.def Info: graph/evaluation.png used on input line 82.
+Package pdftex.def Info: graph/evaluation.png used on input line 83.
 (pdftex.def)             Requested size: 469.47046pt x 272.4679pt.
 
 
 LaTeX Warning: Reference `fig:evaluation2' on page 34 undefined on input line 8
-6.
+7.
 
 <graph/evaluation1.png, id=450, 328.22626pt x 196.48407pt>
 File: graph/evaluation1.png Graphic file (type png)
 
 <use graph/evaluation1.png>
-Package pdftex.def Info: graph/evaluation1.png used on input line 90.
+Package pdftex.def Info: graph/evaluation1.png used on input line 91.
 (pdftex.def)             Requested size: 469.47046pt x 281.03903pt.
 
 
@@ -812,7 +812,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/courier/ucrr8a.pfb>
-Output written on kid_thesis.pdf (47 pages, 1276011 bytes).
+Output written on kid_thesis.pdf (47 pages, 1276121 bytes).
 PDF statistics:
  715 PDF objects out of 1000 (max. 8388607)
  189 named destinations out of 1000 (max. 500000)
