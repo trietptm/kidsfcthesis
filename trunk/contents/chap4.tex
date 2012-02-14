@@ -124,36 +124,36 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
 The fields of Optional header are described as follow: 
 \begin{itemize}
 \item Magic: appears to be set to 0x010B.
-\item MajorLinkerVersion
-\item MinorLinkerVersion: the version of the linker that produced this file.
-\item SizeOfCode: this field matches the size of the .text section.
-\item SizeOfInitializedData: 
-\item SizeOfUninitializedData: 
-\item AddressOfEntryPoint: 
-\item BaseOfCode: 
-\item BaseOfData: 
-\item ImageBase: 
-\item SectionAlignment: 
-\item FileAlignment: 
-\item MajorOperatingSystemVersion: 
-\item MinorOperatingSystemVersion: 
-\item MajorImageVersion: 
-\item MinorImageVersion: 
-\item MajorSubsystemVersion: 
-\item MinorSubsystemVersion: 
-\item Reserved1: 
-\item SizeOfImage: 
-\item SizeOfHeaders: 
-\item CheckSum: 
-\item Subsystem: 
-\item DllCharacteristics: 
-\item SizeOfStackReserve:
-\item SizeOfStackCommit: 
-\item SizeOfHeapReserve:
-\item SizeOfHeapCommit: 
-\item LoaderFlags: 
-\item NumberOfRvaAndSizes:
-\item DataDirectory:
+\item MajorLinkerVersion: "The major version number of the linker."
+\item MinorLinkerVersion: "The minor version number of the linker."
+\item SizeOfCode: "The size of the code section, in bytes, or the sum of all such sections if there are multiple code sections."
+\item SizeOfInitializedData: "The size of the initialized data section, in bytes, or the sum of all such sections if there are multiple initialized data sections."
+\item SizeOfUninitializedData: "The size of the uninitialized data section, in bytes, or the sum of all such sections if there are multiple uninitialized data sections."
+\item AddressOfEntryPoint: "A pointer to the entry point function, relative to the image base address. For executable files, this is the starting address. For device drivers, this is the address of the initialization function. The entry point function is optional for DLLs. When no entry point is present, this member is zero."
+\item BaseOfCode: "A pointer to the beginning of the code section, relative to the image base."
+\item BaseOfData: "A pointer to the beginning of the data section, relative to the image base."
+\item ImageBase: "The preferred address of the first byte of the image when it is loaded in memory."
+\item SectionAlignment: "The alignment of sections loaded in memory, in bytes."
+\item FileAlignment: "The alignment of the raw data of sections in the image file, in bytes."
+\item MajorOperatingSystemVersion: "The major version number of the required operating system."
+\item MinorOperatingSystemVersion: "The minor version number of the required operating system."
+\item MajorImageVersion: "The major version number of the image."
+\item MinorImageVersion: "The minor version number of the image."
+\item MajorSubsystemVersion: "The major version number of the subsystem."
+\item MinorSubsystemVersion: "The minor version number of the subsystem."
+\item Reserved1: "This member is reserved and must be 0."
+\item SizeOfImage: "The size of the image, in bytes, including all headers."
+\item SizeOfHeaders: "The combined size of the MS-DOS stub, the PE header, and the section headers, rounded to a multiple of the value specified in the FileAlignment member."
+\item CheckSum: "The image file checksum."
+\item Subsystem: "The subsystem required to run this image."
+\item DllCharacteristics: "The DLL characteristics of the image. "
+\item SizeOfStackReserve:"The number of bytes to reserve for the stack."
+\item SizeOfStackCommit: "The number of bytes to commit for the stack."
+\item SizeOfHeapReserve: "The number of bytes to reserve for the local heap."
+\item SizeOfHeapCommit: "The number of bytes to commit for the local heap."
+\item LoaderFlags: "This member is obsolete."
+\item NumberOfRvaAndSizes: "The number of directory entries in the remainder of the optional header. Each entry describes a location and size."
+\item DataDirectory: "A pointer to the first IMAGE\_DATA\_DIRECTORY structure in the data directory."
 \end{itemize}
 
 \section{Decision tree\cite{decisiontree}}
